@@ -1,0 +1,29 @@
+.bloco1{
+    position: relative;
+    padding-top: 50px;
+    background-image: radial-gradient(farthest-corner at -2% 5%, #92ACCE 0%, transparent 60%);
+    /* , radial-gradient(farthest-corner at 106% 114%, #1A447F 5%, transparent 25%), radial-gradient(farthest-corner at -2% 75%, #CF9993 0%, transparent 25%) */
+}
+.asset_esq{
+    position: absolute;
+    top: 50px;
+    left: 10px;
+
+}
+.asset_dir{
+    position: absolute;
+    top: 200px;
+    right: 10px;
+}
+.bloco2{
+background-image: none;
+  background-color: #1A447F;
+  border-radius: 60px;
+  box-shadow: 0px 5px 9px 3px rgba(0,0,0,0.75);
+  border: 1px solid #0A3879;
+  color: #fff;
+}
+.bloco2 .table td{background-color: #fff; color: black; }
+.bloco2 .table thead th {
+    /* border-right: 5px solid #1A447F; */
+}
