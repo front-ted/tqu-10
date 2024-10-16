@@ -1,0 +1,73 @@
+.paralax{
+    position: relative;
+    height: 500px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important
+}
+.paralax-img1{background-image: url('img/01.png');}
+.paralax-img2{background-image: url('img/02.png');}
+.paralax-img3{background-image: url('img/03.png');}
+.paralax-img4{background-image: url('img/04.png');}
+.citacao2 p{margin-bottom: 0px;}
+.citacao2 p:last-child{margin-bottom: 30px;}
+.bloco1, .bloco2, .bloco3, .bloco4, .bloco5{
+    background-image: radial-gradient(farthest-corner at -2% 5%, #92ACCE 0%, transparent 60%), radial-gradient(farthest-corner at 106% 114%, #92ACCE 5%, transparent 25%);
+    /* #92ACCE -23%, transparent 32% */
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.btn-pdf{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 254px;
+    height: 86px;
+    /* background-image: url('../assets/images/bt_imprimir.svg'); */
+    background-size: cover;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-indent: 70px;
+    border-radius: 40px;
+    color: #1A4480;
+    background: linear-gradient(#fff, #fff) padding-box, linear-gradient(80deg, var(--cor-primaria) 10%, var(--cor-primaria) 50%, var(--cor-secundaria) 92%) border-box;
+    border: 7px solid transparent;
+}
+.btn-pdf:hover{
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(transparent, transparent) padding-box, linear-gradient(80deg, var(--cor-primaria) 10%, var(--cor-primaria) 50%, var(--cor-secundaria) 92%) border-box;
+}
+.btn-pdf.visitado{
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.btn-pdf.hvr-sweep-to-right:before{
+    left: 9px;
+    /* background-image: linear-gradient(
+        90deg,
+        hsl(215deg 66% 30%) 0%,
+        hsl(240deg 29% 41%) 13%,
+        hsl(267deg 25% 42%) 25%,
+        hsl(293deg 21% 44%) 37%,
+        hsl(317deg 22% 49%) 50%,
+        hsl(333deg 26% 55%) 63%,
+        hsl(345deg 31% 60%) 75%,
+        hsl(356deg 34% 66%) 87%,
+        hsl(6deg 38% 69%) 100%
+      ); */
+      background-image: linear-gradient(
+        90deg,
+        hsl(214deg 38% 69%) 0%,
+        hsl(215deg 35% 63%) 18%,
+        /* hsl(216deg 33% 56%) 26%, */
+        hsl(6deg 38% 69%) 100%
+      );
+
+}
+.btn-pdf img{
+    position: absolute;
+    left: -8px;
+    top: -7px;
+    width: 86px;
+}

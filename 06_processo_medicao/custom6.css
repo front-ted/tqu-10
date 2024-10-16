@@ -1,0 +1,67 @@
+.bloco1{
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: radial-gradient(farthest-corner at -2% 5%, #92ACCE 0%, transparent 60%), radial-gradient(farthest-corner at 106% 114%, #1A447F 5%, transparent 25%), radial-gradient(farthest-corner at -2% 75%, #CF9993 0%, transparent 25%);
+}
+.accordion-body .destaque{
+    margin-left: 50px;
+}
+.espacoPalavra{
+    display: inline-block;
+    height: 20px;
+    width: 90px;
+    border-bottom: 3px dashed;
+    background-color: antiquewhite;
+}
+.asset_esq1{
+    position: absolute;
+    top: 2500px;
+    left: 10px;
+}
+.asset_esq2{
+    position: absolute;
+    bottom: 4800px;
+    left: 10px;
+}
+.asset_dir1{
+    position: absolute;
+    top: 300px;
+    right: 10px;
+}
+.asset_dir2{
+    position: absolute;
+    top: 3500px;
+    right: 10px;
+}
+.asset_dir3{
+    position: absolute;
+    right: 10px;
+    bottom: 1800px;
+}
+.asset_esq1,
+.asset_esq2,
+.asset_dir1,
+.asset_dir2,
+.asset_dir3{
+    width: 18%;
+}
+@media screen and (max-width: 1450px){
+    .asset_esq1,
+    .asset_esq2,
+    .asset_dir1,
+    .asset_dir2,
+    .asset_dir3{
+        width: 14%;
+    }
+}
+@media screen and (max-width: 1200px){
+    .asset_esq1,
+    .asset_esq2,
+    .asset_dir1,
+    .asset_dir2,
+    .asset_dir3{
+        display: none;
+    }
+
+}

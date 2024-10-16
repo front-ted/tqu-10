@@ -1,0 +1,137 @@
+.bloco1, .bloco3, .bloco5, .bloco7{
+    position: relative;
+    padding-top: 50px;
+    background-image: radial-gradient(farthest-corner at -2% 5%, #92ACCE 0%, transparent 60%);
+    /* , radial-gradient(farthest-corner at 106% 114%, #1A447F 5%, transparent 25%), radial-gradient(farthest-corner at -2% 75%, #CF9993 0%, transparent 25%) */
+}
+.bloco1, .bloco5, .bloco7,  .bloco8{
+    padding-bottom: 50px;
+}
+
+.asset_esq{
+    position: absolute;
+    top: 50px;
+    left: 10px;
+}
+.asset_dir{
+    position: absolute;
+    top: 200px;
+    right: 10px;
+}
+.bloco2, .bg-solido-escuro{
+background-image: none;
+  background-color: #1A447F;
+  border-radius: 60px;
+  box-shadow: 0px 5px 9px 3px rgba(0,0,0,0.75);
+  border: 1px solid #0A3879;
+  color: #fff;
+}
+.bloco2 .table td{background-color: #fff; color: black; }
+.bloco2 .table thead th {
+    /* border-right: 5px solid #1A447F; */
+}
+.bg-solido-escuro .tab-content {
+    background-color: #fff;
+    color: black;
+}
+.figColor{
+    color: #fff;
+}
+.imgMap1{
+    display: block;
+    margin: auto;
+    max-width: 668px;
+    width: 100%;
+    position: relative;
+}
+.imgMap2{
+    display: block;
+    margin: auto;
+    max-width: 606px;
+    width: 100%;
+    position: relative;
+}
+.imgMapImg1,.imgMapImg2{
+    display: block;
+    margin: auto;
+}
+.imgMapImg1{
+    max-width: 668px;
+}
+.imgMapImg2{
+    max-width: 606px;
+}
+.map1area1,
+.map1area2,
+.map1area3,
+.map1area4,
+.map1area5,
+.map1area6,
+.map1area7,
+.map1area10,
+.map1area11,
+.map1area12,
+.map1area13,
+.map1area14,
+.map1area15,
+.map1area16,
+.map1area17{
+    position: absolute;
+}
+.map1area1{
+    top: 100px;
+    left: 135px;
+}
+.map1area2{
+    top: 0px;
+    right: 135px;
+}
+.map1area3{
+    top: 350px;
+    left: 135px;
+}
+.map1area4{
+    top: 200px;
+    right: 135px;
+}
+.map1area5{
+    top: 550px;
+    left: 135px;
+}
+.map1area6{
+    top: 450px;
+    right: 135px;
+}
+
+/* 2 */
+.map1area10{
+    top: 0px;
+    right: 115px;
+}
+.map1area11{
+    top: 100px;
+    left: 95px;
+}
+.map1area12{
+    top: 200px;
+    right: 115px;
+}
+.map1area13{
+    top: 320px;
+    left: 95px;
+}
+.map1area14{
+    top: 450px;
+    right: 115px;
+}
+.map1area15{
+    top: 520px;
+    left: 95px;
+}
+.map1area16{
+    top: 680px;
+    right: 115px;
+}
+.map1area17{
+
+}

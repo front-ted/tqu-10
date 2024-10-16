@@ -1,0 +1,6 @@
+.bloco1{
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: radial-gradient(farthest-corner at -2% 5%, #92ACCE 0%, transparent 60%), radial-gradient(farthest-corner at 106% 114%, #1A447F 5%, transparent 25%), radial-gradient(farthest-corner at -2% 75%, #CF9993 0%, transparent 25%);
+}

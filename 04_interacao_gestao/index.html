@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <!-- Inserir o tíutlo do conhecimento na tag title -->
+        <title>Interação com a gestão da qualidade </title>
+        <!-- Meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS v5.0.2 -->
+        <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/fa/css/all.min.css">
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="../assets/css/animate.min.css" />
+        <!-- hover.css https://ianlunn.github.io/Hover/ -->
+        <link rel="stylesheet" href="../assets/css/hover-min.css" />
+        <!--Splide - slideshow-->
+        <link rel="stylesheet" href="../assets/css/splide.min.css">
+        <!-- Preloader -->
+        <link rel="stylesheet" href="../assets/css/preloader.css">
+        <!-- Áudio customizado -->
+        <link rel="stylesheet" href="../assets/css/player.css">
+        <!-- Atividade de verdadeiro ou falso -->
+        <link rel="stylesheet" href="../assets/atividades/perguntas/perguntas.css">
+        <!--Atividade arrasta e solta-->
+        <link rel="stylesheet" href="../assets/atividades/arrasta_solta/dragula.css">
+        <link rel="stylesheet" href="../assets/atividades/arrasta_solta/game-custom.css">
+        <!--Atividade relacionar colunas-->
+        <link rel="stylesheet" href="../assets/atividades/relacionar_colunas/relacionar-colunas.css">
+        <!-- Estilos do template -->
+        <link rel="stylesheet" href="../assets/css/cores.css">
+        <link rel="stylesheet" href="../print/print/print.css">
+        <link rel="stylesheet" href="../assets/css/template.css">
+        <link rel="stylesheet" href="custom4.css">
+    
+    </head>
+    <body class="bg-claro">
+        <!-- Preloader OBRIGATÓRIO -->
+        <div class="preloader">
+            <div class="anim"></div>
+            <p>Aguarde enquanto o conteúdo é carregado.</p>
+        </div>
+        <!-- Marca d'água OBRIGATÓRIA -->
+        <img src="../assets/images/logo_senac_colorido.png" id="marcadaguaLogo">
+
+        <header id="topo">
+            <div class="topo-logo">
+                <div class="container">
+                    <h1 id="nome-curso" class="only-print">Técnico em Qualidade</h1> 
+                    <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()" aria-hidden="true"></div>     
+                </div>
+            </div>
+        </header>
+        <!--Menu lateral-->
+        <button class="bt-hamburguer" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Técnico em óptica</h5>
+                <button type="button" class="bt-fecharmenu text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <nav id="nav-offcanvas" class="offcanvas-body">
+                <ul>
+                    <li><a href="#titulo1">Interação com a gestão da qualidade</a></li>
+                    <li><a href="#titulo2">Interação da metrologia com a gestão da qualidade</a></li>
+                    <li><a href="#titulo3">Indicadores da qualidade na metrologia</a></li>
+                    <li><a href="#titulo4">Mapeamento do processo</a></li>
+                    <li><a href="#titulo5">Controle e monitoramento</a></li>
+                    <li><a href="#titulo6">Gestão de riscos</a></li>
+                    <li><a href="#titulo7">Encerramento</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->    
+        <section id="booklet">  
+            <div class="layer-preta no-print"></div>       
+            <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
+            <section class="paginas">
+                <div class="pagina">
+                    <div class="bloco1">
+                        <div class="container">
+                            <h2 id="titulo1">Interação com a gestão da qualidade: indicadores, mapeamento de processos (decisões), controle e monitoramento, gestão de riscos
+                            </h2>
+                            <p>Olá, estudante! Você compreenderá como a rastreabilidade metrológica desempenha um papel fundamental na gestão da qualidade e verá também que a metrologia se relaciona com indicadores, mapeamento de processos, controle e monitoramento e gestão de riscos. </p>
+                            <p>Veja como o profissional da qualidade é essencial para garantir que uma organização esteja sempre melhorando e atendendo às necessidades de seus clientes. Para isso, é necessário utilizar uma variedade de ferramentas e técnicas, incluindo a metrologia, para medir o desempenho, identificar oportunidades de melhoria e garantir que os processos estejam funcionando como esperado. A seguir, será analisado como empresas podem aplicar a metrologia, uma ferramenta poderosa que fornece a base para a coleta de dados precisos e confiáveis, essenciais a todos os aspectos da gestão da qualidade.</p>
+                            
+                            <figure class="my-5">
+                                <div class="figure-img mb-4">
+                                    <img class="img-fluid d-block mx-auto" src="img/baloes.png">
+                                </div>
+                            </figure>
+                            <h3 id="titulo2">Interação da metrologia com a gestão da qualidade</h3>
+                            <p>No cotidiano, os instrumentos de medição influenciam diretamente a qualidade de vida das pessoas, as relações de consumo e, até mesmo, auxiliam as tomadas de decisão. Ao transportar a metrologia para um ambiente organizacional, a situação não é diferente. A metrologia possibilita a precisão do processo produtivo e a diminuição do índice de incerteza, contribuindo para a redução do número de retrabalho nas empresas e, principalmente, para a qualidade do produto, além disso, desempenha um papel fundamental na gestão da qualidade de uma empresa. Por exemplo, a metrologia assegura que os produtos ou serviços de uma empresa estejam em conformidade com os padrões de qualidade estabelecidos. Isso é alcançado por meio da realização de medições e testes precisos nos produtos ou serviços.</p>
+                            <p>A metrologia também permite que uma empresa monitore e aprimore continuamente seus processos de produção. Isso é possível por meio da coleta e da análise de dados de medição, que também auxiliam na conformidade com as normas e regulamentos do setor. Outro ponto importante é que a metrologia fornece os dados necessários para tomar decisões informadas sobre a qualidade do produto ou serviço. Esses dados, obtidos por meio de coleta e análise, também possibilitam a identificação e a eliminação de desperdícios nos processos de produção, resultando na redução de custos.</p>
+                            <p>Portanto, a metrologia é uma ferramenta essencial para a gestão da qualidade, pois fornece os meios para medir, monitorar e melhorar a qualidade dos produtos ou serviços de uma empresa. </p>
+                                                        
+                            <!-- destaque -->
+                            <div class="destaque borda-colorida icone pergunta">
+                                <p>Veja mais detalhes sobre a <strong>interação da metrologia com a gestão da qualidade</strong> em uma empresa</p>
+                            </div>             
+                            <!-- gatinha1 -->
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                            Padronização e calibração
+
+                            
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>A metrologia assegura que os instrumentos de medição estejam calibrados e funcionando corretamente, o que é crucial para manter a consistência e a precisão das medições, fundamentais para a gestão da qualidade. Por exemplo, em uma indústria automobilística, isso pode envolver a manutenção regular de equipamentos de medição e a verificação de sua precisão contra padrões conhecidos.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Controle de qualidade
+
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>A metrologia disponibiliza as ferramentas e as técnicas necessárias para avaliar a qualidade de produtos e processos. Isso permite que as empresas identifiquem problemas de qualidade e implementem ações corretivas. Por exemplo, um supermercado pode usar balanças calibradas para verificar o peso dos produtos em várias etapas do processo de venda.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Melhoria contínua
+
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>A metrologia auxilia as empresas a monitorarem e aprimorarem continuamente a qualidade de seus produtos e processos. Isso é realizado por meio da coleta e da análise de dados de medição, que podem ser usados para identificar tendências e oportunidades de melhoria. Por exemplo, em uma fábrica de eletrônicos, isso pode envolver o uso de <i>software</i> de análise de dados para rastrear a qualidade ao longo do tempo e identificar áreas para melhoria.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFor">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFor" aria-expanded="false" aria-controls="collapseFor">
+                                            Conformidade com normas e regulamentos 
+
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFor" class="accordion-collapse collapse" aria-labelledby="headingFor" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>A metrologia ajuda as empresas a demonstrarem conformidade com normas e regulamentos de qualidade. Isso é feito por meio da realização de medições precisas e confiáveis, que podem ser usadas para fornecer evidências de conformidade. Por exemplo, em uma indústria farmacêutica, isso pode envolver a realização de auditorias internas e externas para verificar a conformidade com as normas de qualidade.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFive">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            Redução de custos
+
+                            
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>A metrologia pode contribuir para a redução de custos ao identificar e eliminar problemas de qualidade no início do processo de produção. Isso pode resultar em menos retrabalho, menos desperdício e maior satisfação do cliente. Por exemplo, em uma indústria têxtil, isso pode envolver o uso de técnicas de controle estatístico de processos para detectar variações no processo de produção e corrigi-las antes que se tornem problemas maiores.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                Agora que você já conhece a importância da metrologia para a gestão da qualidade, saiba qual a <strong>relação dos indicadores da qualidade com os processos de medição. </strong>
+
+                            </p>
+                            <h3 id="titulo3">Indicadores da qualidade na metrologia
+                            </h3>
+                            <p>
+                                Conforme visto na unidade curricular “Criar e acompanhar o desenvolvimento de indicadores”, os indicadores são ferramentas valiosas que auxiliam a identificação, a medição e a descrição de aspectos associados a um fenômeno específico ou objeto da realidade que se deseja observar. A principal função de um indicador é traduzir, de maneira mensurável (quantitativamente) ou descritível (qualitativamente), um ou mais aspectos da realidade observada. No contexto da metrologia, a finalidade dos indicadores é evidenciar a presença ou a ausência de eventos significativos na gestão. Além disso, os indicadores têm o papel de sinalizar o que está ocorrendo de positivo ou negativo na condução da realização dos objetivos para alcançar os resultados desejados.
+                            </p>
+                            <p>A metrologia e os indicadores de desempenho são dois elementos essenciais na gestão de uma empresa. Eles atuam em conjunto para assegurar a qualidade de produtos e processos, bem como para monitorar e aprimorar o desempenho da empresa. A seguir, são apresentadas algumas formas de interação da metrologia com os indicadores de uma empresa.</p>
+                                                        
+                            <div class="accordion" id="accordionExample2">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne2">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="false" aria-controls="collapseOne2">
+                                            Medição de desempenho
+
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne2" class="accordion-collapse collapse" aria-labelledby="headingOne2" data-bs-parent="#accordionExample2">
+                                        <div class="accordion-body">
+                                            <p>A metrologia disponibiliza as ferramentas e as técnicas necessárias para avaliar o desempenho de produtos e processos. Isso pode envolver a medição de variáveis, como tempo de ciclo, defeitos por unidade, eficiência do processo, entre outros. Essas medições podem ser usadas para calcular indicadores de desempenho, que fornecem uma representação quantitativa do desempenho. Por exemplo, em uma indústria automobilística, a metrologia pode ser usada para medir o tempo de ciclo de montagem de um carro, que é um indicador-chave de desempenho.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo2">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                                            Monitoramento de desempenho
+
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2" data-bs-parent="#accordionExample2">
+                                        <div class="accordion-body">
+                                            <p>Os indicadores de desempenho são utilizados para monitorar o desempenho ao longo do tempo. Isso pode envolver o rastreamento de indicadores-chave de desempenho (KPIs) em um painel de controle ou a realização de análises de tendências para identificar mudanças no desempenho ao longo do tempo. A metrologia fornece os dados necessários para realizar essas atividades. Por exemplo, um supermercado pode usar balanças calibradas para monitorar a qualidade dos produtos ao longo do tempo.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree2">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+                                            Melhoria de desempenho
+
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree2" class="accordion-collapse collapse" aria-labelledby="headingThree2" data-bs-parent="#accordionExample2">
+                                        <div class="accordion-body">
+                                            <p>A metrologia e os indicadores de desempenho podem ser usados em conjunto para identificar oportunidades de melhoria. Por exemplo, se um indicador de desempenho está abaixo do objetivo, a empresa pode usar a metrologia para investigar a causa raiz do problema e implementar ações corretivas. Em uma fábrica de eletrônicos, por exemplo, se o indicador de defeitos por unidade estiver alto, a metrologia pode ser usada para identificar sua causa e implementar ações corretivas.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFor">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFor" aria-expanded="false" aria-controls="collapseFor">
+                                            Tomada de decisão
+
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFor" class="accordion-collapse collapse" aria-labelledby="headingFor" data-bs-parent="#accordionExample2">
+                                        <div class="accordion-body">
+                                            <p>A metrologia e os indicadores de desempenho fornecem a base para a tomada de decisões informadas. Isso pode envolver o uso de indicadores de desempenho para avaliar a eficácia de diferentes estratégias ou a utilização de dados de medição para tomar decisões sobre a alocação de recursos. Por exemplo, em uma empresa de logística, a metrologia pode ser usada para medir o tempo de entrega, que é um indicador-chave de desempenho, para tomar decisões sobre rotas de entrega.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFive">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            Conformidade com normas e regulamentos
+
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample2">
+                                        <div class="accordion-body">
+                                            <p>Tanto a metrologia quanto os indicadores de desempenho podem ajudar uma empresa a demonstrar conformidade com normas e regulamentos. Isso pode envolver o uso de medições para fornecer evidências de conformidade ou o rastreamento de indicadores de desempenho para demonstrar a melhoria contínua. Por exemplo, em uma indústria farmacêutica, a metrologia pode ser usada para medir a pureza de um medicamento, que é um indicador-chave de desempenho, para demonstrar conformidade com as normas de qualidade.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                Conheça a história do Thiago, o técnico em qualidade da empresa “Delícias Saudáveis”. Nesse <i>case</i> de uma indústria de alimentos, você verá como a utilização de indicadores é fundamental em seus processos.
+                            </p>
+                            <p class="no-print" aria-hidden="true">
+                                Clique ou toque para visualizar o conteúdo.
+                            </p>
+                           <!-- Espera objeto1 -->
+                            <div class="espera_video video-youtube">Espera objeto1</div>
+                            <div class="only-print">
+                                <p>A “Delícias Saudáveis” é uma empresa especializada na produção de alimentos congelados, saudáveis e orgânicos. Está no mercado desde 2010 e visa produzir e fornecer alimentos saudáveis e saborosos utilizando práticas sustentáveis e éticas para a promoção de saúde e bem-estar a seus clientes. Dois anos após a criação da “Delícias Saudáveis”, ocorreu a contratação de um técnico em qualidade, chamado Thiago, para garantir que os produtos atendam às expectativas e aos requisitos de seus clientes. Quando iniciou na empresa, Thiago utilizou indicadores de metrologia para criar sua rotina de trabalho. Ele definiu vários indicadores-chave de qualidade, que seriam relevantes para a empresa, como taxa de defeitos, tempo de ciclo de produção e eficiência do processo, além dos seguintes indicadores:  </p>
+                                <div class="table-responsive table">
+                                    <table class="text-left align-middle">
+                                        <thead>
+                                            <tr>
+                                                <th class="w-25">Eficiência Global dos Equipamentos (OEE)</th>
+                                                <th class="w-25">Mede a eficiência geral dos equipamentos utilizados na produção. </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Horas de trabalho na produção</td>
+                                                <td>Mede a quantidade de tempo gasto na produção.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Número de produtos produzidos</td>
+                                                <td>Mede a quantidade de produtos produzidos em um determinado período.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tempo Médio de Reparo (MTTR)</td>
+                                                <td>Mede o tempo médio necessário para reparar equipamentos ou resolver problemas de produção.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Utilização da capacidade instalada</td>
+                                                <td>Mede a porcentagem da capacidade de produção utilizada na “Delícias Saudáveis”.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Indicadores de eficácia</td>
+                                                <td>Indica se os processos estão alcançando os objetivos propostos.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Indicador de atendimento</td>
+                                                <td>Indica a satisfação dos clientes em relação aos produtos e aos serviços da “Delícias saudáveis”.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p class="figure-caption text-center">Exemplos de indicadores de metrologia <br>
+                                    Fonte: Senac EAD (2024)
+                                </p>
+                                <p>Posteriormente, Thiago, após um vasto planejamento, implementou uma série de ferramentas de medição para acompanhar os indicadores-chave de qualidade. Veja alguns exemplos de como ele fez isso.
+                                </p>
+                                <div class="table-responsive table">
+                                    <table class="text-left align-middle">
+                                        <tbody>
+                                            <tr>
+                                                <td>Calibração de equipamentos de medição</td>
+                                                <td>Calibração de todos os equipamentos de medição utilizados na produção, como balanças para pesar ingredientes, termômetros para monitorar a temperatura de cozimento e medidores de pH para garantir a segurança dos alimentos.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Implementação de <i>software</i> de análise de dados</td>
+                                                <td>Implementação de <i>software</i> de análise de dados para coletar e analisar os dados de medição, permitindo calcular indicadores de desempenho e identificar tendências e variações.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Uso de sensores e instrumentos de medição</td>
+                                                <td>Implementação de sensores e outros instrumentos de medição para monitorar continuamente processos de produção. Por exemplo, sensores de temperatura em fornos e refrigeradores para garantir a temperatura correta de preparação e armazenamento dos alimentos.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Implementação de procedimentos de inspeção</td>
+                                                <td>Estabelecimento de procedimentos de inspeção para verificar a qualidade dos produtos em várias etapas do processo de produção. O técnico em qualidade instruiu os colaboradores para realizar a inspeção visual de alimentos, a fim de detectar defeitos, realizar testes de sabor, a fim de garantir a qualidade do sabor, e realizar testes microbiológicos, a fim de garantir a segurança dos alimentos.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p class="figure-caption text-center">Exemplos de ferramentas de medição
+                                    <br>
+                                    Fonte: Senac EAD (2024)
+                                </p>
+                                <p>
+                                    Após essa etapa, quando um indicador de qualidade não atingia a meta estabelecida, Thiago entrava em ação. Por exemplo, se o teor de sódio em um lote de produtos estava acima do permitido, ele investigava a causa raiz do problema. Isso envolvia a análise do processo de produção, como a quantidade de sal adicionada durante a fabricação.
+                                </p>
+                                <p>Thiago procurava cumprir com as calibrações periódicas (em intervalos regulares, conforme o calendário de calibração que ele montou), mas quando identificava um problema, como uma balança não calibrada corretamente, ele se encarregava da verificação intermediária do equipamento (que é realizada na própria empresa, geralmente pela equipe operacional ou pelo técnico responsável). Nesse caso, o técnico em qualidade mantém um registro documentado de todas as ações.</p>
+                                <p>Ele também implementou novas práticas de trabalho, como a introdução de verificações de qualidade mais frequentes e a implementação de um novo protocolo de treinamento para a equipe de produção. Depois de implementar as ações corretivas, o trabalho de Thiago não parava por aí. Ele se dedicava ao monitoramento contínuo dos resultados para garantir que a melhoria de qualidade desejada fosse alcançada. Por exemplo, se uma balança fosse recalibrada para corrigir o teor de sódio nos produtos, ele coletaria e analisaria os dados de medição do teor de sódio nos lotes subsequentes para confirmar se a correção foi eficaz. Além disso, Thiago monitorava continuamente outros indicadores de qualidade, como a textura e o sabor dos produtos, por meio de testes sensoriais. Ele também usou ferramentas de metrologia, como espectrômetros, para medir a cor e a consistência dos alimentos.</p>
+                                <p>Na “Delícias Saudáveis”, após a implementação das ações corretivas, o trabalho de Thiago não terminava. Ele se dedicava ao monitoramento contínuo dos resultados para garantir que as melhorias desejadas na qualidade fossem alcançadas. Por exemplo, se uma ação corretiva envolvesse a alteração da quantidade de um ingrediente em uma receita, Thiago coletaria amostras de lotes subsequentes do produto e realizaria testes para verificar se a alteração resultou na melhoria desejada. Ele também orientava a utilização de equipamentos de medição para coletar dados sobre diferentes aspectos dos produtos, como o teor de sódio, a textura e a cor. Esses dados eram analisados para verificar se estavam dentro dos padrões de qualidade estabelecidos.  </p>
+                                <p>Para atingir os resultados propostos em conjunto com os diretores da “Delícias Saudáveis”, Thiago sabia que o mapeamento de processos lhe traria mais informações sobre a indústria e que seu trabalho poderia ser qualificado. </p>
+                                <p>Conheça a importância da metrologia no mapeamento dos processos e siga acompanhando a trajetória de Thiago na “Delícias Saudáveis”.</p>
+                            </div>
+                           <!-- Espera objeto1 -->
+
+                            <h3 id="titulo4">Mapeamento do processo</h3>
+                            <p>O mapeamento de processos é uma ferramenta que permite entender e analisar como uma organização funciona. Identifica todas as atividades realizadas na empresa e organiza os elementos que interagem com a linha de produção e a qualidade final do produto. O mapeamento de processos ajuda a identificar áreas que precisam ser melhoradas e os impactos de alterações no processo. Além disso, fornece uma visão clara e detalhada de como os processos funcionam dentro de uma organização, o que é crucial para a tomada de decisões, pois permite que os gestores façam escolhas informadas sobre onde focar seus esforços de melhoria.</p>
+                            <p>A qualidade das medições realizadas interfere diretamente nos dados obtidos, afetando os resultados de processos, controle de qualidade, índices de retrabalho, desperdícios, custos de garantias e erros em tomadas de decisões. Portanto, a metrologia é importante para garantir a precisão e a confiabilidade dos dados que são usados para monitorar e melhorar a qualidade. Além disso, a metrologia garante que as medições e os dados usados para monitorar e melhorar esses processos sejam precisos e confiáveis, o que é fundamental para a tomada de decisões eficazes.</p>
+                            <p>Dessa forma, é possível compreender que a relação entre o mapeamento de processos e a metrologia para a qualidade e a tomada de decisões fornece informações vitais que orientam as decisões de gestão. Em conjunto, ajudam a organização a atingir seus objetivos de qualidade e formam a base para uma tomada de decisões eficaz e orientada por dados.</p>
+                            <p> Retomando o <i>case</i> de Thiago, o técnico em qualidade contratado pela “Delícias Saudáveis”, é importante analisar o mapeamento dos processos em sua trajetória profissional na indústria de alimentos.</p>
+                            <p class="no-print" aria-hidden="true">Clique ou toque para visualizar o conteúdo.</p>
+                            <!-- Espera objeto2 -->
+                             <div class="espera_video video-youtube">Espera objeto2</div>
+                             <div class="visually-hidden">
+                                <p>Thiago, ao iniciar as suas atividades na “Delícias Saudáveis”, entendeu que era de extrema importância mapear todos os processos envolvidos na produção de alimentos. Isso incluiu processos como recebimento de matérias-primas, armazenamento, preparação, cozimento, embalagem, congelamento e distribuição. Depois de identificar os processos, o técnico pôde desenhar um diagrama de fluxo de processos, que mostra como cada processo se conecta ao próximo. Isso ajudou Thiago a visualizar a sequência de operações e a interação entre os processos.</p>
+                                <p>O próximo passo dele foi identificar os pontos de controle críticos em cada processo. Esses foram os pontos em que as medições precisaram ser feitas para garantir a qualidade dos produtos. Nesse momento, a metrologia “entrou em jogo”. Em cada ponto de controle, o técnico determinou quais medições precisavam ser feitas, quais instrumentos seriam usados e como os dados seriam coletados e analisados. Por exemplo, na “Delícias Saudáveis”, Thiago incluiu medições de temperatura, pH e umidade, entre outros fatores que poderiam afetar a qualidade do produto. Ele indicou a utilização de um termômetro para medir a temperatura do forno e outro para os congeladores, um cronômetro para monitorar o tempo de cozimento e um medidor de umidade para verificar a qualidade da matéria-prima.</p>
+                                <p>Com base nas medições, Thiago criou indicadores de qualidade. Por exemplo, ele estabeleceu que a temperatura do forno deve estar entre 180°C e 200°C e o tempo de cozimento deve ser de 20 a 25 minutos para garantir que os alimentos sejam cozidos adequadamente. Além disso, a farinha deve ter uma umidade abaixo de 14% para garantir a qualidade das formulações.</p>
+                                <p>De acordo com os dados coletados pela metrologia, Thiago conseguiu analisar e identificar áreas de melhoria, o que auxiliou nos ajustes dos processos para melhorar a eficiência e a qualidade dos produtos. Por exemplo, ele notou que a temperatura do forno variava muito, afetando a qualidade dos alimentos. Para solucionar isso, recomendou a compra de um novo forno com melhor controle de temperatura. Apesar do longo trabalho desenvolvido, ainda era necessário criar estratégias para o controle e o monitoramento dos processos.</p>
+                            </div>
+                            <!-- Espera objeto2 -->
+                            <p>
+                                Na próxima seção, além de conhecer a relação do controle e do monitoramento, aliados à metrologia, você continuará acompanhando a história de Thiago.
+                            </p> 
+                            <h3 id="titulo5">Controle e monitoramento
+                            </h3>
+                            <p> É incontestável que a qualidade das medições realizadas tem um impacto direto nos dados obtidos, influenciando os resultados dos processos, o controle de qualidade, os índices de retrabalho, os desperdícios, os custos de garantia e a precisão na tomada de decisões. Portanto, a metrologia, sendo a ciência das medições, é um pilar fundamental para prevenir erros e promover a melhoria contínua dos processos, assegurando produtos de alta qualidade e elevando a satisfação dos clientes.</p> 
+                            <p> Por exemplo, em uma indústria automotiva, as medições podem ser empregadas para monitorar o desempenho de uma linha de montagem e garantir que ela esteja operando dentro dos limites aceitáveis. Se as medições indicarem que o desempenho está fora desses limites, como um aumento no número de defeitos ou uma diminuição na eficiência, ações corretivas podem ser implementadas. Essas ações podem envolver ajustes nas configurações de um processo, retrabalho em uma peça defeituosa ou, até mesmo, a interrupção da produção para evitar mais perdas.</p> 
+                            <p> Além disso, a metrologia é essencial para o monitoramento contínuo de processos e produtos. As medições podem ser coletadas e analisadas ao longo do tempo para identificar tendências, padrões e variações. Por exemplo, em uma indústria de alimentos, a medição contínua da temperatura e do pH pode fornecer insights valiosos sobre a qualidade e a segurança dos alimentos produzidos. Isso pode ajudar a identificar oportunidades de melhoria, como a necessidade de ajustar a receita ou o processo de cozimento. Além disso, o monitoramento contínuo pode ajudar a detectar problemas potenciais antes que eles se tornem graves, permitindo que ações preventivas sejam tomadas para garantir a qualidade e a segurança dos alimentos.</p> 
+                            <p> Seguindo a trajetória de Thiago, o técnico em qualidade da “Delícias Saudáveis”, você entenderá como ele desenvolveu estratégias para o controle e o monitoramento dos processos com o uso da metrologia. Você também verá como a gestão de riscos aliada à metrologia é um potente instrumento. Mas como será que Thiago trabalhou frente a esse novo desafio?</p> 
+                            <p class="no-print" aria-hidden="true">Clique ou toque para visualizar o conteúdo.</p>
+                            <!-- Espera objeto3 -->
+                             <div class="espera_video video-youtube">Espera objeto3</div>
+                             <div class="visually-hidden">
+                                <p>Thiago começou a implementar a metrologia nos processos de produção da “Delícias Saudáveis”. Ele identificou os pontos críticos de controle em cada processo em que as medições precisavam ser feitas. Por exemplo, na linha de produção de lasanhas congeladas, ele identificou que a temperatura de congelamento e o tempo de cozimento eram críticos para a qualidade e a segurança do produto. Para solucionar isso, Thiago selecionou os instrumentos de medição adequados para cada ponto de controle. Ele escolheu um termômetro de alta precisão para medir a temperatura de congelamento e um cronômetro para monitorar o tempo de cozimento. Com base nas normas de qualidade e segurança alimentar, Thiago estabeleceu limites de controle para cada medição. Por exemplo, ele determinou que a temperatura de congelamento deveria ser mantida abaixo de -18°C e o tempo de cozimento deveria ser de 20 a 25 minutos. Assim, implementou um sistema de monitoramento contínuo para acompanhar as medições em tempo real. Se alguma medição saísse dos limites de controle, um alerta seria acionado e ações corretivas seriam tomadas imediatamente. Caso a temperatura de congelamento subisse acima de -18°C, o sistema de refrigeração seria ajustado para trazer a temperatura de volta ao intervalo aceitável.</p>
+                                <p>O técnico em qualidade usou os dados coletados para analisar o desempenho dos processos e identificar oportunidades de melhoria. Ele notou que a temperatura de congelamento tendia a subir durante certas horas do dia. Com base nessa informação, ele ajustou o cronograma de produção para evitar esses horários e melhorar a qualidade dos congelados. Esse fato foi importante para identificar que a produção de alimentos da “Delícias Saudáveis” poderia gerar riscos para a saúde do consumidor, então Thiago passou a avaliar e mitigar riscos.</p> 
+                            </div>                           
+                            <!-- Espera objeto3 -->
+                            
+                            <h3 id="titulo6">Gestão de riscos </h3>
+                            <p>
+                                A metrologia, sendo a ciência das medições, desempenha um papel fundamental na gestão de riscos dentro de uma organização. Ela fornece a base para a tomada de decisões informadas e precisas, que podem auxiliar na identificação, na avaliação e na mitigação de riscos. Veja algumas formas de interação da metrologia com a gestão de riscos em uma organização.
+
+                            </p>
+                                                        
+                            <div class="accordion" id="accordionExample3">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne3" aria-expanded="false" aria-controls="collapseOne3">
+                                            Identificação de riscos
+
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne3" class="accordion-collapse collapse" aria-labelledby="headingOne3" data-bs-parent="#accordionExample3">
+                                        <div class="accordion-body">
+                                            <p>A metrologia pode auxiliar na identificação de riscos potenciais em processos e produtos. Por exemplo, as medições podem ser utilizadas para detectar variações no desempenho de processos ou na qualidade dos produtos, indicando riscos potenciais.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo3" aria-expanded="false" aria-controls="collapseTwo3">
+                                            Avaliação de riscos
+
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo3" class="accordion-collapse collapse" aria-labelledby="headingTwo3" data-bs-parent="#accordionExample3">
+                                        <div class="accordion-body">
+                                            <p>A metrologia fornece dados quantitativos que podem ser utilizados para avaliar a gravidade e a probabilidade de riscos. Por exemplo, as medições podem ser utilizadas para determinar a frequência de defeitos em um produto ou a variabilidade em um processo, a fim de avaliar o risco associado.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+                                            Mitigação de riscos
+
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree3" class="accordion-collapse collapse" aria-labelledby="headingThree3" data-bs-parent="#accordionExample3">
+                                        <div class="accordion-body">
+                                            <p>A metrologia pode ser utilizada para monitorar a eficácia das medidas de mitigação de riscos. Por exemplo, se uma organização implementa uma mudança no processo para reduzir o risco de defeitos, a metrologia pode ser utilizada para medir a qualidade do produto após essa mudança e determinar se a medida de mitigação foi eficaz.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFor3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFor3" aria-expanded="false" aria-controls="collapseFor3">
+                                            Monitoramento de riscos
+
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFor3" class="accordion-collapse collapse" aria-labelledby="headingFor3" data-bs-parent="#accordionExample3">
+                                        <div class="accordion-body">
+                                            <p>A metrologia fornece a base para o monitoramento contínuo de riscos. As medições podem ser coletadas e analisadas ao longo do tempo para identificar novos riscos e monitorar a eficácia das medidas de mitigação de riscos.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFive3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive3" aria-expanded="false" aria-controls="collapseFive3">
+                                            Tomada de decisão
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive3" class="accordion-collapse collapse" aria-labelledby="headingFive3" data-bs-parent="#accordionExample3">
+                                        <div class="accordion-body">
+                                            <p>A metrologia fornece dados precisos e confiáveis que são essenciais para a tomada de decisões informadas sobre a gestão de riscos. Isso pode envolver o uso de dados de medição para avaliar a eficácia das medidas de mitigação de riscos, determinar a necessidade de novas medidas de mitigação ou avaliar o impacto potencial de riscos identificados.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>	
+                                A partir do exposto, você pode estar se perguntando: “Como Thiago implementou a gestão de riscos na Delícias Saudáveis?”. Continue acompanhando essa história.
+
+                            </p>
+                            <p class="no-print" aria-hidden="true">Clique ou toque para visualizar o conteúdo.</p>
+                            <!-- Espera objeto4 -->
+                             <div class="espera_video video-youtube">Espera objeto4</div>
+                             <div class="visually-hidden">
+                                <p>Thiago começou identificando os riscos potenciais em cada processo de produção. Por exemplo, ele reconheceu que uma falha no sistema de refrigeração poderia resultar em temperaturas de congelamento inadequadas, colocando em risco a qualidade e a segurança dos alimentos. Em seguida, avaliou a probabilidade e o impacto de cada risco. Ele usou a metrologia para coletar dados e realizar essa avaliação. Por exemplo, ele monitorou a temperatura de congelamento ao longo do tempo para determinar a frequência e a gravidade das variações de temperatura.</p>
+
+                                <p>
+                                    Com base nessa avaliação de riscos, Thiago desenvolveu controles para mitigar cada risco. Por exemplo, ele implementou um sistema de alarme que seria acionado se a temperatura de congelamento subisse acima do limite aceitável. Esse sistema permitiu uma resposta rápida para corrigir o problema e minimizar o impacto. Ele usou a metrologia para monitorar continuamente os riscos e a eficácia dos controles de risco. Coletou e analisou dados regularmente para identificar tendências e fazer ajustes, conforme necessário. Caso ele notasse que o sistema de alarme estava sendo acionado com frequência, poderia investigar a causa e ajustar o sistema de refrigeração para melhorar a estabilidade da temperatura. Thiago revisou regularmente o plano de gestão de riscos e fez melhorias com base nos dados coletados e nas lições aprendidas. A metrologia forneceu a ele os dados necessários para fazer essas revisões e melhorias de forma informada e eficaz.
+                               </p>
+                                <p>     
+                                    As estratégias de gestão de riscos implementadas por Thiago tiveram um impacto significativo na redução dos riscos na “Delícias Saudáveis”. A gestão proativa de riscos minimizou as interrupções na produção, maximizando a eficiência operacional e garantindo a continuidade dos negócios. Por exemplo, o sistema de alarme implementado para monitorar a temperatura de congelamento permitiu uma resposta rápida a variações de temperatura, evitando interrupções na produção. Além disso, as estratégias de gestão de riscos ajudaram a garantir a qualidade do produto em todo o seu ciclo de existência. A implementação de controles rigorosos de temperatura e tempo de cozimento resultou em produtos congelados de alta qualidade, atendendo consistentemente aos padrões de segurança alimentar.  A gestão de riscos também levou a um ambiente de trabalho mais seguro. Ao identificar e mitigar riscos, como falhas em equipamentos ou erros humanos, Thiago foi capaz de reduzir a probabilidade de acidentes de trabalho. Por sua vez, ao evitar interrupções na produção e melhorar a eficiência dos processos, as estratégias de gestão de riscos levaram a uma redução nos custos operacionais. Ao garantir a qualidade e a segurança dos produtos, essas estratégias também promoveram o aumento da satisfação do cliente. Por fim, as estratégias de gestão de riscos implementadas por Thiago tiveram um impacto positivo significativo na “Delícias Saudáveis”, melhorando a qualidade do produto, fortalecendo a segurança, reduzindo os custos e aumentando a satisfação do cliente, a fim de garantir que os produtos sempre atendessem aos mais altos padrões de qualidade. </p>
+                             </div>
+                            <!-- Espera objeto4 -->
+                            <h3 id="titulo7">Encerramento </h3>
+                            <p>De acordo com a análise da atuação profissional do técnico em qualidade Thiago, que ingressou na indústria de alimentos “Delícias Saudáveis”, você pôde observar a relevância inquestionável da metrologia nos procedimentos de gestão. Foi possível identificar o papel que a metrologia desempenha na elaboração dos indicadores e no mapeamento de processos em uma organização. A metrologia fornece as ferramentas necessárias para quantificar e avaliar o desempenho de um processo ou produto, permitindo uma gestão mais eficaz.</p>
+                            <p>Além disso, foi explorado como a metrologia pode ser integrada ao controle e ao monitoramento desses processos. Por meio da coleta e da análise de dados, a metrologia permite um acompanhamento em tempo real do desempenho do processo, garantindo que esteja operando dentro dos parâmetros estabelecidos.</p>
+                            <p>No que diz respeito à gestão de riscos, a metrologia se mostra uma aliada valiosa. Com a medição precisa das características de um produto ou processo, é possível identificar potenciais defeitos ou falhas que representam um risco. A metrologia, então, pode ser utilizada para monitorar esses riscos ao longo do tempo e avaliar a eficácia das medidas de mitigação implementadas.</p>
+                            <p>A metrologia se revela uma ferramenta indispensável para a gestão eficaz da qualidade, sendo um elemento-chave na atuação do técnico em qualidade. O <i>case</i> do Thiago mostrou como a metrologia é aplicada no dia a dia de uma organização, contribuindo para a melhoria contínua e a satisfação do cliente. Portanto, a metrologia e a gestão da qualidade estão intrinsecamente ligadas e são fundamentais para o sucesso de qualquer organização.</p>
+
+                        </div>
+                    </div>
+
+                    <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a> 
+                </div> 
+            </section>
+            <!-- Paginação-->
+            <!-- <footer class="text-center no-print d-flex justify-content-center mx-auto">
+                <ul class="pagination">
+    
+                </ul>
+            </footer>    -->
+        </section>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+        <!--Jquery-->
+        <script src="../assets/js/jquery-3.6.0.min.js"></script>
+        <!--Áudio customizado-->
+        <script src="../assets/js/audio-player.js"></script>
+        <!--Atividade de verdadeiro ou falso-->
+        <script src="../assets/atividades/perguntas/perguntas.js"></script>
+        <!--Splide - slideshow-->
+        <script src="../assets/js/splide.min.js"></script>
+        <!--Prog'n'roll - barra de progresso conforme rola a página-->
+        <script src="../assets/js/prognroll.min.js"></script>
+        <!--Scripts gerais-->
+        <script src="../assets/js/geral.js"></script>
+
+        <script>
+            var splide = new Splide( '.splide', {
+                type   : 'slide',
+                perPage: 2,
+                trimSpace: false,
+                focus  : 'center'
+            } );
+
+            splide.mount();
+
+            $(function() {
+                $("body").prognroll();
+            });
+        </script>
+
+        <!-- Handtalk -->
+        <script>
+            var scriptElem=document.createElement("script");
+            scriptElem.src="https://plugin.handtalk.me/web/latest/handtalk.min.js",
+            scriptElem.charset="UTF-8",
+            scriptElem.onload=function(){
+                window.ht = new HT({
+                    token:"bf5b7efb148a829a126a0e0c9fd533bf",
+                    align:"top",
+                    videoEnabled: true,
+                    ytEmbedReplace: true,           
+                    mobileConfig:{align:"right",
+                                    actionsAlign:"top",
+                                    customButtonStyle:{
+                                        borderRadius:"6px",
+                                        size:"38px",
+                                        horizontalMargin:"13px",
+                                        bottomMargin:"140px",
+                                        rightMargin:"40px"}
+                                    }
+                    });        
+                $('.ht-skip').attr("aria-hidden","true")
+            },
+        document.body.appendChild(scriptElem);
+        
+        </script>
+    </body>
+</html>

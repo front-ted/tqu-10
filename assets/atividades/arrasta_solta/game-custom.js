@@ -9,7 +9,10 @@ var containers = [
   // Containers que irão receber os cards
   document.querySelector("#slot-1"),
   document.querySelector('#slot-2'), 
-  document.querySelector('#slot-3')
+  document.querySelector('#slot-3'), 
+  document.querySelector('#slot-4'), 
+  document.querySelector('#slot-5'),
+  document.querySelector('#slot-6')
 ];
 var audio = new Audio();
 var erro = 0;
@@ -37,6 +40,8 @@ dragula({
   }
 }).on('drag', function(el, source) {
   // On mobile this prevents the default page scrolling while dragging an item.
+  
+  $('.splide__slide.is-active.is-visible .card .slot').addClass('dropAqui');
   scrollable = false;
 }).on("drop", function(){
   scrollable = true;
@@ -46,6 +51,7 @@ dragula({
       audio.load(); //load the new source
       audio.play(); //play
 
+      $('.slot').removeClass('dropAqui');
 }).on("cancel", function(){
   scrollable = true;
 
@@ -55,6 +61,7 @@ dragula({
       audio.setAttribute('src','../assets/atividades/arrasta_solta/erro.mp3'); //change the source
       audio.load(); //load the new source
       audio.play(); //play
+      $('.slot').removeClass('dropAqui');
 });
 
 // document.addEventListener('touchmove', function(e) { e.preventDefault(); }, { passive:false });

@@ -629,6 +629,10 @@ tbody td:first-child{border-left: 0;}
 .referencias h2, .referencias h3, .referencias h4{
     font-family: italiana;
 }
+/* tqu10 add */
+.custom-bullet {
+    list-style-image: url(../images/marcador.png);
+}
 .espera_video{
     text-align: center;
     color: #fff;
@@ -639,6 +643,24 @@ tbody td:first-child{border-left: 0;}
     border: 5px solid black;
     border-radius: 10px;
 }
+.accordion-item{border-radius: 30px;}
+.accordion-item:first-of-type {
+    border-top-left-radius: 30px;
+    border-top-right-radius:30px;
+}
+.accordion-item:last-of-type {
+    border-bottom-right-radius:  30px;
+    border-bottom-left-radius:  30px;
+}
+/* col-md-4 col-12 em tablist */
+/* .accordion-collapse.collapse.show{background-color: #fff;} */
+/* .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: var(--cor-primaria);
+}
+.nav-link {
+    color: #000
+} */
+/* fim add */
 @media screen and (max-width: 1200px){
     h2{margin-left: 0;}
     .container-fluid .splide .splide__slide{

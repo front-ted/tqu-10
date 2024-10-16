@@ -1,0 +1,118 @@
+.bloco1{
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url('img/bg.png');
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important
+
+}
+.figure-caption {
+    margin-bottom: 25px;
+    margin-top: -25px;
+}
+.carousel-control-next{
+    background: url("../05/img/dir.png") no-repeat;
+}
+.carousel-control-prev{
+    background: url("../05/img/esq.png") no-repeat;
+}
+.carousel-indicators .carousel-control-prev, .carousel-indicators .carousel-control-next{
+    background-size: cover;
+    width: 32px;
+}
+.carousel-control-next:hover{
+    background: url("../05/img/dir_hover.png") no-repeat;
+    background-size: cover;
+    background-color: transparent;
+}
+.carousel-control-prev:hover{
+    background: url("../05/img/esq_hover.png") no-repeat;
+    background-size: cover;
+    background-color: transparent;
+}
+.carousel-indicators [data-bs-target]{
+    background-color: transparent;
+}
+/* jogo arrastar */
+.box-atividade{
+    max-width: 900px;
+}
+.splide .card  {
+    opacity: 0.7;
+    width: 450px;
+    cursor: auto;
+    background-color: #ededed;
+    /* margin-bottom: 0px; */
+}
+.splide__slide.is-active.is-visible .card{
+    background-color: #fff;
+}
+.splide .card:hover  {
+    box-shadow: unset;
+}
+
+.game-titulo{
+    /* background: linear-gradient(#fff, #fff) padding-box, linear-gradient(80deg, var(--cor-primaria) 10%, var(--cor-primaria) 50%, var(--cor-secundaria) 92%) border-box !important; */
+    /* background: #92ACCE; */
+    background: #1A4480;
+    max-width: 450px;
+    /* border: 7px solid transparent; */
+    /* color: black; */
+    border-radius: 0px;
+}
+#content-game{
+    margin-top: 85px;
+}
+.game-body .slot{
+    min-height: 200px;
+    max-width: 450px;
+    padding: 0 !important;
+    margin-top: 0px;
+}
+.game-body .slot .card {
+    max-width: 370px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.game-body .slot .card img{
+    max-width: 250px;
+    max-height: 210px;
+}
+.splide__arrow, .splide__arrow:disabled{
+    bottom: 50%;
+}
+.splide__arrow--next{
+    background: url("img/dir.png") no-repeat;
+    background-size: cover;
+}
+.splide__arrow--prev{
+    background: url("img/esq.png") no-repeat;
+    background-size: cover;
+}
+.splide__pagination {
+    bottom: unset;
+    top: -55px;
+}
+.container-fluid .splide .splide__slide {
+    margin-right: 144px;
+    margin-left: -30px;
+}
+.game-body .slot.dropAqui{
+    background-color: #effff4 !important;
+}
+.game-itens-container{padding-top: 0 !important;}
+#cardPile{
+    margin-top: -35px !important;
+}
+#cardPile .card{cursor: move;}
+#cardPile .card:nth-child(4),
+#cardPile .card:nth-child(5){margin-top: 15px;}
+.card img{
+    width: 100%;
+    max-width: 250px;
+    border-radius: 8px;
+}
+

@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <!-- Inserir o tíutlo do conhecimento na tag title -->
+        <title>Relatório de medição</title>
+        <!-- Meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS v5.0.2 -->
+        <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/fa/css/all.min.css">
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="../assets/css/animate.min.css" />
+        <!-- hover.css https://ianlunn.github.io/Hover/ -->
+        <link rel="stylesheet" href="../assets/css/hover-min.css" />
+        <!--Splide - slideshow-->
+        <link rel="stylesheet" href="../assets/css/splide.min.css">
+        <!-- Preloader -->
+        <link rel="stylesheet" href="../assets/css/preloader.css">
+        <!-- Áudio customizado -->
+        <link rel="stylesheet" href="../assets/css/player.css">
+        <!-- Atividade de verdadeiro ou falso -->
+        <link rel="stylesheet" href="../assets/atividades/perguntas/perguntas.css">
+        <!--Atividade arrasta e solta-->
+        <link rel="stylesheet" href="../assets/atividades/arrasta_solta/dragula.css">
+        <link rel="stylesheet" href="../assets/atividades/arrasta_solta/game-custom.css">
+        <!--Atividade relacionar colunas-->
+        <link rel="stylesheet" href="../assets/atividades/relacionar_colunas/relacionar-colunas.css">
+        <!-- Estilos do template -->
+        <link rel="stylesheet" href="../assets/css/cores.css">
+        <link rel="stylesheet" href="../print/print/print.css">
+        <link rel="stylesheet" href="../assets/css/template.css">
+        <link rel="stylesheet" href="custom7.css">
+    
+    </head>
+    <body class="bg-claro">
+        <!-- Preloader OBRIGATÓRIO -->
+        <div class="preloader">
+            <div class="anim"></div>
+            <p>Aguarde enquanto o conteúdo é carregado.</p>
+        </div>
+        <!-- Marca d'água OBRIGATÓRIA -->
+        <img src="../assets/images/logo_senac_colorido.png" id="marcadaguaLogo">
+
+        <header id="topo">
+            <div class="topo-logo">
+                <div class="container">
+                    <h1 id="nome-curso" class="only-print">Técnico em Qualidade</h1> 
+                    <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()" aria-hidden="true"></div>     
+                </div>
+            </div>
+        </header>
+        <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->    
+        <section id="booklet">  
+            <div class="layer-preta no-print"></div>       
+            <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
+            <section class="paginas">
+                <div class="pagina">
+                    <div class="bloco1">
+                        <div class="container">
+                            <h2>Relatório de medição: interpretação e análise</h2>
+                            <p>Após verificar os processos de medição, é necessário evidenciar os resultados, assim, são confeccionados relatórios de medição. Esses documentos são fundamentais para garantir a precisão dos dados coletados e utilizados para tomar decisões importantes em diferentes áreas. Nesta seção, será explorado o que constitui um relatório de ensaio eficaz, sua importância e as formas de interpretá-lo.
+                            </p>
+                        </div>
+                    </div>
+                    <div aria-hidden="true" class="no-print paralax paralax-img1"></div>
+                    <div class="bloco2">
+                        <div class="container">
+                            <p>O relatório é um documento formal com o propósito de apresentar informações, como resultados, análises e observações, de forma objetiva e organizada. Na área da metrologia, o relatório expressa os resultados obtidos nos ensaios, nas calibrações e nas amostragens, tornando-se essencial à documentação e à garantia da rastreabilidade das medições e das calibrações realizadas. Um bom relatório assegura a clareza no registro das etapas do processo metrológico, o que permite a verificação futura e a conformidade com normas e padrões. Veja o item “7.8 Relato de Resultados”, da norma ABNT NBR ISO/IEC 17025:2017:
+                            </p>
+                            <div class="citacao">
+                                <p>Os resultados devem ser fornecidos com exatidão, clareza, objetividade, sem ambiguidade, normalmente em um relatório (por exemplo, relatório de ensaio ou um certificado de calibração ou relatório de amostragem), e devem incluir todas as informações acordadas com o cliente e necessárias para a interpretação dos resultados e todas as informações requeridas pelo método utilizado. Todos os relatórios emitidos devem ser retidos como registros técnicos (ABNT, 2017).
+                                </p>
+                            </div>
+                            <p>
+                                De acordo com a norma, na metrologia, são encontrados três tipos de relatórios. O certificado (ou relatório) de calibração é aplicado na verificação da confiabilidade dos equipamentos de medição, ou seja, na precisão dos valores indicados pelo instrumento. O relatório de amostragem tem como foco o processo de coleta de amostras. Já o relatório de ensaio é o que apresenta os resultados das características e a avaliação de conformidade de um produto ou processo, de acordo com procedimentos específicos. Nesta seção, os focos principais serão os relatórios de ensaio e os certificados de calibração.
+                            </p>
+                            <p>
+                                A norma ISO/IEC 17025, no item 7.8.2, propõe requisitos mínimos que devem estar presentes em todos os tipos de relatório:
+                            </p>
+                            <div class="citacao citacao2">
+
+                                <p>a) um título (por exemplo, "Relatório de Ensaio", "Certificado de Calibração" ou "Relatório de Amostragem");</p>
+                                <p>b) nome e endereço do laboratório;</p>
+                                <p>c) local da realização das atividades de laboratório, inclusive quando realizadas nas instalações de cliente ou em locais fora das instalações permanentes do laboratório, ou em instalações associadas temporárias ou móveis;</p>
+                                <p>d) identificação unívoca de forma que todos os seus componentes sejam reconhecidos como parte do relatório completo e uma clara identificação do final do relatório;</p>
+                                <p>e) nome e informações de contato do cliente;</p>
+                                <p>f) identificação do método utilizado;</p>
+                                <p>g) uma descrição, identificação não ambígua e, quando necessário, condição do item;</p>
+                                <p>h) data do recebimento do(s) item(s) de ensaio ou de calibração, e data da amostragem, quando isso for crítico para a validade e aplicação dos resultados;</p>
+                                <p>i) data(s) da realização da atividade de laboratório;</p>
+                                <p>j) data da emissão do relatório;</p>
+                                <p>k) referência ao plano de amostragem e ao método de amostragem utilizados pelo laboratório ou por outros organismos, quando estes forem pertinentes para a validade ou aplicação dos resultados;</p>
+                                <p>l) uma declaração de que os resultados se referem somente aos itens ensaiados, calibrados ou amostrados;</p>
+                                <p>m) resultados com, quando apropriado, as unidades de medida;</p>
+                                <p>n) adições, desvios ou exclusões em relação ao método;</p>
+                                <p>o) identificação da(s) pessoa(s) que autoriza(m) o relatório;</p>
+                                <p>p) quando os resultados forem de provedores externos, uma identificação clara sobre isso (ABNT, 2017).</p>
+                            </div>
+                            <br>
+                            <p>Entre os itens “a” e “e”, são requisitados os dados de identificação do laboratório responsável, do cliente e do documento, o que garante sua integridade. Do item “f” ao “m”, são representadas as especificidades dos procedimentos realizados, como o método utilizado, as informações da amostra, as datas de recebimento dos itens, a realização da atividade e a emissão do relatório e as unidades de medida, que contribuem para a qualidade, a precisão e a confiabilidade dos resultados. Essas informações possibilitam a reprodutibilidade e a rastreabilidade dos ensaios e das calibrações, facilitam auditorias, revisões e interpretações dos dados. Além disso, são essenciais para manter a integridade do processo de medição.
+                            </p>
+                            <p>Os três últimos requisitos (do “n” ao “p”) garantem que a origem dos dados, especialmente quando provenientes de provedores externos, e as possíveis modificações sejam claramente documentadas, além de atribuir a profissionais qualificados a responsabilidade pela emissão do relatório, o que promove uma maior confiança nos resultados obtidos.
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <div aria-hidden="true" class="no-print paralax paralax-img2"></div>
+                    <div class="bloco3">
+                        <div class="container">
+                            <h2>Relatório de ensaio
+                            </h2>
+                            <p>No item 7.8.3, a norma promove requisitos específicos para relatórios de ensaio. Quando for necessária a interpretação dos resultados de ensaio, devem ser apresentadas: 
+                            </p>
+                            <div class="citacao citacao2">
+                                <p>q) informações sobre condições específicas de ensaio, como condições ambientais;</p>
+                                <p>r) quando pertinente, uma declaração de conformidade aos requisitos ou especificações;</p>
+                                <p>s) quando aplicável, a incerteza de medição apresentada na mesma unidade do mensurando ou na forma de um termo relativo ao mensurando (por exemplo, percentual), quando: a incerteza de medição for pertinente para a validade ou aplicação dos resultados de ensaio, requerido por uma instrução do cliente, ou a incerteza de medição afetar a conformidade a um limite de especificação;</p>
+                                <p>t) quando apropriado, opiniões e interpretações;</p>
+                                <p>u) informações adicionais que possam ser requeridas por métodos específicos, autoridades, clientes ou grupos de clientes (ABNT, 2017).</p>
+                            </div>
+                            <p>
+                                As condições ambientais (item “q”) referem-se às influências de fatores como temperatura, umidade, poeira, vibração, variações na tensão de alimentação elétrica, ruído elétrico ou magnético, iluminação, entre outros, presentes no local onde as medições serão realizadas e podem influenciar significativamente os resultados (Mendes, 2019). Assim, registrar essas condições ajuda a explicar as possíveis variações nos resultados, uma vez que toda medição está associada a uma margem de erro. 
+                            </p>
+                            <p>
+                                A incerteza de medição é um parâmetro que quantifica a dúvida associada ao resultado de uma medição. Assim, representa a faixa dentro da qual se espera que o valor verdadeiro da quantidade medida se encontre, considerando todos os possíveis fatores que podem influenciar a precisão do resultado. Dessa forma, para compreender os resultados dos documentos em um relatório, é necessário verificar como o conceito de tolerância relaciona a conformidade a especificações (item “r”) e incertezas (item “s”). A tolerância de um processo produtivo ou produto é definida como a oscilação máxima permitida para as variáveis medidas. É necessário garantir que essas variáveis permaneçam dentro dos limites estabelecidos. 
+                            </p>
+                            <p>
+                                Em resumo, devido à incerteza, o resultado de uma medida apresenta-se dentro de uma faixa, e a conformidade do processo ou produto dependerá do seu posicionamento dentro das definições de tolerância. A figura a seguir apresenta quatro cenários possíveis para o posicionamento da medição e sua incerteza em relação aos limites de uma especificação ou tolerância.
+                            </p>
+                            <!-- img -->
+                            <figure class="my-5">
+                                <div class="figure-img mb-4">
+                                    <img class="img-fluid d-block borda-colorida mx-auto" src="img/img01.png" alt="Diagrama de resultados de medição e suas incertezas. Há um limite superior de especificação ou tolerância e um limite inferior de especificação ou tolerância, representados por duas linhas horizontais. Dentro desses limites, há quatro cenários com linhas verticais representando a variação dos resultados de medição e incerteza. No cenário (a), os resultados de medição e incerteza estão dentro dos limites. Nos cenários (b) e (c), os resultados de medição e incerteza não estão totalmente fora nem dentro dos limites. No cenário (d), os resultados de medição e incerteza estão fora dos limites. ">
+                                </div>
+                            </figure>
+                            <figcaption class="figure-caption text-center">Resultados de medição e suas incertezas <br>
+                                Fonte: Mendes (2019)
+                                </figcaption>
+                            <p>O caso (a) é classificado como “conformidade”, pois o resultado e a incerteza estão dentro dos limites especificados. De maneira oposta, no caso (d), percebe-se uma “não conformidade”, pois nem o resultado nem qualquer parte da faixa de incerteza estão dentro do intervalo de tolerância. Nos casos (b) e (c), as medições e as incertezas não estão totalmente dentro nem fora dos limites. Por isso, esses resultados não são conclusivos e se encontram na faixa de dúvida (Mendes, 2019).
+                            </p>
+                            <p>
+                                Segundo a norma, a declaração de conformidade (item “r”) deve ser distinta e precisa, e o laboratório deve registrar a regra de decisão utilizada, considerando os níveis de risco, tais como falsos, aceitação e rejeição, e suposições estatísticas, associados à regra de decisão, e implementar essa regra de forma apropriada. Ainda no item 7.8.6.2, o laboratório deve relatar a declaração de conformidade e identificar objetivamente:
+                            </p>
+                            <div class="citacao citacao2">
+                                <p>I) a quais resultados a declaração de conformidade se aplica;</p>
+                                <p>II) quais especificações, normas ou partes destas são atendidas ou não atendidas;</p>
+                                <p>III) a regra de decisão aplicada (a menos que esta seja inerente à especificação ou norma solicitada) (ABNT, 2017).</p>
+                            </div>
+                            <p>
+                                Tais requisitos possibilitam que as partes interessadas possam confiar na precisão e na conformidade dos dados apresentados. O item “s” destaca a importância de quantificar e comunicar a incerteza de medição quando relevante para a validade dos resultados, solicitado pelo cliente ou impactando a conformidade com especificações. 
+                            </p>
+                            <p>
+                                Em relação a opiniões e interpretações (item “t”), na seção 7.8.7, da ISO/IEC 17025:2017, o laboratório deve garantir que apenas pessoal autorizado emita declarações nesse sentido, documentando claramente as bases para essas opiniões e interpretações. Os pareceres expressos nos relatórios devem estar fundamentados em resultados específicos dos itens ensaiados, sendo explicitamente identificados como tais. Além disso, quando forem comunicadas diretamente ao cliente por meio de diálogo, o laboratório deve manter registros precisos dessas interações para referência futura.
+                            </p>
+                            <p>
+                                Como visto, cada requisito do relatório de ensaio apresenta sua relevância na documentação dos resultados, e sua interpretação envolve uma análise cuidadosa de todos os componentes do documento. Veja, no arquivo disponibilizado a seguir, um exemplo de relatório de ensaio conforme a norma ISO/IEC 17025:2017.
+                            </p>
+                            <div class="no-print" aria-hidden="true">
+                                <p>Clique ou toque para visualizar o conteúdo.
+                                </p>
+                                <a target="_blank" rel="noopener noreferrer">
+                                    <button type="button" class="botao hvr-sweep-to-right btn-pdf">
+                                        <img src="../assets/images/ico_relembrando.svg" alt="">Baixar pdf
+                                    </button>
+                                </a>
+                            </div>
+                            <p class="only-print">Para fazer o <i>download</i> do Exemplo de Relatório de Ensaio, acesse o conteúdo de impressão no índice do curso. Há um botão específico para você fazer a impressão do material indicado.
+                            </p>
+
+
+
+                        </div>
+                    </div>
+                    <div aria-hidden="true" class="no-print paralax paralax-img3"></div>
+                    <div class="bloco4">
+                        <div class="container">
+                            <h2>Certificado de calibração</h2>
+                            <p>A norma ISO/IEC 17025:2017, no item 7.8.4, propõe requisitos específicos para os relatórios ou certificados de calibração:
+                            </p>
+                            <div class="citacao citacao2">
+                                <p>q) incerteza de medição do resultado de medição, apresentada na mesma unidade do mensurando;</p>
+                                <p>r) condições (por exemplo, ambientais) sob as quais as calibrações foram realizadas, que tenham influência sobre os resultados de medição;</p>
+                                <p>s) uma declaração identificando como os resultados das medições são metrologicamente rastreáveis;</p>
+                                <p>t) resultados obtidos antes e depois de qualquer ajuste ou reparo, se disponíveis;</p>
+                                <p>u) quando pertinente, uma declaração de conformidade aos requisitos ou especificações;</p>
+                                <p>v) quando apropriado, opiniões e interpretações (ABNT, 2017).</p>
+                            </div>
+                            <p>Os requisitos “q”, “r”, “u” e “v” demonstram o mesmo significado visto de itens específicos para os relatórios de ensaio. O requisito “s” garante a rastreabilidade metrológica, ou seja, a propriedade de um resultado de medição que permite relacioná-lo a referências estabelecidas, geralmente, padrões nacionais ou internacionais, por meio de uma cadeia contínua de comparações. 
+                            </p>
+                            <p>
+                                Para emitir certificados com rastreabilidade, o laboratório não precisa ser acreditado, mas, caso isso ocorra, o laboratório acreditado pela Coordenação Geral de Acreditação – CGCRE, o Inmetro, que emita certificados com rastreabilidade, da Rede Brasileira de Calibração – RBC, deve seguir a norma ISO/IEC 17025:2017 e passar por auditorias da CGCRE a cada dois anos, para assegurar o cumprimento da documentação correta. A rastreabilidade da RBC promove a melhoria da qualidade do produto, pois os laboratórios precisam implementar um sistema de gestão da qualidade, conforme as normas (Roth, 2024).
+                            </p>
+                            <p>
+                                O item “t” aponta para o registro antes ou após um ajuste ou reparo, o que garante transparência e confiança nas intervenções realizadas no equipamento e proporciona um histórico detalhado, que é importante para a manutenção da qualidade e da conformidade com os padrões internacionais.
+                            </p>
+                            <p>
+                                Os requisitos da norma ISO/IEC 17025:2017 ajudam a garantir a competência técnica dos laboratórios e a confiabilidade dos resultados das medições e calibrações realizadas. No arquivo a seguir, é possível observar a distribuição dos itens em um exemplo de certificado de calibração.
+                            </p>
+                            <div class="no-print" aria-hidden="true">
+                                <p>Clique ou toque para visualizar o conteúdo.
+                                </p>
+                                <a target="_blank" rel="noopener noreferrer">
+                                    <button type="button" class="botao hvr-sweep-to-right btn-pdf">
+                                        <img src="../assets/images/ico_relembrando.svg" alt="">Baixar pdf
+                                    </button>
+                                </a>
+                                <br>
+                            </div>
+                            <p class="only-print">Para fazer o <i>download</i> do Exemplo de Certificado de Calibração, acesse o conteúdo de impressão no índice do curso. Há um botão específico para você fazer a impressão do material indicado.
+                            </p>
+                            <p>Além do certificado de calibração, segundo a norma ISO/IEC 17025:2017, todo equipamento que necessite de calibração deve ser etiquetado, codificado ou identificado de alguma outra forma que permita ao usuário do equipamento identificar a situação de calibração. 
+                            </p>
+                            <p>
+                                A etiqueta, também conhecida como TAG, deve incluir o código do equipamento e a data da calibração, data da próxima calibração, localização, setor e classificação. Quando o serviço é realizado por um laboratório acreditado, é obrigatório utilizar o símbolo da acreditação, o nome do laboratório e o número do certificado de calibração, conforme a próxima imagem. A norma ainda estabelece que a codificação deve ser única para garantir a rastreabilidade entre os documentos de calibração e o instrumento ou vidraria (Mendonça, 2021). A falta da identificação ou número divergente entre a etiqueta e o certificado de calibração geram não conformidades. 
+                            </p>
+                            <!-- img -->
+                            <figure class="my-5">
+                                <div class="figure-img mb-4">
+                                    <img class="img-fluid d-block borda-colorida mx-auto" src="img/img02.png" alt="Etiqueta com o fundo amarelo. À esquerda, há o selo da Rede Brasileira de Calibração em preto e branco com a inscrição “Calibração NBR ISO/IEC 17025”. À direita, há uma tabela com cinco linhas, onde está escrito: Código, Número do Certificado, Data de Calibração, Data da Próxima Calibração e Assinatura do Responsável. ">
+                                </div>
+                            </figure>
+                            <figcaption class="figure-caption text-center">Etiqueta de calibração <br>
+                                Fonte: Etipress (2019)
+                                </figcaption>
+                            <p>Os relatórios de ensaio e os certificados de medição devem ser documentados corretamente. Segundo a norma ISO 9001:2015, a toda informação documentada devem ser assegurados identificação, descrição (título, data, autor ou número de referência), formato (por exemplo, linguagem, versão do software) e meio (papel ou eletrônico). Além disso, os relatórios devem estar disponíveis para uso quando e onde forem necessários. 
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <div aria-hidden="true" class="no-print paralax paralax-img4"></div>
+                    <div class="bloco5">
+                        <div class="container">
+                            <h2>Encerramento</h2>
+                            <p>Os relatórios de medição desempenham um papel essencial na validação e na transparência dos resultados obtidos. Também são fundamentais para comunicar, com precisão, os dados coletados, garantindo sua confiabilidade e interpretação correta das medições realizadas. Ao seguir as melhores práticas para sua elaboração, os laboratórios não apenas demonstram conformidade com normas como a ISO/IEC 17025:2017, mas também promovem a confiança de clientes e usuários finais na qualidade dos serviços prestados.
+                            </p>
+                        </div>
+                    </div>
+
+                    <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a> 
+                </div> 
+            </section>
+            <!-- Paginação-->
+            <!-- <footer class="text-center no-print d-flex justify-content-center mx-auto">
+                <ul class="pagination">
+    
+                </ul>
+            </footer>    -->
+        </section>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+        <!--Jquery-->
+        <script src="../assets/js/jquery-3.6.0.min.js"></script>
+        <!--Áudio customizado-->
+        <script src="../assets/js/audio-player.js"></script>
+        <!--Atividade de verdadeiro ou falso-->
+        <script src="../assets/atividades/perguntas/perguntas.js"></script>
+        <!--Splide - slideshow-->
+        <script src="../assets/js/splide.min.js"></script>
+        <!--Prog'n'roll - barra de progresso conforme rola a página-->
+        <script src="../assets/js/prognroll.min.js"></script>
+        <!--Scripts gerais-->
+        <script src="../assets/js/geral.js"></script>
+
+        <script>
+            var splide = new Splide( '.splide', {
+                type   : 'slide',
+                perPage: 2,
+                trimSpace: false,
+                focus  : 'center'
+            } );
+
+            splide.mount();
+
+            $(function() {
+                $("body").prognroll();
+            });
+        </script>
+
+        <!-- Handtalk -->
+        <script>
+            var scriptElem=document.createElement("script");
+            scriptElem.src="https://plugin.handtalk.me/web/latest/handtalk.min.js",
+            scriptElem.charset="UTF-8",
+            scriptElem.onload=function(){
+                window.ht = new HT({
+                    token:"bf5b7efb148a829a126a0e0c9fd533bf",
+                    align:"top",
+                    videoEnabled: true,
+                    ytEmbedReplace: true,           
+                    mobileConfig:{align:"right",
+                                    actionsAlign:"top",
+                                    customButtonStyle:{
+                                        borderRadius:"6px",
+                                        size:"38px",
+                                        horizontalMargin:"13px",
+                                        bottomMargin:"140px",
+                                        rightMargin:"40px"}
+                                    }
+                    });        
+                $('.ht-skip').attr("aria-hidden","true")
+            },
+        document.body.appendChild(scriptElem);
+        
+        </script>
+    </body>
+</html>
