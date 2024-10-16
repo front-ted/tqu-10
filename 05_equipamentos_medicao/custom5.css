@@ -76,6 +76,8 @@
     max-width: 370px;
     margin: 0 auto;
     padding: 10px;
+    color: black;
+    background-color: #fff;
 }
 .game-body .slot .card img{
     max-width: 250px;
@@ -107,12 +109,15 @@
 #cardPile{
     margin-top: -35px !important;
 }
-#cardPile .card{cursor: move;}
+#cardPile .card{cursor: move; min-height: 170px;}
 #cardPile .card:nth-child(4),
 #cardPile .card:nth-child(5){margin-top: 15px;}
 .card img{
     width: 100%;
     max-width: 250px;
     border-radius: 8px;
+}
+#cardPile #card-6 img{
+    max-width: 150px !important;
 }
 
