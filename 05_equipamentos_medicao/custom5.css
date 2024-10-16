@@ -14,22 +14,22 @@
     margin-top: -25px;
 }
 .carousel-control-next{
-    background: url("../05/img/dir.png") no-repeat;
+    background: url("../05_equipamentos_medicao/img/dir.png") no-repeat;
 }
 .carousel-control-prev{
-    background: url("../05/img/esq.png") no-repeat;
+    background: url("../05_equipamentos_medicao/img/esq.png") no-repeat;
 }
 .carousel-indicators .carousel-control-prev, .carousel-indicators .carousel-control-next{
     background-size: cover;
     width: 32px;
 }
 .carousel-control-next:hover{
-    background: url("../05/img/dir_hover.png") no-repeat;
+    background: url("../05_equipamentos_medicao/img/dir_hover.png") no-repeat;
     background-size: cover;
     background-color: transparent;
 }
 .carousel-control-prev:hover{
-    background: url("../05/img/esq_hover.png") no-repeat;
+    background: url("../05_equipamentos_medicao/img/esq_hover.png") no-repeat;
     background-size: cover;
     background-color: transparent;
 }
