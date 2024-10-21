@@ -96,7 +96,7 @@
                             </div>
                             <p class="no-print" aria-hidden="true">Clique ou toque para visualizar o conteúdo.
                             </p>
-                            <div class="piramide">
+                            <div class="piramide no-print" aria-hidden="true">
                                 <img src="img/painel/bt01.png" data-bs-toggle="modal" data-bs-target="#modal6" alt="">
                                 <img src="img/painel/bt02.png" data-bs-toggle="modal" data-bs-target="#modal5" alt="">
                                 <img src="img/painel/bt03.png" data-bs-toggle="modal" data-bs-target="#modal4" alt="">
@@ -104,6 +104,8 @@
                                 <img src="img/painel/bt05.png" data-bs-toggle="modal" data-bs-target="#modal2" alt="">
                                 <img src="img/painel/bt06.png" data-bs-toggle="modal" data-bs-target="#modal1" alt="">
                             </div>
+                            
+                            <img src="img/painel.png" class="only-print img-fluid mx-auto" alt="">
                             <p class="figure-caption text-center">
                                 Figura 1 – Pirâmide metrológica <br>
                                 Fonte: INMETRO (2009) <br>
@@ -114,7 +116,7 @@
                         <!-- Modal -->
                         <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-xl">
-                                <div class="modal-content">
+                                <div class="modal-content no-print">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="exampleModalLabel">Indústria e outros setores (usuário final)
                                         </h5>
@@ -134,7 +136,7 @@
                         </div>
                         <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
                             <div class="modal-dialog modal-xl">
-                                <div class="modal-content">
+                                <div class="modal-content no-print">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="exampleModalLabel2">Ensaios</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -153,7 +155,7 @@
                         </div>
                         <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
                             <div class="modal-dialog modal-xl">
-                                <div class="modal-content">
+                                <div class="modal-content no-print">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="exampleModalLabel3">Calibração</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -172,7 +174,7 @@
                         </div>
                         <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
                             <div class="modal-dialog modal-xl">
-                                <div class="modal-content">
+                                <div class="modal-content no-print">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="exampleModalLabel4">Padrões nacionais
                                         </h5>
@@ -192,7 +194,7 @@
                         </div>
                         <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
                             <div class="modal-dialog modal-xl">
-                                <div class="modal-content">
+                                <div class="modal-content no-print">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="exampleModalLabel5">BIPM (Bureau Internacional de Pesos e Medidas)
                                         </h5>
@@ -212,7 +214,7 @@
                         </div>
                         <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="exampleModalLabel6" aria-hidden="true">
                             <div class="modal-dialog modal-xl">
-                                <div class="modal-content">
+                                <div class="modal-content no-print">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="exampleModalLabel6">SI (Sistema Internacional de Unidades)
                                         </h5>
@@ -230,12 +232,34 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="print visually-hidden">
+                        <!-- Modal -->
+                            <h5>Indústria e outros setores (usuário final)</h5>
+                                <p>No Brasil, o Inmetro (Instituto Nacional de Metrologia, Qualidade e Tecnologia) desempenha um papel fundamental na garantia da qualidade dos produtos e serviços, fornecendo regulamentações, certificações e acreditações que garantem a confiabilidade e a precisão dos instrumentos de medição utilizados pelos usuários finais na indústria e no comércio, entre outros setores.
+                                </p>
+                            <h5>Ensaios</h5>
+                                <p>Laboratórios realizam testes em produtos e materiais para verificar qualidade e segurança, contribuindo para a melhoria da qualidade dos produtos. Um exemplo de órgão certificador oficial é o NIST (National Institute of Standards and Technology), nos Estados Unidos, ele realiza pesquisas, desenvolve padrões de medições, fornece serviços de calibração e certificação e orienta sobre conformidade com normas técnicas, garantindo a qualidade e a segurança dos produtos e serviços no país.
+                                </p>
+                            <h5>Calibração</h5>
+                                <p>Laboratórios responsáveis por ajustar e verificar a precisão dos instrumentos de medição, garantindo a confiabilidade das medições em toda a cadeia de produção e serviços. A RBC (Rede Brasileira de Calibração), do Inmetro, garante a qualidade das medições no Brasil, certificando laboratórios de calibração e garantindo a confiabilidade dos resultados.
+                                </p>
+                            <h5>Padrões nacionais</h5>
+                                <p>Os padrões brasileiros são estabelecidos para fornecer uma referência confiável e uniforme para medições no Brasil. Eles são utilizados como ponto de referência para a calibração de instrumentos e ensaios de produtos. A CGCRE (Coordenação Geral de Acreditação), do Inmetro, padroniza procedimentos de acreditação, facilitando a aceitação global de resultados de ensaios, calibrações e certificações, garantindo a qualidade e a confiabilidade dos serviços no Brasil.
+                                </p>
+                            <h5>BIPM (Bureau Internacional de Pesos e Medidas)</h5>
+                                <p>O BIPM é uma organização internacional responsável por coordenar e promover a metrologia globalmente, mantendo os padrões internacionais de medição e promovendo a cooperação entre países, para garantir a confiança mútua nas medidas. 
+                                </p>
+                            <h5>SI (Sistema Internacional de Unidades)</h5>
+                                <p>Conjunto de unidades padronizadas que servem como referência internacional para medições em todo o mundo. O SI é mantido e atualizado pelo BIPM, que garante sua consistência e precisão. 
+                                </p>
+                        </div>
+
                         <p>
                             Em resumo, a hierarquia do sistema metrológico representado pela figura da pirâmide metrológica, tem seu foco na rastreabilidade e confiabilidade e desempenha um papel vital na garantia da integridade das medidas em todas as áreas. Desde os laboratórios de metrologia primária, que estabelecem os padrões fundamentais, até as entidades de coordenação internacional, que garantem a conformidade global. Cada nível dessa pirâmide desempenha um papel importante. A rastreabilidade metrológica, aliada à confiabilidade dos resultados obtidos, é essencial para promover e impulsionar o avanço científico, tecnológico e econômico em todo o mundo, neste contexto é importante entender os conceitos de rastreabilidade, confiabilidade e calibração.
 
                         </p>     
                         <!-- gatinha1 -->
-                        <div class="accordion" id="accordionExample">
+                        <div class="accordion no-print" aria-hidden="true" id="accordionExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingOne">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
@@ -278,13 +302,24 @@
                             </div>
 
                         </div>
+                        <div class="print visually-hidden">
+                            <p><strong>Rastreabilidade</strong></p>
+                            <p>Refere-se à capacidade de relacionar uma medição específica a um padrão de referência bem definido e reconhecido internacionalmente. Isso significa que cada medida realizada pode ser traçada de volta a um padrão de medição confiável, estabelecendo, assim, uma cadeia ininterrupta de comparações e garantindo a confiabilidade dos resultados. A rastreabilidade é essencial para garantir a consistência e a comparabilidade das medidas em diferentes locais e períodos.
+                            </p>
+                            <strong><p>Confiabilidade</strong></p>
+                            <p>Diz respeito à consistência e à precisão das medições realizadas. Uma medida é considerada confiável quando pode ser repetida com precisão em condições semelhantes, produzindo resultados consistentes ao longo do tempo. Para alcançar a confiabilidade, é necessário que os instrumentos de medição estejam calibrados e mantenham sua precisão até a próxima calibração. Além disso, é importante que os procedimentos de medição sejam padronizados e seguidos rigorosamente para reduzir erros e incertezas. 
+                            </p>
+                            <strong><p>Calibração</strong></p>
+                            <p>É o processo de ajustar ou verificar a precisão de um instrumento de medição em relação a um padrão de referência conhecido, garantindo, assim, sua confiabilidade. Uma especificidade é que a calibração também envolve documentar e registrar os resultados obtidos, fornecendo dados e registros a fim de garantir a rastreabilidade das medições.
+                            </p>
+                        </div>
                         <p class="no-print" aria-hidden="true">
                             Clique ou toque para assistir ao vídeo sobre a pirâmide metrológica a seguir.
                         </p>
-                        <div class="espera_video video-youtube">Espera video</div>
+                        <div class="espera_video video-youtube no-print">Espera video</div>
                         <div class="visually-hidden"></div>
                         
-                    <div class="box-atividade">
+                    <div class="box-atividade no-print">
                         <p class="titulo-ativ"><strong>Teste de conhecimento
                         </strong></p>
                         <p>Chegou a hora de testar seus conhecimentos sobre os temas abordados até o momento.
@@ -335,7 +370,7 @@
 
                             </p>
                             <!-- gatinha1 -->
-                            <div class="accordion" id="accordionExample2">
+                            <div class="accordion no-print" aria-hidden="true" id="accordionExample2">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne2">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="false" aria-controls="collapseOne2">
@@ -380,6 +415,15 @@
                                 </div>
                             </div>
                             
+                            <div class="print visually-hidden">
+                                <strong><p> Padrões primários</strong></p> 
+                                <p>Representam os mais fundamentais e precisos, utilizados para estabelecer unidades de medida essenciais, como o metro, o quilograma e o segundo. São mantidos em laboratórios de metrologia primária e calibrados por comparação direta com padrões internacionais.</p>
+                                <strong><p> Padrões secundários</strong></p> 
+                                <p>Correspondem aos padrões nacionais que derivam dos padrões primários, utilizados para calibrar instrumentos de medição em laboratórios de calibração, ensaios e outras instituições. Fornecem uma referência intermediária entre os padrões primários e os instrumentos de trabalho utilizados na prática.</p>
+                                <strong><p> Padrões de trabalho</strong></p> 
+                                <p>São os padrões utilizados rotineiramente em medições diárias, em laboratórios, indústrias, comércio e outras áreas. São calibrados regularmente, com base em padrões secundários, para garantir sua precisão e confiabilidade.</p>
+                            </div>
+                            
                             <!-- destaque -->
                             <div class="destaque borda-colorida icone importante">
                                 <p>Entre os diferentes níveis hierárquicos, é possível encontrar padrões intermediários adicionais. Cada nível subsequente da hierarquia é estabelecido por meio de uma calibração em relação ao padrão do nível anterior. A rastreabilidade da calibração de um instrumento é alcançada quando essa hierarquia é respeitada e uma metodologia reconhecida é aplicada durante a calibração.                                    
@@ -388,7 +432,7 @@
                                     Os padrões desempenham um papel importante na metrologia, fornecendo referências confiáveis para as medições e garantindo a consistência e a precisão dos resultados obtidos em diversas áreas, desde a indústria até a pesquisa científica. São a base para a confiabilidade e a rastreabilidade das medições em todo o mundo.
                                 </p>
                             </div>
-                            <div class="box-atividade">
+                            <div class="box-atividade no-print">
                                 <p class="titulo-ativ"><strong>Teste de conhecimento
                                 </strong></p>
                                 <p>Este é o momento de aplicar seu aprendizado e ver o quanto você absorveu.
@@ -428,7 +472,7 @@
                             </p>
                             <p class="no-print" aria-hidden="true">Clique ou toque para assistir ao vídeo sobre o SI a seguir.
                             </p>
-                            <div class="espera_video video-youtube">Espera video</div>
+                            <div class="espera_video video-youtube no-print">Espera video</div>
                             <div class="visually-hidden"></div>
                             
                         </div>
@@ -586,7 +630,7 @@
                             <p>A importância dessas grandezas e unidades para a metrologia e o SI reside na padronização e na universalidade das medições. Ao adotar um sistema consistente e bem definido de unidades, torna-se possível realizar medições precisas e confiáveis, garantindo a qualidade e a consistência dos resultados em diferentes contextos e aplicações. Isso é de suma importância para o avanço da ciência, da tecnologia e do comércio global, promovendo a rastreabilidade e a confiabilidade das medições em todo o mundo.
                             </p>
                             
-                    <div class="box-atividade">
+                    <div class="box-atividade no-print">
                         <p class="titulo-ativ"><strong>Teste de conhecimento
                         </strong></p>
                         <p>Teste o que você aprendeu e supere este desafio. Cada pergunta é uma oportunidade de consolidar sua compreensão sobre o conteúdo.

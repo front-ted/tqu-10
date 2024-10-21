@@ -137,14 +137,19 @@
                             <!-- img -->
                             <figure class="my-5">
                                 <div class="figure-img mb-4">
-                                    <img class="img-fluid d-block mx-auto" src="img/infogr.png">
+                                    <img class="img-fluid d-block mx-auto no-print" aria-hidden="true" src="img/infogr.png">
+                                </div>
+                            </figure>
+                            <figure class="my-5">
+                                <div class="figure-img mb-4">
+                                    <img class="only-print" style="max-width: 100% !important; width: 100%;" src="img/infogr.png">
                                 </div>
                             </figure>
                             <p>
                                 A calibração deve ser realizada periodicamente e é uma condição necessária para que os resultados de medição sejam confiáveis (Tibiriçá e Reis, p. 9). As calibrações precisam ser conduzidas conforme referências técnicas estabelecidas, como normas nacionais e internacionais, diretrizes do Inmetro, procedimentos internos de laboratórios e recomendações dos fabricantes. A calibração pode ocorrer de duas formas: direta ou indireta.
                             </p>
                             <!-- gatinha1 -->
-                            <div class="accordion" id="accordionExample">
+                            <div class="accordion no-print" id="accordionExample" aria-hidden="true">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
@@ -190,17 +195,43 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="print visually-hidden">
+                                                <p><strong>Calibração direta</strong></p>
+                                                <p>O padrão é medido diretamente pelo sistema de medição a calibrar e a indicação obtida é comparada com os valores-padrão.
+                                                </p>
+                                                    <p>Para calibrar uma balança (sistema de medição), é necessário um conjunto de massas-padrão, de modo a cobrir toda a faixa de medição do aparelho. Aplicando-se diretamente a massa (com valor conhecido de 15g, por exemplo) sobre a balança, obtém-se o resultado, que é comparado com o esperado. 
+                                                    </p>
+                                                <p>
+                                                    Após repetidas medições, são calculados os erros e as incertezas, entre outros itens (que serão vistos a seguir), utilizando os valores medidos e os valores das massas-padrão.
+                                                </p>
+                                            <strong><p>Calibração indireta</strong></p>
+                                                <p>Nesse formato, em vez de usar uma grandeza-padrão, é usado um sistema de medição-padrão.
+                                                </p>
+                                                    <p>Na calibração da balança, uma massa (de valor não necessariamente conhecido) é medida pela balança a calibrar e pela balança-padrão, e as indicações das duas balanças são comparadas. 
+                                                    </p>
+                                                <p>
+                                                    Após as medições, são calculados os erros e as incertezas, entre outros itens, para o sistema a calibrar, utilizando os valores medidos por ele e as indicações do sistema de medição-padrão.
+                                                </p>
+                            </div>
                             <p>Veja, na ilustração, um comparativo desses dois modos de calibração.
                             </p>
                             <!-- img -->
+
+
                             <figure class="my-5">
                                 <div class="figure-img mb-4">
-                                    <img class="img-fluid d-block borda-colorida mx-auto" alt="Ilustração representando dois sistemas de medição. À esquerda, há a “Calibração direta”, um peso de dois quilos acima de uma balança. Ao lado do peso, há uma seta com a frase “Padrão é o que será medido: Peso”. Embaixo da balança, há a frase: “Balança: é o sistema de medição a ser calibrado”. Na parte inferior, está escrito: “Na calibração direta, o esperado é que a balança apresente o resultado do peso aplicado.”  À direita, há a “Calibração Indireta”, um peso de massa desconhecida, com um ponto de interrogação no local da informação do valor da massa). Abaixo, à esquerda, há a balança de referência, ao seu lado, há a balança a ser calibrada. Há uma seta o lado da balança de referência com a frase “Padrão é o sistema de medição: balança de referência”. Na parte inferior, está escrito: “Na calibração indireta, o esperado é que a balança a ser calibrada apresente o mesmo resultado do peso aplicado na balança de referência”." src="img/img01.png">
+                                    <img class="img-fluid d-block borda-colorida mx-auto no-print" alt="Ilustração representando dois sistemas de medição. À esquerda, há a “Calibração direta”, um peso de dois quilos acima de uma balança. Ao lado do peso, há uma seta com a frase “Padrão é o que será medido: Peso”. Embaixo da balança, há a frase: “Balança: é o sistema de medição a ser calibrado”. Na parte inferior, está escrito: “Na calibração direta, o esperado é que a balança apresente o resultado do peso aplicado.”  À direita, há a “Calibração Indireta”, um peso de massa desconhecida, com um ponto de interrogação no local da informação do valor da massa). Abaixo, à esquerda, há a balança de referência, ao seu lado, há a balança a ser calibrada. Há uma seta o lado da balança de referência com a frase “Padrão é o sistema de medição: balança de referência”. Na parte inferior, está escrito: “Na calibração indireta, o esperado é que a balança a ser calibrada apresente o mesmo resultado do peso aplicado na balança de referência”." src="img/img01.png">
+                                </div>
+                            </figure>
+                            
+                            <figure class="my-5">
+                                <div class="figure-img mb-4">
+                                    <img class="only-print" style="max-width: 100% !important; width: 100%;" src="img/img01.png">
                                 </div>
                             </figure>
                             <figcaption class="figure-caption text-center">Comparativo de calibração direta e indireta em uma balança <br>
                                 Fonte: Senac EAD (2024)
-                                </figcaption>
+                            </figcaption>
 
                             <p>Normalmente, as calibrações são executadas por laboratórios, que têm sua competência técnica avaliada pela RBC (Rede Brasileira de Calibração). Esses laboratórios seguem a norma ABNT NBR ISO/IEC 17025 e aderem à norma ABNT ISO 9001 para o sistema de gestão da qualidade. Para saber mais sobre os laboratórios de calibração acreditados, pesquise no portal do Inmetro. 
                             </p>
@@ -243,7 +274,7 @@
                             <!-- <div class="espera_video video-youtube">Espera atividade de ligar colunas ou arrastar Calibração x verificação.</div> -->
                             <!-- atividade ligar colunas -->
                              
-                    <div class="box-atividade">
+                    <div class="box-atividade no-print">
                         <p class="titulo-ativ"><strong>Relacionar colunas</strong></p>
                         <p>Agora que você já aprendeu sobre calibração e verificação, é hora de praticar. Relacione as informações a seguir.
                         </p>
@@ -412,7 +443,7 @@
                                 Existem diversos fatores que podem contribuir para a incerteza em uma medição, como limitações nos instrumentos de medição, variações nas condições ambientais, definição incorreta da grandeza medida, falta de calibração, fatores humanos e limitações no método de medição. A avaliação da incerteza de medição é fundamental para garantir a qualidade dos processos e a confiabilidade das medições realizadas. Essa avaliação é realizada por laboratórios credenciados, conforme já visto, e fornece parâmetros essenciais para quantificar a incerteza.
                             </p>
                             <!-- gaitinha2 -->
-                            <div class="accordion" id="accordionExample2">
+                            <div class="accordion no-print" id="accordionExample2" aria-hidden="true">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne2">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="false" aria-controls="collapseOne2">
@@ -473,6 +504,33 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="print visually-hidden">
+                                <p><strong>Limite inferior</strong></p>
+                                <p>O limite inferior de incerteza representa o valor mínimo medido.
+                                </p>
+                                <strong><p>Limite superior</strong></p>
+                                <p>O limite superior de incerteza indica o valor máximo medido.
+                                </p>
+                                <p>
+                                    Estes limites representam a amplitude (largura) do intervalo de medição ou intervalo de valores, ambos com a mesma probabilidade, e são fundamentais para estabelecer a confiança na medição, pois fornecem uma faixa dentro da qual o valor verdadeiro da grandeza medida provavelmente está contido. 
+                                </p>
+                                <p>
+                                    Quando a incerteza de medição tem um amplo intervalo (distância entre o limite inferior e o limite superior), indica, provavelmente uma escolha inadequada do aparelho de medição, o que resulta em uma qualidade de medição pouco confiável.
+                                </p>
+                                <strong><p>Probabilidade de abrangência</strong></p>
+                                <p>Indica o quão certo o valor da medição está dentro daquele intervalo (ou margem).
+                                </p>
+                                <p>
+                                    Todos esses parâmetros, o intervalo de valores (limite inferior e superior) e a probabilidade são determinados por meio de diversos ensaios, realizados sob condições específicas, para garantir que o instrumento atenda às especificações técnicas, por meio de cálculos estatísticos e probabilísticos. Seus resultados são comparados com valores e tolerâncias permitidos, por meio de normas e especificações técnicas e requisitos de qualidade.
+
+                                </p>
+                                <p>
+                                    É importante compreender que a incerteza não indica erro ou imprecisão, mas sim uma faixa dentro da qual o valor verdadeiro da grandeza medida provavelmente se encontra.
+                                </p>
+                                <p>
+                                    Por fim, saiba que todo instrumento de medição deve ter uma especificação técnica fornecida pelo fabricante, que descreve suas características metrológicas, incluindo erro e precisão. Assim como todo processo de calibração de um instrumento, é acompanhado de um certificado contendo a incerteza de medição associada. 
+                                </p>
+                            </div>
 
                             <h3 id="titulo6">Erros de medição</h3>
                             <p>Você já conhece o conceito de incerteza de medição, agora serão tratadas as questões que envolvem o erro no processo de medição. O erro sempre está presente em qualquer processo de medição, fazendo parte da rotina de trabalho, mesmo de um laboratório. Isso ocorre porque o resultado de medição não depende só do instrumento, mas também do método de medição, das condições ambientais, do padrão utilizado, do operador, entre outros. 
@@ -488,7 +546,7 @@
                             </p>
                             <!-- gaitinha3 -->
                              
-                            <div class="accordion" id="accordionExample3">
+                            <div class="accordion no-print" id="accordionExample3" aria-hidden="true">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne3">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne3" aria-expanded="false" aria-controls="collapseOne3">
@@ -547,6 +605,27 @@
                                 </div>
                                 
                             </div>
+                            <div class="print visually-hidden">
+                                <p><strong>Erro sistemático</strong></p>
+                                <p>É aquele que acontece nas medições sempre em um mesmo sentido (em idênticas condições de operação). Ou seja, sempre ocorre um aumento ou uma diminuição em relação ao valor de referência, de maneira previsível. Pode ser causado por problemas de ajuste, calibração, desgaste, fatores construtivos, método empregado ou por fatores externos.
+                                </p>
+                                    <p>Um hidrômetro mal calibrado em sua fabricação, durante uma medição, indica um consumo ligeiramente superior ao real. Em todas as leituras, independentemente da quantidade de água consumida, o hidrômetro registra um volume de 17 litros maior do que o consumo real. Esse desvio constante é um exemplo de erro sistemático.
+                                    </p>
+                                <p>
+                                    Uma estimativa para o erro sistemático de um sistema de medição pode ser feita medindo-se um padrão algumas vezes e calculando-se a diferença entre a média das medições e o valor do padrão. Essa diferença é chamada de tendência. 
+                                </p>
+                                <strong><p>Erro aleatório</strong></p>
+                                <p>É aquele que ocorre nas medições de forma imprevisível, ou seja, provoca alterações de forma aleatória (sem previsão), também chamado de erro acidental. O erro aleatório acontece em função de causas diversas e imprevisíveis e dificilmente pode ser eliminado. Pode ser causado por flutuações naturais, condições ambientais variáveis ou imprecisões no método de medição.
+                                </p>
+                                    <p>No processo de medição de uma bomba de combustível, podem ocorrer erros aleatórios, como manuseio inadequado ou problemas de alimentação elétrica. Desse modo, eventualmente, uma medição de uma bomba de combustível pode apresentar um valor incorreto. 
+                                    </p>
+                                <p>
+                                    Saiba mais sobre o instrumento de medição <strong>bomba medidora de combustível</strong> no <i>site</i> do Instituto de Pesos e Medidas do Estado de São Paulo (IPEM-SP).
+                                </p>
+                                <strong><p>Erro grosseiro</strong></p>
+                                <p>Resultado de leitura errônea pelo operador, de operação indevida ou de dano no sistema de medição. Pode ser minimizado com aferições e calibrações dos instrumentos. De acordo com Tibiriçá e Reis (2023, p. 9) “O erro grosseiro é imprevisível e por isso não pode ser estimado. No entanto, ele pode ser evitado facilmente através do uso e manutenção adequados do sistema de medição”. Por vezes, ocorrem equívocos na compreensão entre erro e incerteza. É importante saber que o erro de uma medição pode ser corrigido a partir do momento em que for detectada, com clareza, a falha no processo de medição em questão. Já a incerteza de qualquer processo de medição continuará sendo um intervalo de confiança das medidas.
+                                </p>
+                            </div>
                             <p>Por fim, a redução do erro pode ocorrer com a aplicação de algumas medidas básicas, que envolvem o processo de medição. Veja algumas delas:
                             </p>
                             <ul class="custom-bullet">
@@ -558,7 +637,7 @@
 
                             </p>
                             <!-- atividade -->
-                            <div class="box-atividade">
+                            <div class="box-atividade no-print">
                                 <p class="titulo-ativ"><strong>Erro ou incerteza</strong></p>
                                 <p>Como foi seu aprendizado sobre erro e incerteza? Verifique o que você aprendeu na atividade a seguir!
                                 </p>
@@ -644,7 +723,7 @@
                                 A norma ABNT NBR ISO/IEC 17025:2017 contém um item voltado a esse tema, o <strong>7.3 Amostragem</strong>. Nesse item, há uma obrigação para os laboratórios que realizam análise metrológica: ter “um plano e um método de amostragem, quando realiza amostragem de substâncias, materiais ou produtos para ensaio ou calibração subsequente”. Esse plano deve “assegurar a validade dos resultados de ensaio e calibração subsequentes.” (ABNT, 2017, p. 13). A norma também diz que esse plano deve ter base em métodos estatísticos apropriados e ficar disponível no local onde a amostra for realizada. Entre os pontos importantes na determinação de uma amostra, o laboratório deve ficar atento às seguintes situações:
                             </p>
                             <!-- gaitinha4 -->
-                            <div class="accordion" id="accordionExample4">
+                            <div class="accordion no-print" id="accordionExample4" aria-hidden="true">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne4">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne4" aria-expanded="false" aria-controls="collapseOne4">
@@ -700,6 +779,21 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="print visually-hidden">
+                                <p><strong>Representatividade dos resultados</strong></p>
+                                <p>Uma amostra representativa deve refletir as características da população ou do processo que está sendo avaliado. Isso significa que as características principais e variáveis importantes devem estar presentes na amostra em proporções semelhantes às do todo.
+                                </p>
+                                <strong><p>Aleatoriedade</strong></p>
+                                <p>A seleção dos elementos da amostra deve ser aleatória para evitar erros sistemáticos e garantir que todas as partes da população tenham uma chance igual de serem incluídas na amostra. Isso pode ser alcançado por métodos como sorteios aleatórios ou técnicas estatísticas de amostragem probabilística.
+
+                                </p>
+                                <strong><p>Tamanho da amostra </strong></p>
+                                <p>Determinar o tamanho adequado da amostra é essencial para equilibrar a precisão estatística com os recursos disponíveis. Métodos estatísticos são frequentemente aplicados para calcular o tamanho da amostra, necessário para alcançar resultados confiáveis. Um tamanho de amostra muito pequeno pode levar a generalizações inválidas, enquanto um tamanho excessivamente grande pode ser desnecessário e dispendioso.
+                                </p>
+                                <strong><p>Procedimentos documentados</strong></p>
+                                <p>Em laboratórios de metrologia, é indispensável documentar os procedimentos de amostragem adotados, incluindo critérios de seleção, técnicas de coleta, condições ambientais e qualquer outra informação relevante que possa afetar os resultados da medição.
+                                </p>
                             </div>
                             <p>
                                 Em resumo, uma amostragem confiável pode garantir precisão nas medições em metrologia, pois influencia diretamente a qualidade e a confiabilidade das medições realizadas. Ao seguir métodos adequados de amostragem e aderir às normas reconhecidas internacionalmente, os laboratórios de metrologia podem assegurar que suas medições sejam precisas, confiáveis e cientificamente válidas, contribuindo para a integridade e a eficácia de seus serviços e resultados.
