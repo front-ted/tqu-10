@@ -135,3 +135,30 @@ background-image: none;
 .map1area17{
 
 }
+.map1mobile{
+    display: none;
+}
+.map1mobile  img{
+    width: 150px;
+}
+.map1mobile .row{
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 700px){
+    .map1mobile .container{ padding: 0 !important;}
+    .map1mobile{
+        display: block;
+    }
+    .imgMap1,.imgMap2{
+        display: none;
+    }
+}
+@media screen and (max-width: 600px){
+    .map1mobile img{
+        max-width: 120px;
+    }
+}
+@media screen and (max-width: 500px){
+    
+}
