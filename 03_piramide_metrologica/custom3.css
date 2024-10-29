@@ -41,10 +41,47 @@ background-image: none;
     background-color: #fff;
     color: black;
 }
+.piramide{
+    position: relative;
+    background-image: url('img/painel.png');
+    background-position-y: -81px;
+    background-position-x: center;
+    height: 430px;
+}
 .piramide img{
+    position: absolute;
     display: block;
+    right: 0;
+    left: 0;
     margin: 0 auto;
     transition: all 0.18s ease-in;
+}
+.piramide img.piramide-bt01{
+    left: -13px;
+}
+.piramide img.piramide-bt02{
+    top: 57px;
+    left: -13px;
+}
+.piramide img.piramide-bt03{
+    top: 129px;
+    left: -13px;
+}
+.piramide img.piramide-bt04{
+    top: 189px;
+    left: -13px;
+}
+.piramide img.piramide-bt05{
+    top: 248px;
+    left: -13px;
+}
+.piramide img.piramide-bt06{
+    top: 308px;
+    left: -13px;
+}
+
+.img-fundo-piramide{
+  
 }
 .piramide img:hover{
     cursor: pointer;

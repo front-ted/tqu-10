@@ -37,3 +37,12 @@
 .bt-img4{
     background-image: url('img/bt04.png');
 }
+
+
+@media print {
+    .img-jornal{
+        max-width: 100% !important; 
+        width: 100% !important;
+
+    }
+}

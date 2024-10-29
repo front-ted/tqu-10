@@ -636,7 +636,8 @@ tbody td:first-child{border-left: 0;}
 .espera_video{
     text-align: center;
     color: #fff;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     height: 300px;
     margin: 20px auto;
     background-color: #333;
@@ -663,9 +664,9 @@ tbody td:first-child{border-left: 0;}
 /* fim add */
 @media screen and (max-width: 1200px){
     h2{margin-left: 0;}
-    .container-fluid .splide .splide__slide{
+    /* .container-fluid .splide .splide__slide{
         width: 80% !important;
-    }
+    } */
     .grafismo::after{
         right: -30px;
     }

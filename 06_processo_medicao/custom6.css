@@ -46,6 +46,10 @@
 .asset_dir3{
     width: 18%;
 }
+.img-sismed{
+    max-width: 800px;
+    width: 100%;
+}
 @media screen and (max-width: 1450px){
     .asset_esq1,
     .asset_esq2,

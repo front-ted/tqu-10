@@ -707,3 +707,15 @@ table.text-left.align-middle td {
   margin-top: 10px;
 }
 /* código para tabela não desconfigurar na versão impressa */
+
+/* adc uc10 */
+
+.pagina img.img-jornal{
+  max-width: 100% !important; 
+  width: 100% !important;
+}
+/* no TQU10 usei isso, se quiser padronizar */
+.citacao p{
+  margin-left: 12em;
+}
+/* fim adc */

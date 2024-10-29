@@ -120,4 +120,18 @@
 #cardPile #card-6 img{
     max-width: 150px !important;
 }
+.modal-header h4 {
+    margin-top: 0;
+    color: #fff;
+    padding: 5px 20px;
+}
 
+@media screen and (max-width: 830px){
+    .splide .card {
+        width: 100%;
+    }
+    .container-fluid .splide .splide__slide {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}

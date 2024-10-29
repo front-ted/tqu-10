@@ -35,6 +35,10 @@
     background: linear-gradient(#fff, #fff) padding-box, linear-gradient(80deg, var(--cor-primaria) 10%, var(--cor-primaria) 50%, var(--cor-secundaria) 92%) border-box;
     border: 7px solid transparent;
 }
+
+.link-pdf{
+    text-decoration: none;
+}
 .btn-pdf:hover{
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     background: linear-gradient(transparent, transparent) padding-box, linear-gradient(80deg, var(--cor-primaria) 10%, var(--cor-primaria) 50%, var(--cor-secundaria) 92%) border-box;
