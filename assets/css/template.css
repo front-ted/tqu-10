@@ -662,6 +662,16 @@ tbody td:first-child{border-left: 0;}
     color: #000
 } */
 /* fim add */
+.img-zoom{ position: relative;}
+.img-zoom::after {
+    content: url(../images/ico_visualizar.svg);
+    display: block;
+    width: 88px;
+    height: 88px;
+    right: 0;
+    bottom: 7%;
+    position: absolute;
+}
 @media screen and (max-width: 1200px){
     h2{margin-left: 0;}
     /* .container-fluid .splide .splide__slide{
