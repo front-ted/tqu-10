@@ -5,19 +5,22 @@ $(function (){
         $(this).toggleClass("selecionado");
 
         if($(".selecionado").length == 2){
-            console.log($(".selecionado")[0].dataset.resp, $(".selecionado")[1])
+            console.log($(".selecionado")[0].dataset.acerto);
+            console.log($(".selecionado")[0].dataset.erro);
+            // console.log($(".selecionado")[0], $(".selecionado")[1])
 
             if($(".selecionado")[0].dataset.resp == $(".selecionado")[1].dataset.resp)
             {
+                document.getElementById("p-relacionar-acerto").textContent = $(".selecionado")[0].dataset.acerto;
                 $(".selecionado").prop("disabled", "disabled")
                 $(".selecionado").addClass("acertou")
                 $(".selecionado .txtacao").text($(".selecionado")[0].dataset.resp)
                 $(".selecionado").removeClass("selecionado");
                 $("#associar_colulas_acertou").modal("show")
                 acerto.play()
-            }else
-            {
+            }else{
                 // $(".selecionado").addClass("errou")
+                document.getElementById("p-relacionar-erro").textContent = $(".selecionado")[0].dataset.erro;
                 $(".selecionado").removeClass("selecionado");
                 $("#associar_colulas_errou").modal("show")
                 erro.play()

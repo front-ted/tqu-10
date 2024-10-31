@@ -71,7 +71,7 @@
                             <p class="no-print" aria-hidden="true">Clique ou toque para visualizar os
                                 exemplos de instrumento de medição e
                                 sistema de medição.</p>
-                            <div id="carousel2" class="carousel slide carousel-fade no-print" data-bs-ride="carousel">
+                            <div id="carousel2" class="carousel slide carousel-fade no-print" aria-hidden="true" data-bs-ride="carousel">
                                 <div class="carousel-indicators">
                                     <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev"></button>
                                     <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next"></button>
@@ -87,8 +87,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <img src="img/slide01.png" class="only-print mx-auto" style="max-width: 100% !important;width: 100%;" alt="">
-                            <img src="img/slide02.png" class="only-print mx-auto" style="max-width: 100% !important;width: 100%;" alt="">
+                            <img src="img/slide01.png" class="print sr-only mx-auto" style="max-width: 100% !important;width: 100%;" alt="Instrumento de medição paquímetro. ">
+                            <img src="img/slide02.png" class="print sr-only mx-auto" style="max-width: 100% !important;width: 100%;" alt="Ilustração de uma bomba de gasolina. ">
 
                             <div class="destaque borda-colorida icone pergunta">
                                 <p>Em relação aos instrumentos e aos sistemas de medição, existem diversos tipos, afinal, a todo o momento do dia, você se depara com eles, não é mesmo?
@@ -720,65 +720,11 @@
                                                         </div>
                                                     </div>
                                     
-                        <!-- <div id="carousel3" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev"></button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next"></button>
-                                <button type="button" data-bs-target="#carousel3" data-bs-slide-to="0" class="indicador active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carousel3" data-bs-slide-to="1" class="indicador" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carousel3" data-bs-slide-to="2" class="indicador" aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="game-titulo">
-                                        <p>Caixa 1</p>
-                                    </div>
-                                    <div id="slot-1" class="slot">
-                                        
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="game-titulo">
-                                        <p>Caixa 2</p>
-                                    </div>
-                                    <div id="slot-2" class="slot">
-                                        
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="game-titulo">
-                                        <p>Caixa 3</p>
-                                    </div>
-                                    <div id="slot-3" class="slot">
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-
-
-                                                    <!--  -->
                                                     <div class="col-12 col-md-4 mt-3 mb-3">
-                                                        <!-- <div class="game-titulo">
-                                                            <p>Caixa 1</p>
-                                                        </div>
-                                                        <div id="slot-1" class="slot">
-                                                            
-                                                        </div> -->
                                                     </div>
                                                     <div class="col-12 col-md-4 mt-3 mb-3">
-                                                        <!-- <div class="game-titulo">
-                                                            <p>Caixa 2</p>
-                                                        </div>
-                                                        <div id="slot-2" class="slot"></div> -->
                                                     </div>
                                                     <div class="col-12 col-md-4 mt-3 mb-3">
-                                                    <!-- <div class="game-titulo">
-                                                        <p>Caixa 3</p>
-                                                    </div>
-                                                    <div id="slot-3" class="slot">
-                                                    
-                                                    </div> -->
                                                     </div>
                                                 </div>
                                                 
@@ -786,33 +732,30 @@
                                 
                                             <div id="cardPile" class="game-itens-container">
                                                 
-                                                <div id="card-6" class="card" data-target="slot-6">
+                                                <div id="card-6" class="card" data-target="slot-6" data-acerto="Muito bem! Você acertou." data-erro="Ops, tente novamente!">
                                                     Opacímetro
                                                     <img class="" alt="A imagem mostra a foto de um opacímetro" src="img/img12.png">
                                                 </div>
-                                                <div id="card-1" class="card" data-target="slot-1">
+                                                <div id="card-1" class="card" data-target="slot-1" data-acerto="Muito bem! Você acertou." data-erro="Ops, tente novamente!">
                                                     Balança digital
                                                     <img class="" alt="Ilustração de uma balança digital." src="img/img01.png">
-
                                                 </div>
-                                                
-                                                <div id="card-5" class="card" data-target="slot-5">
+                                                <div id="card-5" class="card" data-target="slot-5" data-acerto="Muito bem! Você acertou." data-erro="Ops, tente novamente!">
                                                     Paquímetro
                                                     <img class="" src="img/img13.png" alt="Fotografia de um paquímetro digital. ">
                                                 </div>
-                                                <div id="card-2" class="card" data-target="slot-2">
+                                                <div id="card-2" class="card" data-target="slot-2" data-acerto="Muito bem! Você acertou." data-erro="Ops, tente novamente!">
                                                     Velocímetro
                                                     <img class="" alt="Fotografia de um velocímetro de automóvel." src="img/img09.png">
                                                 </div>
-                                                <div id="card-3" class="card" data-target="slot-3">
+                                                <div id="card-3" class="card" data-target="slot-3" data-acerto="Muito bem! Você acertou." data-erro="Ops, tente novamente!">
                                                     Etilômetro  
                                                     <img class="" src="img/img10.png" alt="Fotografia de um etilômetro.">
                                                 </div>
-                                                <div id="card-4" class="card" data-target="slot-4">
+                                                <div id="card-4" class="card" data-target="slot-4" data-acerto="Muito bem! Você acertou." data-erro="Ops, tente novamente!">
                                                     Hidrômetro
                                                     <img class="" alt="A imagem mostra a foto de um hidrômetro." src="img/img03.png">
                                                 </div>
-                                            
                                             </div>
                                         </div>
                                     </div>
@@ -831,7 +774,7 @@
                                                         <img src="../assets/atividades/arrasta_solta/resposta_pos.svg" class="img-fluid" alt="">
                                                     </div>
                                                     <div class="col-12 col-lg-8">
-                                                        <p>Muito bem! Você acertou.</p>
+                                                        <p id="p-acerto">Muito bem! Você acertou.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -853,7 +796,7 @@
                                                         <img src="../assets/atividades/arrasta_solta/resposta_neg.svg" class="img-fluid" alt="">
                                                     </div>
                                                     <div class="col-12 col-lg-8">
-                                                        <p>Ops, tente novamente!</p>
+                                                        <p id="p-erro">Ops, tente novamente!</p>
                                                     </div>
                                                 </div>
                                             </div>
