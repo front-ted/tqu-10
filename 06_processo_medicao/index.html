@@ -1,919 +1,1370 @@
 <!doctype html>
 <html lang="pt-br">
-    <head>
-        <!-- Inserir o tíutlo do conhecimento na tag title -->
-        <title>Processo de medição</title>
-        <!-- Meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS v5.0.2 -->
-        <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
-        <link rel="stylesheet" href="../assets/fa/css/all.min.css">
-        <!-- Animate.css -->
-        <link rel="stylesheet" href="../assets/css/animate.min.css" />
-        <!-- hover.css https://ianlunn.github.io/Hover/ -->
-        <link rel="stylesheet" href="../assets/css/hover-min.css" />
-        <!--Splide - slideshow-->
-        <link rel="stylesheet" href="../assets/css/splide.min.css">
-        <!-- Preloader -->
-        <link rel="stylesheet" href="../assets/css/preloader.css">
-        <!-- Áudio customizado -->
-        <link rel="stylesheet" href="../assets/css/player.css">
-        <!-- Atividade de verdadeiro ou falso -->
-        <link rel="stylesheet" href="../assets/atividades/perguntas/perguntas.css">
-        <!--Atividade arrasta e solta-->
-        <link rel="stylesheet" href="../assets/atividades/arrasta_solta/dragula.css">
-        <link rel="stylesheet" href="../assets/atividades/arrasta_solta/game-custom.css">
-        <!--Atividade relacionar colunas-->
-        <link rel="stylesheet" href="../assets/atividades/relacionar_colunas/relacionar-colunas.css">
-        <!-- Estilos do template -->
-        <link rel="stylesheet" href="../assets/css/cores.css">
-        <link rel="stylesheet" href="../print/print/print.css">
-        <link rel="stylesheet" href="../assets/css/template.css">
-        <link rel="stylesheet" href="custom6.css">
-    
-    </head>
-    <body class="bg-claro">
-        <!-- Preloader OBRIGATÓRIO -->
-        <div class="preloader">
-            <div class="anim"></div>
-            <p>Aguarde enquanto o conteúdo é carregado.</p>
-        </div>
-        <!-- Marca d'água OBRIGATÓRIA -->
-        <img src="../assets/images/logo_senac_colorido.png" id="marcadaguaLogo">
+<head>
+    <!-- Inserir o tíutlo do conhecimento na tag title -->
+    <title>Processo de medição</title>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <header id="topo">
-            <div class="topo-logo">
-                <div class="container">
-                    <h1 id="nome-curso" class="only-print">Técnico em Qualidade</h1> 
-                    <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()" aria-hidden="true"></div>     
-                </div>
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/fa/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <!-- hover.css https://ianlunn.github.io/Hover/ -->
+    <link rel="stylesheet" href="../assets/css/hover-min.css" />
+    <!--Splide - slideshow-->
+    <link rel="stylesheet" href="../assets/css/splide.min.css">
+    <!-- Preloader -->
+    <link rel="stylesheet" href="../assets/css/preloader.css">
+    <!-- Áudio customizado -->
+    <link rel="stylesheet" href="../assets/css/player.css">
+    <!-- Atividade de verdadeiro ou falso -->
+    <link rel="stylesheet" href="../assets/atividades/perguntas/perguntas.css">
+    <!--Atividade arrasta e solta-->
+    <link rel="stylesheet" href="../assets/atividades/arrasta_solta/dragula.css">
+    <link rel="stylesheet" href="../assets/atividades/arrasta_solta/game-custom.css">
+    <!--Atividade relacionar colunas-->
+    <link rel="stylesheet" href="../assets/atividades/relacionar_colunas/relacionar-colunas.css">
+    <!-- Estilos do template -->
+    <link rel="stylesheet" href="../assets/css/cores.css">
+    <link rel="stylesheet" href="../print/print/print.css">
+    <link rel="stylesheet" href="../assets/css/template.css">
+    <link rel="stylesheet" href="custom6.css">
+
+</head>
+
+<body class="bg-claro">
+    <!-- Preloader OBRIGATÓRIO -->
+    <div class="preloader">
+        <div class="anim"></div>
+        <p>Aguarde enquanto o conteúdo é carregado.</p>
+    </div>
+    <!-- Marca d'água OBRIGATÓRIA -->
+    <img src="../assets/images/logo_senac_colorido.png" id="marcadaguaLogo">
+
+    <header id="topo">
+        <div class="topo-logo">
+            <div class="container">
+                <h1 id="nome-curso" class="only-print">Técnico em Qualidade</h1>
+                <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()"
+                    aria-hidden="true"></div>
             </div>
-        </header>
-        <!--Menu lateral-->
-        <button class="bt-hamburguer" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
-            <i class="fas fa-bars"></i>
-        </button>
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Técnico em Qualidade</h5>
-                <button type="button" class="bt-fecharmenu text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <nav id="nav-offcanvas" class="offcanvas-body">
-                <ul>
-                    <li><a href="#titulo1">Início</a></li>
-                    <li><a href="#titulo2">Processos de medição</a></li>
-                    <li><a href="#titulo3">Calibração</a></li>
-                    <li><a href="#titulo4">Verificação</a></li>
-                    <li><a href="#titulo5">Incerteza de medições</a></li>
-                    <li><a href="#titulo6">Erros de medição</a></li>
-                    <li><a href="#titulo7">Amostragem confiável</a></li>
-                    <li><a href="#titulo8">Encerramento</a></li>
-                </ul>
-            </nav>
         </div>
-        <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->    
-        <section id="booklet">  
-            <div class="layer-preta no-print"></div>       
-            <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
-            <section class="paginas">
-                <div class="pagina">
-                    <div class="bloco1">
-                        <img src="img/asset_dir.png" class="asset_dir1 no-print" alt="">
-                        <img src="img/asset_dir.png" class="asset_dir2 no-print" alt="">
-                        <img src="img/asset_dir.png" class="asset_dir3 no-print" alt="">
-                        <img src="img/asset_esq.png" class="asset_esq1 no-print" alt="">
-                        <img src="img/asset_esq.png" class="asset_esq2 no-print" alt="">
-                        <div class="container">
-                            <h2 id="titulo1">Processos de medição: calibração, verificação, incertezas (limites inferior e superior), erros de medição e amostragem confiável
-                            </h2>
-                            <p>
-                                Você já aprendeu o quanto é importante para um profissional da qualidade conhecer metrologia e seus conceitos, história, áreas de atuação, equipamentos de medição, entre outros pontos. Você pôde compreender, ainda, que existe uma grande relação entre o sistema de gestão da qualidade (SGQ) e a metrologia, além de também aprender sobre rastreabilidade e confiabilidade, conceitos de padrões e unidades de SI (sistema internacional), interação com a gestão da qualidade: indicadores, mapeamento de processos (decisões), controle e monitoramento e gestão de riscos, um amplo conteúdo!
+    </header>
+    <!--Menu lateral-->
+    <button class="bt-hamburguer" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
+        aria-controls="offcanvasWithBackdrop">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+        aria-labelledby="offcanvasWithBackdropLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Técnico em Qualidade</h5>
+            <button type="button" class="bt-fecharmenu text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav id="nav-offcanvas" class="offcanvas-body">
+            <ul>
+                <li><a href="#titulo1">Início</a></li>
+                <li><a href="#titulo2">Processos de medição</a></li>
+                <li><a href="#titulo3">Calibração</a></li>
+                <li><a href="#titulo4">Verificação</a></li>
+                <li><a href="#titulo5">Incerteza de medições</a></li>
+                <li><a href="#titulo6">Erros de medição</a></li>
+                <li><a href="#titulo7">Amostragem confiável</a></li>
+                <li><a href="#titulo8">Encerramento</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->
+    <section id="booklet">
+        <div class="layer-preta no-print"></div>
+        <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
+        <section class="paginas">
+            <div class="pagina">
+                <div class="bloco1">
+                    <img src="img/asset_dir.png" class="asset_dir1 no-print" alt="">
+                    <img src="img/asset_dir.png" class="asset_dir2 no-print" alt="">
+                    <img src="img/asset_dir.png" class="asset_dir3 no-print" alt="">
+                    <img src="img/asset_esq.png" class="asset_esq1 no-print" alt="">
+                    <img src="img/asset_esq.png" class="asset_esq2 no-print" alt="">
+                    <div class="container">
+                        <h2 id="titulo1">Processos de medição: calibração, verificação, incertezas (limites inferior e
+                            superior), erros de medição e amostragem confiável
+                        </h2>
+                        <p>
+                            Você já aprendeu o quanto é importante para um profissional da qualidade conhecer metrologia
+                            e seus conceitos, história, áreas de atuação, equipamentos de medição, entre outros pontos.
+                            Você pôde compreender, ainda, que existe uma grande relação entre o sistema de gestão da
+                            qualidade (SGQ) e a metrologia, além de também aprender sobre rastreabilidade e
+                            confiabilidade, conceitos de padrões e unidades de SI (sistema internacional), interação com
+                            a gestão da qualidade: indicadores, mapeamento de processos (decisões), controle e
+                            monitoramento e gestão de riscos, um amplo conteúdo!
 
-                            </p>
-                            <p>
-                                A partir de agora, você conhecerá os procedimentos que antecedem os <strong>processos de medição</strong>. É importante compreender que os processos de medição realizados por laboratórios impactam o dia a dia de todos. 
+                        </p>
+                        <p>
+                            A partir de agora, você conhecerá os procedimentos que antecedem os <strong>processos de
+                                medição</strong>. É importante compreender que os processos de medição realizados por
+                            laboratórios impactam o dia a dia de todos.
 
+                        </p>
+                        <div class="destaque borda-colorida icone exemplo">
+                            <p>São comuns no cotidiano situações como a medição correta do consumo de água ou energia
+                                elétrica em uma residência ou comércio, a calibração adequada dos pneus de um veículo
+                                particular ou de transporte público, o peso de produtos medido em uma balança de
+                                supermercado, termômetros clínicos para medir temperatura, entre outros exemplos.
                             </p>
-                            <div class="destaque borda-colorida icone exemplo">
-                                <p>São comuns no cotidiano situações como a medição correta do consumo de água ou energia elétrica em uma residência ou comércio, a calibração adequada dos pneus de um veículo particular ou de transporte público, o peso de produtos medido em uma balança de supermercado, termômetros clínicos para medir temperatura, entre outros exemplos.
-                                </p>
-                            </div>
-                            <h3 id="titulo2">Processos de medição</h3>
-                            <p>
-                                Os seguintes procedimentos serão explorados a partir de agora: calibração de equipamentos de medida, verificação metrológica, incertezas de medição, erros que podem ocorrer no momento da medição e obtenção de amostragem confiável. As normas da ABNT NBR ISO/IEC 17025:2017 Requisitos gerais para a competência de laboratórios de ensaio e calibração e NBR ISO 9001:2015: Sistemas de gestão da qualidade – requisitos embasam este conteúdo.
+                        </div>
+                        <h3 id="titulo2">Processos de medição</h3>
+                        <p>
+                            Os seguintes procedimentos serão explorados a partir de agora: calibração de equipamentos de
+                            medida, verificação metrológica, incertezas de medição, erros que podem ocorrer no momento
+                            da medição e obtenção de amostragem confiável. As normas da ABNT NBR ISO/IEC 17025:2017
+                            Requisitos gerais para a competência de laboratórios de ensaio e calibração e NBR ISO
+                            9001:2015: Sistemas de gestão da qualidade – requisitos embasam este conteúdo.
+                        </p>
+
+                        <div class="destaque borda-colorida icone importante">
+                            <p>Para iniciar este aprendizado, saiba que um <strong>processo de medição</strong> consiste
+                                em um conjunto de métodos e operações, utilizado para determinar o valor de uma
+                                grandeza, ou seja, efetuar uma medida. </p>
+                        </div>
+                        <div class="destaque borda-colorida icone exemplo">
+                            <p>O medidor de velocidade de veículos, comumente conhecido como radar, é um instrumento que
+                                faz parte de um processo de medição utilizado para monitorar e controlar a velocidade
+                                dos veículos em estradas e vias públicas. Seu correto funcionamento é fundamental para a
+                                prevenção de acidentes, entre outras funções.
                             </p>
-                            
-                            <div class="destaque borda-colorida icone importante">
-                                <p>Para iniciar este aprendizado, saiba que um <strong>processo de medição</strong> consiste em um conjunto de métodos e operações, utilizado para determinar o valor de uma grandeza, ou seja, efetuar uma medida. </p>
-                            </div>
-                            <div class="destaque borda-colorida icone exemplo">
-                                <p>O medidor de velocidade de veículos, comumente conhecido como radar, é um instrumento que faz parte de um processo de medição utilizado para monitorar e controlar a velocidade dos veículos em estradas e vias públicas. Seu correto funcionamento é fundamental para a prevenção de acidentes, entre outras funções.
-                                </p>
-                            </div>
-                            <p>
-                                Para que ocorra um processo de medição de forma correta, é necessário que se realize a seleção do instrumento de medição mais adequado, em condições apropriadas de uso, conforme orienta a norma ISO 9001:2015, em seu requisito “7.1.5 Recursos de monitoramento e medição”, subitem “7.1.5.1 Generalidades”: “A organização deve assegurar que os recursos providos:  a) sejam adequados para o tipo específico de atividades de monitoramento e medição assumidas;  b) sejam mantidos para assegurar que estejam continuamente apropriados aos seus propósitos.” (ABNT, 2015, p. 8).
+                        </div>
+                        <p>
+                            Para que ocorra um processo de medição de forma correta, é necessário que se realize a
+                            seleção do instrumento de medição mais adequado, em condições apropriadas de uso, conforme
+                            orienta a norma ISO 9001:2015, em seu requisito “7.1.5 Recursos de monitoramento e medição”,
+                            subitem “7.1.5.1 Generalidades”: “A organização deve assegurar que os recursos providos:  a)
+                            sejam adequados para o tipo específico de atividades de monitoramento e medição assumidas; 
+                            b) sejam mantidos para assegurar que estejam continuamente apropriados aos seus propósitos.”
+                            (ABNT, 2015, p. 8).
+                        </p>
+
+                        <div class="destaque borda-colorida icone exemplo">
+                            <p>Para medir a temperatura corporal de
+                                uma pessoa, é preciso utilizar um
+                                termômetro clínico, cuja faixa de
+                                medição abranja a temperatura normal
+                                do corpo humano, ou seja, de 32°C a
+                                42°C, seja de leitura rápida e simples e
+                                esteja próprio para o uso. Nessa
+                                situação, seria inadequado o uso de
+                                termômetros com faixa de medição entre
+                                0°C e 100°C e de difícil leitura ou
+                                manuseio.
                             </p>
-                            
-                            <div class="destaque borda-colorida icone exemplo">
-                                <p>Para medir a temperatura corporal de
-                                    uma pessoa, é preciso utilizar um
-                                    termômetro clínico, cuja faixa de
-                                    medição abranja a temperatura normal
-                                    do corpo humano, ou seja, de 32°C a
-                                    42°C, seja de leitura rápida e simples e
-                                    esteja próprio para o uso. Nessa
-                                    situação, seria inadequado o uso de
-                                    termômetros com faixa de medição entre
-                                    0°C e 100°C e de difícil leitura ou
-                                    manuseio.
-                                    </p>
-                            </div>
-                            <p>
-                                Para garantir a confiabilidade dos processos de medição, são necessários os procedimentos citados. Veja cada um deles a seguir.
+                        </div>
+                        <p>
+                            Para garantir a confiabilidade dos processos de medição, são necessários os procedimentos
+                            citados. Veja cada um deles a seguir.
+                        </p>
+                        <h3 id="titulo3">Calibração</h3>
+
+                        <div class="destaque borda-colorida icone importante">
+                            <p>Como ter confiança na medida feita pelo bafômetro (etilômetro) utilizado por autoridades
+                                policiais, durante <i>blitzes</i> e fiscalizações de trânsito, para verificar se
+                                condutores estão dirigindo sob a influência de álcool, por exemplo? Você pode estar
+                                pensando: para ter confiança, o bafômetro precisa estar <strong>calibrado</strong>!
                             </p>
-                            <h3 id="titulo3">Calibração</h3>
-                            
-                            <div class="destaque borda-colorida icone importante">
-                                <p>Como ter confiança na medida feita pelo bafômetro (etilômetro) utilizado por autoridades policiais, durante <i>blitzes</i> e fiscalizações de trânsito, para verificar se condutores estão dirigindo sob a influência de álcool, por exemplo? Você pode estar pensando: para ter confiança, o bafômetro precisa estar <strong>calibrado</strong>!
-                                </p>
-                            </div>
-                            <p>
-                                A calibração, de modo geral, consiste em comparar os resultados obtidos em um equipamento com resultados obtidos por equipamentos-padrão rastreáveis (padrões de referência nacionais/internacionais), sob condições preestabelecidas e controladas para cada situação, como temperatura ambiental, ausência de poeira e vibrações, entre outros.
+                        </div>
+                        <p>
+                            A calibração, de modo geral, consiste em comparar os resultados obtidos em um equipamento
+                            com resultados obtidos por equipamentos-padrão rastreáveis (padrões de referência
+                            nacionais/internacionais), sob condições preestabelecidas e controladas para cada situação,
+                            como temperatura ambiental, ausência de poeira e vibrações, entre outros.
+                        </p>
+                        <div class="destaque borda-colorida icone importante">
+                            <p>A calibração de um instrumento é um processo que busca checar se a medida obtida pelo
+                                instrumento está de acordo com o esperado e se o instrumento está adequado ao uso, nas
+                                condições preestabelecidas e controladas.
                             </p>
-                            <div class="destaque borda-colorida icone importante">
-                                <p>A calibração de um instrumento é um processo que busca checar se a medida obtida pelo instrumento está de acordo com o esperado e se o instrumento está adequado ao uso, nas condições preestabelecidas e controladas. 
-                                </p>
-                            </div>
-                            
-                            <!-- img -->
-                            <!-- <figure class="my-5">
+                        </div>
+
+                        <!-- img -->
+                        <!-- <figure class="my-5">
                                 <div class="figure-img mb-4">
                                     <img class="img-fluid d-block mx-auto no-print" aria-hidden="true" src="img/infogr.png">
                                 </div>
                             </figure> -->
 
-                            <figure class="my-5 no-print" aria-hidden="true">
-                                <img src="img/infogr.png" class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block radius" alt="Imagem">
-                                <a href="img/infogr.png" target="_blank" class="img-zoom d-sm-block d-md-none d-lg-none no-print">
-                                    <img src="img/infogr.png" class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none radius" alt="Imagem">
-                                </a>
-                            </figure>
-                            <div class="no-print sr-only">
-                                <p>Objetivos da calibração </p>
-                                <p>Garantir que o instrumento de medição forneça resultados precisos </p>
-                                <p>Identificar e corrigir qualquer desvio ou erro do instrumento </p>
-                                <p>Documentar a rastreabilidade dos resultados de medição aos padrões nacionais ou internacionais </p>
+                        <figure class="my-5 no-print" aria-hidden="true">
+                            <img src="img/infogr.png"
+                                class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block radius"
+                                alt="Imagem">
+                            <a href="img/infogr.png" target="_blank"
+                                class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+                                <img src="img/infogr.png"
+                                    class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none radius"
+                                    alt="Imagem">
+                            </a>
+                        </figure>
+                        <div class="no-print sr-only">
+                            <p>Objetivos da calibração </p>
+                            <p>Garantir que o instrumento de medição forneça resultados precisos </p>
+                            <p>Identificar e corrigir qualquer desvio ou erro do instrumento </p>
+                            <p>Documentar a rastreabilidade dos resultados de medição aos padrões nacionais ou
+                                internacionais </p>
 
+                        </div>
+
+
+                        <img class="only-print" style="max-width: 100% !important; width: 100%;" src="img/infogr.png">
+                        <p>
+                            A calibração deve ser realizada periodicamente e é uma condição necessária para que os
+                            resultados de medição sejam confiáveis (Tibiriçá; Reis, 2023, p. 9). As calibrações precisam
+                            ser conduzidas conforme referências técnicas estabelecidas, como normas nacionais e
+                            internacionais, diretrizes do Inmetro, procedimentos internos de laboratórios e
+                            recomendações dos fabricantes. A calibração pode ocorrer de duas formas: direta ou indireta.
+                        </p>
+                        <!-- gatinha1 -->
+                        <p class="no-print" aria-hidden="true">Clique ou toque para visualizar o conteúdo.</p>
+                        <div class="accordion no-print" id="accordionExample" aria-hidden="true">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        Calibração direta
+
+
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>O padrão é medido diretamente pelo sistema de medição a calibrar e a
+                                            indicação obtida é comparada com os valores-padrão.
+                                        </p>
+                                        <!-- destaque escuro -->
+                                        <div class="destaque borda-colorida icone exemplo" style="margin-left: 50px;">
+                                            <p>Para calibrar uma balança (sistema de medição), é necessário um conjunto
+                                                de massas-padrão, de modo a cobrir toda a faixa de medição do aparelho.
+                                                Aplicando-se diretamente a massa (com valor conhecido de 15g, por
+                                                exemplo) sobre a balança, obtém-se o resultado, que é comparado com o
+                                                esperado.
+                                            </p>
+                                        </div>
+                                        <p>
+                                            Após repetidas medições, são calculados os erros e as incertezas, entre
+                                            outros itens (que serão vistos a seguir), utilizando os valores medidos e os
+                                            valores das massas-padrão.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Calibração indireta
 
-
-                            <img class="only-print" style="max-width: 100% !important; width: 100%;" src="img/infogr.png">
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Nesse formato, em vez de usar uma grandeza-padrão, é usado um sistema de
+                                            medição-padrão.
+                                        </p>
+                                        <div class="destaque borda-colorida icone exemplo" style="margin-left: 50px;">
+                                            <p>Na calibração da balança, uma massa (de valor não necessariamente
+                                                conhecido) é medida pela balança a calibrar e pela balança-padrão, e as
+                                                indicações das duas balanças são comparadas.
+                                            </p>
+                                        </div>
+                                        <p>
+                                            Após as medições, são calculados os erros e as incertezas, entre outros
+                                            itens, para o sistema a calibrar, utilizando os valores medidos por ele e as
+                                            indicações do sistema de medição-padrão.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="print visually-hidden">
+                            <p><strong>Calibração direta</strong></p>
+                            <p>O padrão é medido diretamente pelo sistema de medição a calibrar e a indicação obtida é
+                                comparada com os valores-padrão.
+                            </p>
+                            <p>Para calibrar uma balança (sistema de medição), é necessário um conjunto de
+                                massas-padrão, de modo a cobrir toda a faixa de medição do aparelho. Aplicando-se
+                                diretamente a massa (com valor conhecido de 15g, por exemplo) sobre a balança, obtém-se
+                                o resultado, que é comparado com o esperado.
+                            </p>
                             <p>
-                                A calibração deve ser realizada periodicamente e é uma condição necessária para que os resultados de medição sejam confiáveis (Tibiriçá; Reis, 2023, p. 9). As calibrações precisam ser conduzidas conforme referências técnicas estabelecidas, como normas nacionais e internacionais, diretrizes do Inmetro, procedimentos internos de laboratórios e recomendações dos fabricantes. A calibração pode ocorrer de duas formas: direta ou indireta.
+                                Após repetidas medições, são calculados os erros e as incertezas, entre outros itens
+                                (que serão vistos a seguir), utilizando os valores medidos e os valores das
+                                massas-padrão.
                             </p>
-                            <!-- gatinha1 -->
-                             <p class="no-print" aria-hidden="true">Clique ou toque para visualizar o conteúdo.</p>
-                            <div class="accordion no-print" id="accordionExample" aria-hidden="true">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                            Calibração direta
-
-
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <p>O padrão é medido diretamente pelo sistema de medição a calibrar e a indicação obtida é comparada com os valores-padrão.
-                                            </p>
-                                            <!-- destaque escuro -->
-                                            <div class="destaque borda-colorida icone exemplo" style="margin-left: 50px;">
-                                                <p>Para calibrar uma balança (sistema de medição), é necessário um conjunto de massas-padrão, de modo a cobrir toda a faixa de medição do aparelho. Aplicando-se diretamente a massa (com valor conhecido de 15g, por exemplo) sobre a balança, obtém-se o resultado, que é comparado com o esperado. 
-                                                </p>
-                                            </div>
-                                            <p>
-                                                Após repetidas medições, são calculados os erros e as incertezas, entre outros itens (que serão vistos a seguir), utilizando os valores medidos e os valores das massas-padrão.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            Calibração indireta
-
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <p>Nesse formato, em vez de usar uma grandeza-padrão, é usado um sistema de medição-padrão.
-                                            </p>
-                                            <div class="destaque borda-colorida icone exemplo" style="margin-left: 50px;">
-                                                <p>Na calibração da balança, uma massa (de valor não necessariamente conhecido) é medida pela balança a calibrar e pela balança-padrão, e as indicações das duas balanças são comparadas. 
-                                                </p>
-                                            </div>
-                                            <p>
-                                                Após as medições, são calculados os erros e as incertezas, entre outros itens, para o sistema a calibrar, utilizando os valores medidos por ele e as indicações do sistema de medição-padrão.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="print visually-hidden">
-                                                <p><strong>Calibração direta</strong></p>
-                                                <p>O padrão é medido diretamente pelo sistema de medição a calibrar e a indicação obtida é comparada com os valores-padrão.
-                                                </p>
-                                                    <p>Para calibrar uma balança (sistema de medição), é necessário um conjunto de massas-padrão, de modo a cobrir toda a faixa de medição do aparelho. Aplicando-se diretamente a massa (com valor conhecido de 15g, por exemplo) sobre a balança, obtém-se o resultado, que é comparado com o esperado. 
-                                                    </p>
-                                                <p>
-                                                    Após repetidas medições, são calculados os erros e as incertezas, entre outros itens (que serão vistos a seguir), utilizando os valores medidos e os valores das massas-padrão.
-                                                </p>
-                                            <strong><p>Calibração indireta</strong></p>
-                                                <p>Nesse formato, em vez de usar uma grandeza-padrão, é usado um sistema de medição-padrão.
-                                                </p>
-                                                    <p>Na calibração da balança, uma massa (de valor não necessariamente conhecido) é medida pela balança a calibrar e pela balança-padrão, e as indicações das duas balanças são comparadas. 
-                                                    </p>
-                                                <p>
-                                                    Após as medições, são calculados os erros e as incertezas, entre outros itens, para o sistema a calibrar, utilizando os valores medidos por ele e as indicações do sistema de medição-padrão.
-                                                </p>
-                            </div>
-                            <p>Veja, na ilustração, um comparativo desses dois modos de calibração.
+                            <strong>
+                                <p>Calibração indireta
+                            </strong></p>
+                            <p>Nesse formato, em vez de usar uma grandeza-padrão, é usado um sistema de medição-padrão.
                             </p>
-                            <!-- img -->
+                            <p>Na calibração da balança, uma massa (de valor não necessariamente conhecido) é medida
+                                pela balança a calibrar e pela balança-padrão, e as indicações das duas balanças são
+                                comparadas.
+                            </p>
+                            <p>
+                                Após as medições, são calculados os erros e as incertezas, entre outros itens, para o
+                                sistema a calibrar, utilizando os valores medidos por ele e as indicações do sistema de
+                                medição-padrão.
+                            </p>
+                        </div>
+                        <p>Veja, na ilustração, um comparativo desses dois modos de calibração.
+                        </p>
+                        <!-- img -->
 
-                            <figure class="my-5 no-print">
-                                <img src="img/img_zoom.png" class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block radius img-sismed" alt="Ilustração representando dois sistemas de medição. À esquerda, há a “Calibração direta”, um peso de dois quilos acima de uma balança. Ao lado do peso, há uma seta com a frase “Padrão é o que será medido: Peso”. Embaixo da balança, há a frase: “Balança: é o sistema de medição a ser calibrado”. Na parte inferior, está escrito: “Na calibração direta, o esperado é que a balança apresente o resultado do peso aplicado.”  À direita, há a “Calibração Indireta”, um peso de massa desconhecida, com um ponto de interrogação no local da informação do valor da massa). Abaixo, à esquerda, há a balança de referência, ao seu lado, há a balança a ser calibrada. Há uma seta o lado da balança de referência com a frase “Padrão é o sistema de medição: balança de referência”. Na parte inferior, está escrito: “Na calibração indireta, o esperado é que a balança a ser calibrada apresente o mesmo resultado do peso aplicado na balança de referência”.">
-                                <a href="img/img_zoom.png" target="_blank" class="img-zoom d-sm-block d-md-none d-lg-none no-print">
-                                    <img src="img/img_zoom.png" class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none radius" alt="Ilustração representando dois sistemas de medição. À esquerda, há a “Calibração direta”, um peso de dois quilos acima de uma balança. Ao lado do peso, há uma seta com a frase “Padrão é o que será medido: Peso”. Embaixo da balança, há a frase: “Balança: é o sistema de medição a ser calibrado”. Na parte inferior, está escrito: “Na calibração direta, o esperado é que a balança apresente o resultado do peso aplicado.”  À direita, há a “Calibração Indireta”, um peso de massa desconhecida, com um ponto de interrogação no local da informação do valor da massa). Abaixo, à esquerda, há a balança de referência, ao seu lado, há a balança a ser calibrada. Há uma seta o lado da balança de referência com a frase “Padrão é o sistema de medição: balança de referência”. Na parte inferior, está escrito: “Na calibração indireta, o esperado é que a balança a ser calibrada apresente o mesmo resultado do peso aplicado na balança de referência”.">
-                                </a>
-                            </figure>
+                        <figure class="my-5 no-print">
+                            <img src="img/img_zoom.png"
+                                class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block radius img-sismed"
+                                alt="Ilustração representando dois sistemas de medição. À esquerda, há a “Calibração direta”, um peso de dois quilos acima de uma balança. Ao lado do peso, há uma seta com a frase “Padrão é o que será medido: Peso”. Embaixo da balança, há a frase: “Balança: é o sistema de medição a ser calibrado”. Na parte inferior, está escrito: “Na calibração direta, o esperado é que a balança apresente o resultado do peso aplicado.”  À direita, há a “Calibração Indireta”, um peso de massa desconhecida, com um ponto de interrogação no local da informação do valor da massa). Abaixo, à esquerda, há a balança de referência, ao seu lado, há a balança a ser calibrada. Há uma seta o lado da balança de referência com a frase “Padrão é o sistema de medição: balança de referência”. Na parte inferior, está escrito: “Na calibração indireta, o esperado é que a balança a ser calibrada apresente o mesmo resultado do peso aplicado na balança de referência”.">
+                            <a href="img/img_zoom.png" target="_blank"
+                                class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+                                <img src="img/img_zoom.png"
+                                    class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none radius"
+                                    alt="Ilustração representando dois sistemas de medição. À esquerda, há a “Calibração direta”, um peso de dois quilos acima de uma balança. Ao lado do peso, há uma seta com a frase “Padrão é o que será medido: Peso”. Embaixo da balança, há a frase: “Balança: é o sistema de medição a ser calibrado”. Na parte inferior, está escrito: “Na calibração direta, o esperado é que a balança apresente o resultado do peso aplicado.”  À direita, há a “Calibração Indireta”, um peso de massa desconhecida, com um ponto de interrogação no local da informação do valor da massa). Abaixo, à esquerda, há a balança de referência, ao seu lado, há a balança a ser calibrada. Há uma seta o lado da balança de referência com a frase “Padrão é o sistema de medição: balança de referência”. Na parte inferior, está escrito: “Na calibração indireta, o esperado é que a balança a ser calibrada apresente o mesmo resultado do peso aplicado na balança de referência”.">
+                            </a>
+                        </figure>
 
-                            <!-- <figure class="my-5">
+                        <!-- <figure class="my-5">
                                 <div class="figure-img mb-4">
                                     <img class="img-fluid d-block borda-colorida mx-auto no-print img-sismed" alt="Ilustração representando dois sistemas de medição. À esquerda, há a “Calibração direta”, um peso de dois quilos acima de uma balança. Ao lado do peso, há uma seta com a frase “Padrão é o que será medido: Peso”. Embaixo da balança, há a frase: “Balança: é o sistema de medição a ser calibrado”. Na parte inferior, está escrito: “Na calibração direta, o esperado é que a balança apresente o resultado do peso aplicado.”  À direita, há a “Calibração Indireta”, um peso de massa desconhecida, com um ponto de interrogação no local da informação do valor da massa). Abaixo, à esquerda, há a balança de referência, ao seu lado, há a balança a ser calibrada. Há uma seta o lado da balança de referência com a frase “Padrão é o sistema de medição: balança de referência”. Na parte inferior, está escrito: “Na calibração indireta, o esperado é que a balança a ser calibrada apresente o mesmo resultado do peso aplicado na balança de referência”." src="img/img_zoom.png">
                                 </div>
                             </figure> -->
-                            
-                                    <img class="only-print" style="max-width: 100% !important; width: 100%;" src="img/img_zoom.png">
-                            <figcaption class="figure-caption text-center">Comparativo de calibração direta e indireta em uma balança <br>
-                                Fonte: Senac EAD (2024)
-                            </figcaption>
-                            <br>
 
-                            <p>Normalmente, as calibrações são executadas por laboratórios, que têm sua competência técnica avaliada pela RBC (Rede Brasileira de Calibração). Esses laboratórios seguem a norma ABNT NBR ISO/IEC 17025 e aderem à norma ABNT ISO 9001 para o sistema de gestão da qualidade. Para saber mais sobre os laboratórios de calibração acreditados, pesquise no portal do Inmetro. 
-                            </p>
-                            <p>
-                                Os resultados de uma calibração devem ser documentados em um relatório técnico, comumente conhecido como <strong>certificado de calibração</strong>. Com as informações fornecidas nesse tipo de certificado, é possível avaliar o desempenho do instrumento de medição ao compará-lo com as especificações de normas, recomendações do fabricante ou tolerâncias do processo.
-                            </p>
-                            <p>
-                                Desse modo, como profissional da área da qualidade, é preciso compreender que quando a organização utiliza um instrumento de medição sem identificação nem calibração ou que a calibração não atenda às tolerâncias definidas, você estará apenas incorporando custos na qualidade, com correções, falhas, retrabalho, entre outros. Por fim, conforme Tibiriçá e Reis (2023, p. 10): “Uma empresa que busca atingir o padrão máximo em termos de controle de qualidade dos seus produtos e processos, deveria ter todos os seus instrumentos de medição calibrados periodicamente com elevada frequência”.
-                            </p>
-                            <h4>Certificado de calibração</h4>
-                            <p>
-                                O registro final da calibração é um documento denominado “certificado de calibração”. Esse documento deve conter informações detalhadas sobre o procedimento e as condições de calibração e deve apresentar as principais informações relacionadas com a execução da calibração e seus resultados, além de dar um parecer conclusivo sobre o sistema de medição (Tibiriçá; Reis, 2023, p. 12). Comumente são apresentados, em tabelas ou gráficos, os resultados de cada ponto medido ao longo da faixa de medição do instrumento, juntamente com as estimativas do erro ou correção e a incerteza associada a esses valores. 
-                            </p>
-                            <p>
-                                Não se esqueça de que, para ser considerado um documento oficial no Brasil, deve ser emitido por um laboratório da RBC, certificado pelo Inmetro e alicerçado na norma ABNT NBR ISO/IEC 17025. Esse assunto será mais aprofundado a seguir.
-                            </p>
-                            <h3 id="titulo4">Verificação</h3>
-                            <p>Mesmo estando calibrado, um equipamento, ao longo do tempo, sofre desgastes e até avarias, fazendo com que o seu desempenho apresente problemas. Ocorre então a necessidade de verificações periódicas da calibração, em intervalos regulares, para checar se o equipamento ainda se encontra calibrado, de modo a garantir seu bom desempenho no período entre as calibrações.
-                            </p>
-                            <!-- destaque -->
-                            <div class="destaque borda-colorida icone importante">
-                                <p>A verificação consiste, fundamentalmente, na comparação/conformidade entre um instrumento e outro de qualidade superior.
-                                </p>
-                            </div>
-                            <p>
-                                Conhecida como <i><strong>verificação intermediária</strong></i>, ela é realizada no local de instalação do instrumento, ou seja, na própria empresa, e geralmente pela equipe operacional ou pelo técnico responsável. Nesse procedimento, não é emitido um certificado, mas é essencial manter um registro documentado. A verificação intermediária permite monitorar variações nas medições do equipamento, sem necessidade de aguardar pela próxima calibração programada, conforme diretrizes do Inmetro. 
-                            </p>
-                            <p>
-                                Para as empresas, as verificações de instrumentos são tão importantes quanto as calibrações e, obrigatoriamente, devem ocorrer no intervalo entre duas calibrações. Elas são fundamentais para verificar se o equipamento continua medindo de forma correta, ou seja, se os resultados da calibração continuam válidos.
-                            </p>
-                            <p>
-                                Existem outros procedimentos de verificação, relacionados à ação fiscal, que são realizados pelo Inmetro e laboratórios certificados, como verificação inicial, verificação subsequente e verificação após reparo. São realizados respectivamente em instrumentos novos (antes de serem comercializados), em instrumentos em uso nos estabelecimentos onde estiverem instalados e em instrumentos submetidos a reparos/manutenção. 
-                            </p>
-                            <!-- destaque -->
-                            <div class="destaque borda-colorida icone saibamais">
-                                <p>Você pode saber mais sobre verificações de ação fiscal no <i>site</i> do Instituto de Pesos e Medidas do Estado de São Paulo, pesquisando “Instrumento de medição: Fiscalização”.
-                                </p>
-                            </div>
+                        <img class="only-print" style="max-width: 100% !important; width: 100%;" src="img/img_zoom.png">
+                        <figcaption class="figure-caption text-center">Comparativo de calibração direta e indireta em
+                            uma balança <br>
+                            Fonte: Senac EAD (2024)
+                        </figcaption>
+                        <br>
 
-                            <!-- <div class="espera_video video-youtube">Espera atividade de ligar colunas ou arrastar Calibração x verificação.</div> -->
-                            <!-- atividade ligar colunas -->
-                             
-                    <div class="box-atividade no-print">
-                        <p class="titulo-ativ"><strong>Relacionar colunas</strong></p>
-                        <p>Agora que você já aprendeu sobre calibração e verificação, é hora de praticar. Relacione as informações a seguir.
+                        <p>Normalmente, as calibrações são executadas por laboratórios, que têm sua competência técnica
+                            avaliada pela RBC (Rede Brasileira de Calibração). Esses laboratórios seguem a norma ABNT
+                            NBR ISO/IEC 17025 e aderem à norma ABNT ISO 9001 para o sistema de gestão da qualidade. Para
+                            saber mais sobre os laboratórios de calibração acreditados, pesquise no portal do Inmetro.
                         </p>
-                        <div class="game-associar-colunas no-print nao-imprimir">
-                            <div class="row">
-                                <div class="col-12 col-sm-4 flexs itens">
-                                    <button data-resp="1"  data-acerto="Parabéns, você demonstrou que compreendeu o que é calibração." data-erro="Revise o conteúdo. A utilização de padrões ocorre preferencialmente em processos de calibração." class="item item1">
-                                        <p>Calibração</p>
-                                    </button>
-                    
-                                    <button data-resp="1"  data-acerto="Parabéns, você demonstrou que compreendeu o que é calibração." data-erro="Revise o conteúdo. A utilização de padrões ocorre preferencialmente em processos de calibração." class="item item2">
-                                        <p>Calibração</p>
-                                    </button>
-                    
-                                    <button data-resp="1"  data-acerto="Parabéns, você demonstrou que compreendeu o que é calibração." data-erro="Revise o conteúdo. A utilização de padrões ocorre preferencialmente em processos de calibração." class="item item3">
-                                        <p>Calibração</p>
-                                    </button>
-                    
-                                    <button data-resp="2"  data-acerto="Parabéns, você demonstrou que compreendeu o que é verificação. " data-erro="Revise o conteúdo. A emissão de um documento ou relatório é obrigatória em um processo de calibração. " class="item item4">
-                                        <p>Verificação</p>
-                                    </button>
-                    
-                                    <button data-resp="2"  data-acerto="Parabéns, você demonstrou que compreendeu o que é verificação. " data-erro="Revise o conteúdo. A emissão de um documento ou relatório é obrigatória em um processo de calibração. " class="item item5">
-                                        <p>Verificação</p>
-                                    </button>
-                    
-                                    <button data-resp="2"  data-acerto="Parabéns, você demonstrou que compreendeu o que é verificação. " data-erro="Revise o conteúdo. A emissão de um documento ou relatório é obrigatória em um processo de calibração. " class="item item6">
-                                        <p>Verificação</p>
-                                    </button>
-                    
-                    
-                                </div>
-                                <div class="col-12 col-sm-8 flexs">
-                                    <button type="button" data-resp="1" class="resp resp1">
-                                        <div class="txtacao"><i class="fas fa-question"></i></div>
-                                        <p>Operação que estabelece uma relação entre os valores e as incertezas de medição conforme padrões.</p>
-                                    </button>
-                    
-                                    <button type="button" data-resp="1" class="resp resp2">
-                                        <div class="txtacao"><i class="fas fa-question"></i></div>
-                                        <p>É um processo de checagem da medida obtida por um instrumento, envolvendo um cálculo de erro e incerteza de medição, fornecido por padrões.</p>
-                                    </button>
-                    
-                                    <button type="button" data-resp="1" class="resp resp3">
-                                        <div class="txtacao"><i class="fas fa-question"></i></div>
-                                        <p>Seus resultados são apresentados em um documento (relatório).</p>
-                                    </button>
-                    
-                                    <button type="button" data-resp="2" class="resp resp4">
-                                        <div class="txtacao"><i class="fas fa-question"></i></div>
-                                        <p>Procedimento de avaliação da conformidade, um complemento das calibrações.</p>
-                                    </button>
-                    
-                                    <button type="button" data-resp="2" class="resp resp5">
-                                        <div class="txtacao"><i class="fas fa-question"></i></div>
-                                        <p>Processo de confirmação de que um instrumento de medição está funcionando dentro das especificações aceitáveis, sem necessariamente ajustá-lo.</p>
-                                    </button>
-                    
-                                    <button type="button" data-resp="2" class="resp resp6">
-                                        <div class="txtacao"><i class="fas fa-question"></i></div>
-                                        <p>Não requer a emissão de um certificado de calibração, no entanto, é necessário um registro documentado.</p>
-                                    </button>
-                    
-                                </div>
-                            </div>
-                    
-                            <!-- Modal -->
-                            <div class="modal fade associar_colunas_modal  no-print nao-imprimir" id="associar_colulas_errou" tabindex="-1"
-                                aria-labelledby="associarColunasErrou" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="associarColunasErrou">Resposta incorreta</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-12 col-lg-4">
-                                                    <img src="../assets/atividades/relacionar_colunas/resposta_neg.svg" class="img-fluid" alt="">
-                                                </div>
-                                                <div class="col-12 col-lg-8">
-                                                    <p id="p-relacionar-erro">Ops, tente novamente!</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Modal -->
-                            <div class="modal fade associar_colunas_modal no-print nao-imprimir" id="associar_colulas_acertou"
-                                tabindex="-1" aria-labelledby="associarColunasAcertou" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="associarColunasAcertou">Resposta correta</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-12 col-lg-4">
-                                                    <img src="../assets/atividades/relacionar_colunas/resposta_pos.svg" class="img-fluid" alt="">
-                                                </div>
-                                                <div class="col-12 col-lg-8">
-                                                    <p id="p-relacionar-acerto">Muito bem! Você acertou.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    
+                        <p>
+                            Os resultados de uma calibração devem ser documentados em um relatório técnico, comumente
+                            conhecido como <strong>certificado de calibração</strong>. Com as informações fornecidas
+                            nesse tipo de certificado, é possível avaliar o desempenho do instrumento de medição ao
+                            compará-lo com as especificações de normas, recomendações do fabricante ou tolerâncias do
+                            processo.
+                        </p>
+                        <p>
+                            Desse modo, como profissional da área da qualidade, é preciso compreender que quando a
+                            organização utiliza um instrumento de medição sem identificação nem calibração ou que a
+                            calibração não atenda às tolerâncias definidas, você estará apenas incorporando custos na
+                            qualidade, com correções, falhas, retrabalho, entre outros. Por fim, conforme Tibiriçá e
+                            Reis (2023, p. 10): “Uma empresa que busca atingir o padrão máximo em termos de controle de
+                            qualidade dos seus produtos e processos, deveria ter todos os seus instrumentos de medição
+                            calibrados periodicamente com elevada frequência”.
+                        </p>
+                        <h4>Certificado de calibração</h4>
+                        <p>
+                            O registro final da calibração é um documento denominado “certificado de calibração”. Esse
+                            documento deve conter informações detalhadas sobre o procedimento e as condições de
+                            calibração e deve apresentar as principais informações relacionadas com a execução da
+                            calibração e seus resultados, além de dar um parecer conclusivo sobre o sistema de medição
+                            (Tibiriçá; Reis, 2023, p. 12). Comumente são apresentados, em tabelas ou gráficos, os
+                            resultados de cada ponto medido ao longo da faixa de medição do instrumento, juntamente com
+                            as estimativas do erro ou correção e a incerteza associada a esses valores.
+                        </p>
+                        <p>
+                            Não se esqueça de que, para ser considerado um documento oficial no Brasil, deve ser emitido
+                            por um laboratório da RBC, certificado pelo Inmetro e alicerçado na norma ABNT NBR ISO/IEC
+                            17025. Esse assunto será mais aprofundado a seguir.
+                        </p>
+                        <h3 id="titulo4">Verificação</h3>
+                        <p>Mesmo estando calibrado, um equipamento, ao longo do tempo, sofre desgastes e até avarias,
+                            fazendo com que o seu desempenho apresente problemas. Ocorre então a necessidade de
+                            verificações periódicas da calibração, em intervalos regulares, para checar se o equipamento
+                            ainda se encontra calibrado, de modo a garantir seu bom desempenho no período entre as
+                            calibrações.
+                        </p>
+                        <!-- destaque -->
+                        <div class="destaque borda-colorida icone importante">
+                            <p>A verificação consiste, fundamentalmente, na comparação/conformidade entre um instrumento
+                                e outro de qualidade superior.
+                            </p>
                         </div>
-                        <!-- Versão para impressão -->
-                        <!-- <div class="print-only only-print">
-                            <p>Associe a primeira coluna com a segunda.</p>
-                            <table class="associe-colunas">
-                                <tr>
-                                    <td>
-                                        <p>A) GERMÂNIO</p>
-                                        <p>B) TUNGSTÊNIO</p>
-                                        <p>C) LÍTIO</p>
-                                        <p>D) SÓDIO</p>
-                                        <p>E) POTÁSSIO</p>
-                                        <p>F) CÁLCIO</p>
-                                        <p>G) CLORO</p>
-                                        <p>H) CARBONO</p>
-                                    </td>
-                                    <td>
-                                        <p>(&nbsp;&nbsp;) FRUTAS E VEGETAIS</p>
-                                        <p>(&nbsp;&nbsp;) CONCHAS E OSSOS</p>
-                                        <p>(&nbsp;&nbsp;) PISCINAS</p>
-                                        <p>(&nbsp;&nbsp;) SEMICONDUTORES ELETRÔNICOS</p>
-                                        <p>(&nbsp;&nbsp;) BASE DAS MOLÉCULAS DA VIDA</p>
-                                        <p>(&nbsp;&nbsp;) SAL</p>
-                                        <p>(&nbsp;&nbsp;) FILAMENTO DE LÂMPADAS</p>
-                                        <p>(&nbsp;&nbsp;) BATERIAS</p>
-                                    </td>
-                                </tr>
-                            </table>
+                        <p>
+                            Conhecida como <i><strong>verificação intermediária</strong></i>, ela é realizada no local
+                            de instalação do instrumento, ou seja, na própria empresa, e geralmente pela equipe
+                            operacional ou pelo técnico responsável. Nesse procedimento, não é emitido um certificado,
+                            mas é essencial manter um registro documentado. A verificação intermediária permite
+                            monitorar variações nas medições do equipamento, sem necessidade de aguardar pela próxima
+                            calibração programada, conforme diretrizes do Inmetro.
+                        </p>
+                        <p>
+                            Para as empresas, as verificações de instrumentos são tão importantes quanto as calibrações
+                            e, obrigatoriamente, devem ocorrer no intervalo entre duas calibrações. Elas são
+                            fundamentais para verificar se o equipamento continua medindo de forma correta, ou seja, se
+                            os resultados da calibração continuam válidos.
+                        </p>
+                        <p>
+                            Existem outros procedimentos de verificação, relacionados à ação fiscal, que são realizados
+                            pelo Inmetro e laboratórios certificados, como verificação inicial, verificação subsequente
+                            e verificação após reparo. São realizados respectivamente em instrumentos novos (antes de
+                            serem comercializados), em instrumentos em uso nos estabelecimentos onde estiverem
+                            instalados e em instrumentos submetidos a reparos/manutenção.
+                        </p>
+                        <!-- destaque -->
+                        <div class="destaque borda-colorida icone saibamais">
+                            <p>Você pode saber mais sobre verificações de ação fiscal no <i>site</i> do Instituto de
+                                Pesos e Medidas do Estado de São Paulo, pesquisando “Instrumento de medição:
+                                Fiscalização”.
+                            </p>
+                        </div>
+
+                        <!-- <div class="espera_video video-youtube">Espera atividade de ligar colunas ou arrastar Calibração x verificação.</div> -->
+                        <!-- atividade ligar colunas -->
+
+                        <!-- <div class="box-atividade no-print">
+                            <p class="titulo-ativ"><strong>Relacionar colunas</strong></p>
+                            <p>Agora que você já aprendeu sobre calibração e verificação, é hora de praticar. Relacione
+                                as informações a seguir.
+                            </p>
+                            <div class="game-associar-colunas no-print nao-imprimir">
+                                <div class="row">
+                                    <div class="col-12 col-sm-4 flexs itens">
+                                        <button data-resp="1"
+                                            data-acerto="Parabéns, você demonstrou que compreendeu o que é calibração."
+                                            data-erro="Revise o conteúdo. A utilização de padrões ocorre preferencialmente em processos de calibração."
+                                            class="item item1">
+                                            <p>Calibração</p>
+                                        </button>
+                                        <button data-resp="1"
+                                            data-acerto="Parabéns, você demonstrou que compreendeu o que é calibração."
+                                            data-erro="Revise o conteúdo. A utilização de padrões ocorre preferencialmente em processos de calibração."
+                                            class="item item2">
+                                            <p>Calibração</p>
+                                        </button>
+
+                                        <button data-resp="1"
+                                            data-acerto="Parabéns, você demonstrou que compreendeu o que é calibração."
+                                            data-erro="Revise o conteúdo. A utilização de padrões ocorre preferencialmente em processos de calibração."
+                                            class="item item3">
+                                            <p>Calibração</p>
+                                        </button>
+                                        <button data-resp="2"
+                                            data-acerto="Parabéns, você demonstrou que compreendeu o que é verificação. "
+                                            data-erro="Revise o conteúdo. A emissão de um documento ou relatório é obrigatória em um processo de calibração. "
+                                            class="item item4">
+                                            <p>Verificação</p>
+                                        </button>
+                                        <button data-resp="2"
+                                            data-acerto="Parabéns, você demonstrou que compreendeu o que é verificação. "
+                                            data-erro="Revise o conteúdo. A emissão de um documento ou relatório é obrigatória em um processo de calibração. "
+                                            class="item item5">
+                                            <p>Verificação</p>
+                                        </button>
+
+                                        <button data-resp="2"
+                                            data-acerto="Parabéns, você demonstrou que compreendeu o que é verificação. "
+                                            data-erro="Revise o conteúdo. A emissão de um documento ou relatório é obrigatória em um processo de calibração. "
+                                            class="item item6">
+                                            <p>Verificação</p>
+                                        </button>
+                                    </div>
+                                    <div class="col-12 col-sm-8 flexs">
+                                        <button type="button" data-resp="1" class="resp resp1">
+                                            <div class="txtacao"><i class="fas fa-question"></i></div>
+                                            <p>Operação que estabelece uma relação entre os valores e as incertezas de
+                                                medição conforme padrões.</p>
+                                        </button>
+
+                                        <button type="button" data-resp="1" class="resp resp2">
+                                            <div class="txtacao"><i class="fas fa-question"></i></div>
+                                            <p>É um processo de checagem da medida obtida por um instrumento, envolvendo
+                                                um cálculo de erro e incerteza de medição, fornecido por padrões.</p>
+                                        </button>
+
+                                        <button type="button" data-resp="1" class="resp resp3">
+                                            <div class="txtacao"><i class="fas fa-question"></i></div>
+                                            <p>Seus resultados são apresentados em um documento (relatório).</p>
+                                        </button>
+
+                                        <button type="button" data-resp="2" class="resp resp4">
+                                            <div class="txtacao"><i class="fas fa-question"></i></div>
+                                            <p>Procedimento de avaliação da conformidade, um complemento das
+                                                calibrações.</p>
+                                        </button>
+
+                                        <button type="button" data-resp="2" class="resp resp5">
+                                            <div class="txtacao"><i class="fas fa-question"></i></div>
+                                            <p>Processo de confirmação de que um instrumento de medição está funcionando
+                                                dentro das especificações aceitáveis, sem necessariamente ajustá-lo.</p>
+                                        </button>
+
+                                        <button type="button" data-resp="2" class="resp resp6">
+                                            <div class="txtacao"><i class="fas fa-question"></i></div>
+                                            <p>Não requer a emissão de um certificado de calibração, no entanto, é
+                                                necessário um registro documentado.</p>
+                                        </button>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="modal fade associar_colunas_modal  no-print nao-imprimir"
+                                    id="associar_colulas_errou" tabindex="-1" aria-labelledby="associarColunasErrou"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="associarColunasErrou">Resposta incorreta
+                                                </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-12 col-lg-4">
+                                                        <img src="../assets/atividades/relacionar_colunas/resposta_neg.svg"
+                                                            class="img-fluid" alt="">
+                                                    </div>
+                                                    <div class="col-12 col-lg-8">
+                                                        <p id="p-relacionar-erro">Ops, tente novamente!</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade associar_colunas_modal no-print nao-imprimir"
+                                    id="associar_colulas_acertou" tabindex="-1" aria-labelledby="associarColunasAcertou"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="associarColunasAcertou">Resposta correta
+                                                </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-12 col-lg-4">
+                                                        <img src="../assets/atividades/relacionar_colunas/resposta_pos.svg"
+                                                            class="img-fluid" alt="">
+                                                    </div>
+                                                    <div class="col-12 col-lg-8">
+                                                        <p id="p-relacionar-acerto">Muito bem! Você acertou.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div> -->
-                    </div>
-                            <!-- atividade ligar colunas -->
 
-                            <h3 id="titulo5">Incerteza de medições</h3>
-                            <p>
-                                É importante compreender que nenhum processo de medição consegue garantir 100% de confiança em seus resultados. Até para a medição que ocorre dentro de todos os parâmetros exigidos, há sempre uma margem de dúvida, expressa como “mais ou menos” o valor de uma grandeza. Isso ocorre porque o resultado de uma medição é, na verdade, uma aproximação.
-                            </p>
-                            <!-- destaque -->
-                            <div class="destaque borda-colorida icone exemplo">
-                                <p>Para medir o comprimento de uma barra de metal, pode ser utilizada uma trena, e seu resultado pode ser “mais ou menos um centímetro”.</p>
-                            </div>
-                            <!-- destaque -->
-                            <div class="destaque borda-colorida icone importante">
-                                <p>Então tem-se a incerteza de medição, que representa um intervalo de valores, em que se espera que o valor verdadeiro esteja contido.
-                                </p>
-                            </div>
-                            <p>
-                                Esse intervalo deve ser acompanhado por uma probabilidade específica que indica o nível de confiança no resultado. 
-                            </p>
-                            <!-- destaque -->
-                            <div class="destaque borda-colorida icone exemplo">
-                                <p>Na medida da barra de metal, pode-se ter como resultado 175 ± 1cm, com uma probabilidade de abrangência de 95%. Nesse caso, o valor verdadeiro é desconhecido, mas atesta-se, com 95% de confiança, que o valor verdadeiro da grandeza medida se encontra entre 174cm (175 - 1) e 176cm (175 + 1).
-                                </p>
-                            </div>
-                            <p>
-                                Existem diversos fatores que podem contribuir para a incerteza em uma medição, como limitações nos instrumentos de medição, variações nas condições ambientais, definição incorreta da grandeza medida, falta de calibração, fatores humanos e limitações no método de medição. A avaliação da incerteza de medição é fundamental para garantir a qualidade dos processos e a confiabilidade das medições realizadas. Essa avaliação é realizada por laboratórios credenciados, conforme já visto, e fornece parâmetros essenciais para quantificar a incerteza.
-                            </p>
-                            <!-- gaitinha2 -->
-                             <p class="no-print" aria-hidden="true">Clique ou toque para visualizar o conteúdo.</p>
-                            <div class="accordion no-print" id="accordionExample2" aria-hidden="true">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne2">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="false" aria-controls="collapseOne2">
-                                            Limite inferior
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne2" class="accordion-collapse collapse" aria-labelledby="headingOne2" data-bs-parent="#accordionExample2">
-                                        <div class="accordion-body">
-                                            <p>O limite inferior de incerteza representa o valor mínimo medido.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo2">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
-                                            Limite superior
-
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2" data-bs-parent="#accordionExample2">
-                                        <div class="accordion-body">
-                                            <p>O limite superior de incerteza indica o valor máximo medido.
-                                            </p>
-                                            <p>
-                                                Estes limites representam a amplitude (largura) do intervalo de medição ou intervalo de valores, ambos com a mesma probabilidade, e são fundamentais para estabelecer a confiança na medição, pois fornecem uma faixa dentro da qual o valor verdadeiro da grandeza medida provavelmente está contido. 
-                                            </p>
-                                            <p>
-                                                Quando a incerteza de medição tem um amplo intervalo (distância entre o limite inferior e o limite superior), indica, provavelmente uma escolha inadequada do aparelho de medição, o que resulta em uma qualidade de medição pouco confiável.
-                                            </p>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingThree2">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
-                                            Probabilidade de abrangência
-
-                                        </button>
-                                    </h2>
-                                    <div id="collapseThree2" class="accordion-collapse collapse" aria-labelledby="headingThree2" data-bs-parent="#accordionExample2">
-                                        <div class="accordion-body">
-                                            <p>Indica o quão certo o valor da medição está dentro daquele intervalo (ou margem).
-                                            </p>
-                                            <p>
-                                                Todos esses parâmetros, o intervalo de valores (limite inferior e superior) e a probabilidade são determinados por meio de diversos ensaios, realizados sob condições específicas, para garantir que o instrumento atenda às especificações técnicas, por meio de cálculos estatísticos e probabilísticos. Seus resultados são comparados com valores e tolerâncias permitidos, por meio de normas e especificações técnicas e requisitos de qualidade.
-
-                                            </p>
-                                            <p>
-                                                É importante compreender que a incerteza não indica erro ou imprecisão, mas sim uma faixa dentro da qual o valor verdadeiro da grandeza medida provavelmente se encontra.
-                                            </p>
-                                            <p>
-                                                Por fim, saiba que todo instrumento de medição deve ter uma especificação técnica fornecida pelo fabricante, que descreve suas características metrológicas, incluindo erro e precisão. Assim como todo processo de calibração de um instrumento, é acompanhado de um certificado contendo a incerteza de medição associada. 
-                                            </p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="print visually-hidden">
-                                <p><strong>Limite inferior</strong></p>
-                                <p>O limite inferior de incerteza representa o valor mínimo medido.
-                                </p>
-                                <strong><p>Limite superior</strong></p>
-                                <p>O limite superior de incerteza indica o valor máximo medido.
-                                </p>
-                                <p>
-                                    Estes limites representam a amplitude (largura) do intervalo de medição ou intervalo de valores, ambos com a mesma probabilidade, e são fundamentais para estabelecer a confiança na medição, pois fornecem uma faixa dentro da qual o valor verdadeiro da grandeza medida provavelmente está contido. 
-                                </p>
-                                <p>
-                                    Quando a incerteza de medição tem um amplo intervalo (distância entre o limite inferior e o limite superior), indica, provavelmente uma escolha inadequada do aparelho de medição, o que resulta em uma qualidade de medição pouco confiável.
-                                </p>
-                                <strong><p>Probabilidade de abrangência</strong></p>
-                                <p>Indica o quão certo o valor da medição está dentro daquele intervalo (ou margem).
-                                </p>
-                                <p>
-                                    Todos esses parâmetros, o intervalo de valores (limite inferior e superior) e a probabilidade são determinados por meio de diversos ensaios, realizados sob condições específicas, para garantir que o instrumento atenda às especificações técnicas, por meio de cálculos estatísticos e probabilísticos. Seus resultados são comparados com valores e tolerâncias permitidos, por meio de normas e especificações técnicas e requisitos de qualidade.
-
-                                </p>
-                                <p>
-                                    É importante compreender que a incerteza não indica erro ou imprecisão, mas sim uma faixa dentro da qual o valor verdadeiro da grandeza medida provavelmente se encontra.
-                                </p>
-                                <p>
-                                    Por fim, saiba que todo instrumento de medição deve ter uma especificação técnica fornecida pelo fabricante, que descreve suas características metrológicas, incluindo erro e precisão. Assim como todo processo de calibração de um instrumento, é acompanhado de um certificado contendo a incerteza de medição associada. 
-                                </p>
-                            </div>
-
-                            <h3 id="titulo6">Erros de medição</h3>
-                            <p>Você já conhece o conceito de incerteza de medição, agora serão tratadas as questões que envolvem o erro no processo de medição. O erro sempre está presente em qualquer processo de medição, fazendo parte da rotina de trabalho, mesmo de um laboratório. Isso ocorre porque o resultado de medição não depende só do instrumento, mas também do método de medição, das condições ambientais, do padrão utilizado, do operador, entre outros. 
-                            </p>
-                            <!-- destaque -->
-                            <div class="destaque borda-colorida icone importante">
-                                <p>O erro de medição é a diferença entre o valor medido de uma grandeza e o valor de referência de um padrão.
-                                </p>
-                            </div>
-                            <p>
-                                É importante ressaltar a diferença entre erro e incerteza. Enquanto o erro relaciona-se à diferença entre o valor indicado e o valor exato medido, a incerteza implica em dúvida, relacionando-se à faixa de valores dentro da qual se espera que o valor verdadeiro da grandeza esteja contido. Note que, para determinar o erro, é necessário saber o valor exato medido, que, por sua vez, não é conhecido. Os erros podem ser classificados de três formas: 
-
-                            </p>
-                            <!-- gaitinha3 -->
-                             <p class="no-print" aria-hidden="true">Clique ou toque para visualizar o conteúdo.</p>
-                             
-                            <div class="accordion no-print" id="accordionExample3" aria-hidden="true">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne3">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne3" aria-expanded="false" aria-controls="collapseOne3">
-                                            Erro sistemático
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne3" class="accordion-collapse collapse" aria-labelledby="headingOne3" data-bs-parent="#accordionExample3">
-                                        <div class="accordion-body">
-                                            <p>É aquele que acontece nas medições sempre em um mesmo sentido (em idênticas condições de operação). Ou seja, sempre ocorre um aumento ou uma diminuição em relação ao valor de referência, de maneira previsível. Pode ser causado por problemas de ajuste, calibração, desgaste, fatores construtivos, método empregado ou por fatores externos.
-                                            </p>
-                                            <div class="destaque borda-colorida icone exemplo">
-                                                <p>Um hidrômetro mal calibrado em sua fabricação, durante uma medição, indica um consumo ligeiramente superior ao real. Em todas as leituras, independentemente da quantidade de água consumida, o hidrômetro registra um volume de 17 litros maior do que o consumo real. Esse desvio constante é um exemplo de erro sistemático.
-                                                </p>
+                        <div class="box-atividade no-print">
+                            <p class="titulo-ativ"><strong>Arrasta e solta</strong></p>
+                            <p>Agora que você já aprendeu sobre calibração e verificação, é hora de praticar. Arraste as
+                                informações a seguir.</p>
+                            <div id="content-game">
+                                <div class="container-fluid game-body no-print" style="padding:0;">
+                                    <div class="row">
+                                        <div id="slots" class="col-12">
+                                            <div class="row">
+                                                <div class="col-12 col-md-4 mt-3 mb-3">
+                                                    <div class="game-titulo">
+                                                        <p>Calibração</p>
+                                                    </div>
+                                                    <div id="slot-1" class="slot">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4 mt-3 mb-3">
+                                                    <div class="game-titulo">
+                                                        <p>Verificação</p>
+                                                    </div>
+                                                    <div id="slot-2" class="slot">
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <p>
-                                                Uma estimativa para o erro sistemático de um sistema de medição pode ser feita medindo-se um padrão algumas vezes e calculando-se a diferença entre a média das medições e o valor do padrão. Essa diferença é chamada de tendência. 
-                                            </p>
-
-
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo3">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo3" aria-expanded="false" aria-controls="collapseTwo3">
-                                           Erro aleatório
-
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo3" class="accordion-collapse collapse" aria-labelledby="headingTwo3" data-bs-parent="#accordionExample3">
-                                        <div class="accordion-body">
-                                            <p>É aquele que ocorre nas medições de forma imprevisível, ou seja, provoca alterações de forma aleatória (sem previsão), também chamado de erro acidental. O erro aleatório acontece em função de causas diversas e imprevisíveis e dificilmente pode ser eliminado. Pode ser causado por flutuações naturais, condições ambientais variáveis ou imprecisões no método de medição.
-                                            </p>
-                                            <div class="destaque borda-colorida icone exemplo">
-                                                <p>No processo de medição de uma bomba de combustível, podem ocorrer erros aleatórios, como manuseio inadequado ou problemas de alimentação elétrica. Desse modo, eventualmente, uma medição de uma bomba de combustível pode apresentar um valor incorreto. 
-                                                </p>
+                                        <div id="cardPile" class="game-itens-container">
+                                            <div id="card-1" class="card" data-target="slot-1">
+                                                Operação que estabelece uma relação entre os valores e as incertezas de
+                                                medição, conforme padrões.
                                             </div>
-                                            <p>
-                                                Saiba mais sobre o instrumento de medição <strong>bomba medidora de combustível</strong> no <i>site</i> do Instituto de Pesos e Medidas do Estado de São Paulo (IPEM-SP).
-                                            </p>
+                                            <div id="card-3" class="card" data-target="slot-1">
+                                                É um processo de checagem da medida obtida por um instrumento, que
+                                                envolve um cálculo de erro e incerteza de medição fornecidos por
+                                                padrões.
+                                            </div>
+
+                                            <div id="card-5" class="card" data-target="slot-1">
+                                                Seus resultados são apresentados em um documento (relatório).
+                                            </div>
+                                            <div id="card-8" class="card" data-target="slot-2">
+                                                Procedimento de avaliação da conformidade, é um complemento das
+                                                calibrações.
+                                            </div>
+                                            <div id="card-10" class="card" data-target="slot-2">
+                                                Processo de confirmação de que um instrumento de medição está
+                                                funcionando dentro das especificações aceitáveis, sem necessariamente
+                                                ajustá-lo.
+                                            </div>
+                                            <div id="card-11" class="card" data-target="slot-2">
+                                                Não requer a emissão de um certificado de calibração, no entanto, é
+                                                necessário um registro documentado.
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingThree3">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
-                                            Erro grosseiro
-                                        </button>
-                                    </h2>
-                                    <div id="collapseThree3" class="accordion-collapse collapse" aria-labelledby="headingThree3" data-bs-parent="#accordionExample3">
-                                        <div class="accordion-body">
-                                            <p>Resultado de leitura errônea pelo operador, de operação indevida ou de dano no sistema de medição. Pode ser minimizado com aferições e calibrações dos instrumentos. De acordo com Tibiriçá e Reis (2023, p. 9) “O erro grosseiro é imprevisível e por isso não pode ser estimado. No entanto, ele pode ser evitado facilmente através do uso e manutenção adequados do sistema de medição”. Por vezes, ocorrem equívocos na compreensão entre erro e incerteza. É importante saber que o erro de uma medição pode ser corrigido a partir do momento em que for detectada, com clareza, a falha no processo de medição em questão. Já a incerteza de qualquer processo de medição continuará sendo um intervalo de confiança das medidas.
-                                            </p>
+                            </div>
+                            <div class="modal fade" id="bgmodal-acerto" tabindex="-1" aria-labelledby="bgmodal-passou"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-check    "></i>
+                                                Resposta correta</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-4">
+                                                    <img src="../assets/atividades/arrasta_solta/resposta_pos.svg"
+                                                        class="img-fluid" alt="">
+                                                </div>
+                                                <div class="col-12 col-lg-8">
+                                                    <p>Muito bem! Você acertou.</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                
                             </div>
-                            <div class="print visually-hidden">
-                                <p><strong>Erro sistemático</strong></p>
-                                <p>É aquele que acontece nas medições sempre em um mesmo sentido (em idênticas condições de operação). Ou seja, sempre ocorre um aumento ou uma diminuição em relação ao valor de referência, de maneira previsível. Pode ser causado por problemas de ajuste, calibração, desgaste, fatores construtivos, método empregado ou por fatores externos.
-                                </p>
-                                    <p>Um hidrômetro mal calibrado em sua fabricação, durante uma medição, indica um consumo ligeiramente superior ao real. Em todas as leituras, independentemente da quantidade de água consumida, o hidrômetro registra um volume de 17 litros maior do que o consumo real. Esse desvio constante é um exemplo de erro sistemático.
-                                    </p>
-                                <p>
-                                    Uma estimativa para o erro sistemático de um sistema de medição pode ser feita medindo-se um padrão algumas vezes e calculando-se a diferença entre a média das medições e o valor do padrão. Essa diferença é chamada de tendência. 
-                                </p>
-                                <strong><p>Erro aleatório</strong></p>
-                                <p>É aquele que ocorre nas medições de forma imprevisível, ou seja, provoca alterações de forma aleatória (sem previsão), também chamado de erro acidental. O erro aleatório acontece em função de causas diversas e imprevisíveis e dificilmente pode ser eliminado. Pode ser causado por flutuações naturais, condições ambientais variáveis ou imprecisões no método de medição.
-                                </p>
-                                    <p>No processo de medição de uma bomba de combustível, podem ocorrer erros aleatórios, como manuseio inadequado ou problemas de alimentação elétrica. Desse modo, eventualmente, uma medição de uma bomba de combustível pode apresentar um valor incorreto. 
-                                    </p>
-                                <p>
-                                    Saiba mais sobre o instrumento de medição <strong>bomba medidora de combustível</strong> no <i>site</i> do Instituto de Pesos e Medidas do Estado de São Paulo (IPEM-SP).
-                                </p>
-                                <strong><p>Erro grosseiro</strong></p>
-                                <p>Resultado de leitura errônea pelo operador, de operação indevida ou de dano no sistema de medição. Pode ser minimizado com aferições e calibrações dos instrumentos. De acordo com Tibiriçá e Reis (2023, p. 9) “O erro grosseiro é imprevisível e por isso não pode ser estimado. No entanto, ele pode ser evitado facilmente através do uso e manutenção adequados do sistema de medição”. Por vezes, ocorrem equívocos na compreensão entre erro e incerteza. É importante saber que o erro de uma medição pode ser corrigido a partir do momento em que for detectada, com clareza, a falha no processo de medição em questão. Já a incerteza de qualquer processo de medição continuará sendo um intervalo de confiança das medidas.
-                                </p>
+                            <div class="modal fade" id="bgmodal-erro" tabindex="-1" aria-labelledby="bgmodal-passou"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-danger">
+                                            <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-times"></i>
+                                                Resposta incorreta</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-4">
+                                                    <img src="../assets/atividades/arrasta_solta/resposta_neg.svg"
+                                                        class="img-fluid" alt="">
+                                                </div>
+                                                <div class="col-12 col-lg-8">
+                                                    <p>Ops, tente novamente!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <p>Por fim, a redução do erro pode ocorrer com a aplicação de algumas medidas básicas, que envolvem o processo de medição. Veja algumas delas:
-                            </p>
-                            <ul class="custom-bullet">
-                                <li><strong>Calibração regular:</strong> ajustar e verificar os instrumentos periodicamente.</li>
-                                <li><strong>Melhorar técnicas de medição:</strong> usar procedimentos padronizados e treinar operadores.</li>
-                                <li><strong>Controle ambiental:</strong> minimizar influências externas, como temperatura e umidade.</li>
-                            </ul>
-                            <p class="no-print" aria-hidden="true">Como foi seu aprendizado sobre erro e incerteza? Verifique o que você aprendeu na atividade a seguir!
+                        </div>
 
-                            </p>
-                            <!-- atividade -->
-                            <div class="box-atividade no-print">
-                                <p class="titulo-ativ"><strong>Erro ou incerteza</strong></p>
-                                
-                                <p>Complete as sentenças com <strong>erro</strong> ou <strong>incerteza</strong> de medição.
-                                </p>
-                                <div class="esquemaDaBru verdadeiro-falso">
-                                    <p class="enunciado" tabindex="0">1) <span class="espacoPalavra"></span> de medição relaciona-se à diferença entre o valor indicado na medida e o valor de referência.</p>
-                                    <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
-                                        <button class="alt-c botao hvr-grow-shadow">Erro</button>
-                                        <button class="alt-e botao">Incerteza</button>
-                                    </div>
-                                    <div class="feedbacks">
-                                        <p class="f-positivo"><i
-                                                class="fas fa-check"></i> Parabéns, você demonstrou que compreendeu o que é erro.</p>
-                                        <p class="f-negativo"><i
-                                                class="fas fa-times"></i> O erro sempre se relaciona com a diferença do que foi medido com a referência.</p>
-                                    </div>
-                                </div>
-                                <div class="esquemaDaBru verdadeiro-falso">
-                                    <p class="enunciado" tabindex="0">2) <span class="espacoPalavra"></span> de medição relaciona-se à dúvida e é caracterizada por uma faixa de valores (limite inferior e superior), associada a uma probabilidade de abrangência, dentro da qual estaria contido o valor verdadeiro do mensurado.</p>
-                                    <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
-                                        <button class="alt-e botao">Erro</button>
-                                        <button class="alt-c botao hvr-grow-shadow">Incerteza</button>
-                                    </div>
-                                    <div class="feedbacks">
-                                        <p class="f-positivo"><i
-                                                class="fas fa-check"></i> Parabéns, você demonstrou que compreendeu o que é incerteza.</p>
-                                        <p class="f-negativo"><i
-                                                class="fas fa-times"></i> A existência de informação de limites inferiores e superiores caracteriza uma situação de incerteza, além disso a presença da dúvida é que o determina se há uma incerteza.</p>
-                                    </div>
-                                </div>
-                                <div class="esquemaDaBru verdadeiro-falso">
-                                    <p class="enunciado" tabindex="0">3) <span class="espacoPalavra"></span> de medição é formada por um limite inferior e superior e representa a dúvida no resultado da medição.</p>
-                                    <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
-                                        <button class="alt-e botao">Erro</button>
-                                        <button class="alt-c botao hvr-grow-shadow">Incerteza</button>
-                                    </div>
-                                    <div class="feedbacks">
-                                        <p class="f-positivo"><i
-                                                class="fas fa-check"></i> Parabéns, você demonstrou que compreendeu o que é incerteza.</p>
-                                        <p class="f-negativo"><i
-                                                class="fas fa-times"></i> A existência de informação de limites inferiores e superiores caracteriza uma situação de incerteza, além disso a presença da dúvida é que o determina se há uma incerteza.</p>
-                                    </div>
-                                </div>
-                                <div class="esquemaDaBru verdadeiro-falso">
-                                    <p class="enunciado" tabindex="0">4) <span class="espacoPalavra"></span> de medição é a diferença entre o valor medido e o valor de referência da grandeza que está sendo medida.</p>
-                                    <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
-                                        <button class="alt-c botao hvr-grow-shadow">Erro</button>
-                                        <button class="alt-e botao">Incerteza</button>
-                                    </div>
-                                    <div class="feedbacks">
-                                        <p class="f-positivo"><i
-                                                class="fas fa-check"></i> Parabéns, você demonstrou que compreendeu o que é erro.</p>
-                                        <p class="f-negativo"><i
-                                                class="fas fa-times"></i> O erro sempre se relaciona com a diferença do que foi medido com a referência.
-                                            </p>
-                                    </div>
-                                </div>
-                                <div class="esquemaDaBru verdadeiro-falso">
-                                    <p class="enunciado" tabindex="0">5) <span class="espacoPalavra"></span> de medição é a quantificação da dúvida sobre o resultado da medição.</p>
-                                    <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
-                                        <button class="alt-e botao">Erro</button>
-                                        <button class="alt-c botao hvr-grow-shadow">Incerteza</button>
-                                    </div>
-                                    <div class="feedbacks">
-                                        <p class="f-positivo"><i
-                                                class="fas fa-check"></i> Parabéns, você demonstrou que compreendeu o que é incerteza.</p>
-                                        <p class="f-negativo"><i
-                                                class="fas fa-times"></i> A presença da dúvida é o que determina se há uma incerteza.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- atividade -->
+                        <!-- atividade ligar colunas -->
 
-                            <h3 id="titulo7">Amostragem confiável</h3>
-                            <p>Por vezes, é inviável e até impossível realizar a avaliação de todos os instrumentos de medição, produzidos por uma empresa. Desse modo, é necessário que a avaliação metrológica ocorra em uma amostra de todos os instrumentos produzidos. 
+                        <h3 id="titulo5">Incerteza de medições</h3>
+                        <p>
+                            É importante compreender que nenhum processo de medição consegue garantir 100% de confiança
+                            em seus resultados. Até para a medição que ocorre dentro de todos os parâmetros exigidos, há
+                            sempre uma margem de dúvida, expressa como “mais ou menos” o valor de uma grandeza. Isso
+                            ocorre porque o resultado de uma medição é, na verdade, uma aproximação.
+                        </p>
+                        <!-- destaque -->
+                        <div class="destaque borda-colorida icone exemplo">
+                            <p>Para medir o comprimento de uma barra de metal, pode ser utilizada uma trena, e seu
+                                resultado pode ser “mais ou menos um centímetro”.</p>
+                        </div>
+                        <!-- destaque -->
+                        <div class="destaque borda-colorida icone importante">
+                            <p>Então tem-se a incerteza de medição, que representa um intervalo de valores, em que se
+                                espera que o valor verdadeiro esteja contido.
                             </p>
-                            <!-- destaque -->
-                            <div class="destaque borda-colorida icone importante">
-                                <p>A amostragem nada mais é do que a seleção e/ou a coleta de material ou dados, relativos a um objeto ou conjunto de avaliação.</p>
+                        </div>
+                        <p>
+                            Esse intervalo deve ser acompanhado por uma probabilidade específica que indica o nível de
+                            confiança no resultado.
+                        </p>
+                        <!-- destaque -->
+                        <div class="destaque borda-colorida icone exemplo">
+                            <p>Na medida da barra de metal, pode-se ter como resultado 175 ± 1cm, com uma probabilidade
+                                de abrangência de 95%. Nesse caso, o valor verdadeiro é desconhecido, mas atesta-se, com
+                                95% de confiança, que o valor verdadeiro da grandeza medida se encontra entre 174cm (175
+                                - 1) e 176cm (175 + 1).
+                            </p>
+                        </div>
+                        <p>
+                            Existem diversos fatores que podem contribuir para a incerteza em uma medição, como
+                            limitações nos instrumentos de medição, variações nas condições ambientais, definição
+                            incorreta da grandeza medida, falta de calibração, fatores humanos e limitações no método de
+                            medição. A avaliação da incerteza de medição é fundamental para garantir a qualidade dos
+                            processos e a confiabilidade das medições realizadas. Essa avaliação é realizada por
+                            laboratórios credenciados, conforme já visto, e fornece parâmetros essenciais para
+                            quantificar a incerteza.
+                        </p>
+                        <!-- gaitinha2 -->
+                        <p class="no-print" aria-hidden="true">Clique ou toque para visualizar o conteúdo.</p>
+                        <div class="accordion no-print" id="accordionExample2" aria-hidden="true">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne2" aria-expanded="false"
+                                        aria-controls="collapseOne2">
+                                        Limite inferior
+                                    </button>
+                                </h2>
+                                <div id="collapseOne2" class="accordion-collapse collapse" aria-labelledby="headingOne2"
+                                    data-bs-parent="#accordionExample2">
+                                    <div class="accordion-body">
+                                        <p>O limite inferior de incerteza representa o valor mínimo medido.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo2" aria-expanded="false"
+                                        aria-controls="collapseTwo2">
+                                        Limite superior
+
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2"
+                                    data-bs-parent="#accordionExample2">
+                                    <div class="accordion-body">
+                                        <p>O limite superior de incerteza indica o valor máximo medido.
+                                        </p>
+                                        <p>
+                                            Estes limites representam a amplitude (largura) do intervalo de medição ou
+                                            intervalo de valores, ambos com a mesma probabilidade, e são fundamentais
+                                            para estabelecer a confiança na medição, pois fornecem uma faixa dentro da
+                                            qual o valor verdadeiro da grandeza medida provavelmente está contido.
+                                        </p>
+                                        <p>
+                                            Quando a incerteza de medição tem um amplo intervalo (distância entre o
+                                            limite inferior e o limite superior), indica, provavelmente uma escolha
+                                            inadequada do aparelho de medição, o que resulta em uma qualidade de medição
+                                            pouco confiável.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree2" aria-expanded="false"
+                                        aria-controls="collapseThree2">
+                                        Probabilidade de abrangência
+
+                                    </button>
+                                </h2>
+                                <div id="collapseThree2" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree2" data-bs-parent="#accordionExample2">
+                                    <div class="accordion-body">
+                                        <p>Indica o quão certo o valor da medição está dentro daquele intervalo (ou
+                                            margem).
+                                        </p>
+                                        <p>
+                                            Todos esses parâmetros, o intervalo de valores (limite inferior e superior)
+                                            e a probabilidade são determinados por meio de diversos ensaios, realizados
+                                            sob condições específicas, para garantir que o instrumento atenda às
+                                            especificações técnicas, por meio de cálculos estatísticos e
+                                            probabilísticos. Seus resultados são comparados com valores e tolerâncias
+                                            permitidos, por meio de normas e especificações técnicas e requisitos de
+                                            qualidade.
+
+                                        </p>
+                                        <p>
+                                            É importante compreender que a incerteza não indica erro ou imprecisão, mas
+                                            sim uma faixa dentro da qual o valor verdadeiro da grandeza medida
+                                            provavelmente se encontra.
+                                        </p>
+                                        <p>
+                                            Por fim, saiba que todo instrumento de medição deve ter uma especificação
+                                            técnica fornecida pelo fabricante, que descreve suas características
+                                            metrológicas, incluindo erro e precisão. Assim como todo processo de
+                                            calibração de um instrumento, é acompanhado de um certificado contendo a
+                                            incerteza de medição associada.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="print visually-hidden">
+                            <p><strong>Limite inferior</strong></p>
+                            <p>O limite inferior de incerteza representa o valor mínimo medido.
+                            </p>
+                            <strong>
+                                <p>Limite superior
+                            </strong></p>
+                            <p>O limite superior de incerteza indica o valor máximo medido.
+                            </p>
                             <p>
-                                A norma ABNT NBR ISO/IEC 17025:2017 contém um item voltado a esse tema, o <strong>7.3 Amostragem</strong>. Nesse item, há uma obrigação para os laboratórios que realizam análise metrológica: ter “um plano e um método de amostragem, quando realiza amostragem de substâncias, materiais ou produtos para ensaio ou calibração subsequente”. Esse plano deve “assegurar a validade dos resultados de ensaio e calibração subsequentes.” (ABNT, 2017, p. 13). A norma também diz que esse plano deve ter base em métodos estatísticos apropriados e ficar disponível no local onde a amostra for realizada. Entre os pontos importantes na determinação de uma amostra, o laboratório deve ficar atento às seguintes situações:
+                                Estes limites representam a amplitude (largura) do intervalo de medição ou intervalo de
+                                valores, ambos com a mesma probabilidade, e são fundamentais para estabelecer a
+                                confiança na medição, pois fornecem uma faixa dentro da qual o valor verdadeiro da
+                                grandeza medida provavelmente está contido.
                             </p>
-                            <!-- gaitinha4 -->
-                             <p class="no-print" aria-hidden="true">Clique ou toque para visualizar o conteúdo.</p>
-                            <div class="accordion no-print" id="accordionExample4" aria-hidden="true">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne4">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne4" aria-expanded="false" aria-controls="collapseOne4">
-                                            Representatividade dos resultados
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne4" class="accordion-collapse collapse" aria-labelledby="headingOne4" data-bs-parent="#accordionExample4">
-                                        <div class="accordion-body">
-                                            <p>Uma amostra representativa deve refletir as características da população ou do processo que está sendo avaliado. Isso significa que as características principais e variáveis importantes devem estar presentes na amostra em proporções semelhantes às do todo.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo4">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo4" aria-expanded="false" aria-controls="collapseTwo4">
-                                            Aleatoriedade
+                            <p>
+                                Quando a incerteza de medição tem um amplo intervalo (distância entre o limite inferior
+                                e o limite superior), indica, provavelmente uma escolha inadequada do aparelho de
+                                medição, o que resulta em uma qualidade de medição pouco confiável.
+                            </p>
+                            <strong>
+                                <p>Probabilidade de abrangência
+                            </strong></p>
+                            <p>Indica o quão certo o valor da medição está dentro daquele intervalo (ou margem).
+                            </p>
+                            <p>
+                                Todos esses parâmetros, o intervalo de valores (limite inferior e superior) e a
+                                probabilidade são determinados por meio de diversos ensaios, realizados sob condições
+                                específicas, para garantir que o instrumento atenda às especificações técnicas, por meio
+                                de cálculos estatísticos e probabilísticos. Seus resultados são comparados com valores e
+                                tolerâncias permitidos, por meio de normas e especificações técnicas e requisitos de
+                                qualidade.
 
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo4" class="accordion-collapse collapse" aria-labelledby="headingTwo4" data-bs-parent="#accordionExample4">
-                                        <div class="accordion-body">
-                                            <p>A seleção dos elementos da amostra deve ser aleatória para evitar erros sistemáticos e garantir que todas as partes da população tenham uma chance igual de serem incluídas na amostra. Isso pode ser alcançado por métodos como sorteios aleatórios ou técnicas estatísticas de amostragem probabilística.
+                            </p>
+                            <p>
+                                É importante compreender que a incerteza não indica erro ou imprecisão, mas sim uma
+                                faixa dentro da qual o valor verdadeiro da grandeza medida provavelmente se encontra.
+                            </p>
+                            <p>
+                                Por fim, saiba que todo instrumento de medição deve ter uma especificação técnica
+                                fornecida pelo fabricante, que descreve suas características metrológicas, incluindo
+                                erro e precisão. Assim como todo processo de calibração de um instrumento, é acompanhado
+                                de um certificado contendo a incerteza de medição associada.
+                            </p>
+                        </div>
 
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingThree4">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree4" aria-expanded="false" aria-controls="collapseThree4">
-                                            Tamanho da amostra 
-                                        </button>
-                                    </h2>
-                                    <div id="collapseThree4" class="accordion-collapse collapse" aria-labelledby="headingThree4" data-bs-parent="#accordionExample4">
-                                        <div class="accordion-body">
-                                            <p>Determinar o tamanho adequado da amostra é essencial para equilibrar a precisão estatística com os recursos disponíveis. Métodos estatísticos são frequentemente aplicados para calcular o tamanho da amostra, necessário para alcançar resultados confiáveis. Um tamanho de amostra muito pequeno pode levar a generalizações inválidas, enquanto um tamanho excessivamente grande pode ser desnecessário e dispendioso.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingFor4">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFor4" aria-expanded="false" aria-controls="collapseFor4">
-                                            Procedimentos documentados
+                        <h3 id="titulo6">Erros de medição</h3>
+                        <p>Você já conhece o conceito de incerteza de medição, agora serão tratadas as questões que
+                            envolvem o erro no processo de medição. O erro sempre está presente em qualquer processo de
+                            medição, fazendo parte da rotina de trabalho, mesmo de um laboratório. Isso ocorre porque o
+                            resultado de medição não depende só do instrumento, mas também do método de medição, das
+                            condições ambientais, do padrão utilizado, do operador, entre outros.
+                        </p>
+                        <!-- destaque -->
+                        <div class="destaque borda-colorida icone importante">
+                            <p>O erro de medição é a diferença entre o valor medido de uma grandeza e o valor de
+                                referência de um padrão.
+                            </p>
+                        </div>
+                        <p>
+                            É importante ressaltar a diferença entre erro e incerteza. Enquanto o erro relaciona-se à
+                            diferença entre o valor indicado e o valor exato medido, a incerteza implica em dúvida,
+                            relacionando-se à faixa de valores dentro da qual se espera que o valor verdadeiro da
+                            grandeza esteja contido. Note que, para determinar o erro, é necessário saber o valor exato
+                            medido, que, por sua vez, não é conhecido. Os erros podem ser classificados de três formas:
 
-                                        </button>
-                                    </h2>
-                                    <div id="collapseFor4" class="accordion-collapse collapse" aria-labelledby="headingFor4" data-bs-parent="#accordionExample4">
-                                        <div class="accordion-body">
-                                            <p>Em laboratórios de metrologia, é indispensável documentar os procedimentos de amostragem adotados, incluindo critérios de seleção, técnicas de coleta, condições ambientais e qualquer outra informação relevante que possa afetar os resultados da medição.
+                        </p>
+                        <!-- gaitinha3 -->
+                        <p class="no-print" aria-hidden="true">Clique ou toque para visualizar o conteúdo.</p>
+
+                        <div class="accordion no-print" id="accordionExample3" aria-hidden="true">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne3" aria-expanded="false"
+                                        aria-controls="collapseOne3">
+                                        Erro sistemático
+                                    </button>
+                                </h2>
+                                <div id="collapseOne3" class="accordion-collapse collapse" aria-labelledby="headingOne3"
+                                    data-bs-parent="#accordionExample3">
+                                    <div class="accordion-body">
+                                        <p>É aquele que acontece nas medições sempre em um mesmo sentido (em idênticas
+                                            condições de operação). Ou seja, sempre ocorre um aumento ou uma diminuição
+                                            em relação ao valor de referência, de maneira previsível. Pode ser causado
+                                            por problemas de ajuste, calibração, desgaste, fatores construtivos, método
+                                            empregado ou por fatores externos.
+                                        </p>
+                                        <div class="destaque borda-colorida icone exemplo">
+                                            <p>Um hidrômetro mal calibrado em sua fabricação, durante uma medição,
+                                                indica um consumo ligeiramente superior ao real. Em todas as leituras,
+                                                independentemente da quantidade de água consumida, o hidrômetro registra
+                                                um volume de 17 litros maior do que o consumo real. Esse desvio
+                                                constante é um exemplo de erro sistemático.
                                             </p>
                                         </div>
+                                        <p>
+                                            Uma estimativa para o erro sistemático de um sistema de medição pode ser
+                                            feita medindo-se um padrão algumas vezes e calculando-se a diferença entre a
+                                            média das medições e o valor do padrão. Essa diferença é chamada de
+                                            tendência.
+                                        </p>
+
+
                                     </div>
                                 </div>
                             </div>
-                            <div class="print visually-hidden">
-                                <p><strong>Representatividade dos resultados</strong></p>
-                                <p>Uma amostra representativa deve refletir as características da população ou do processo que está sendo avaliado. Isso significa que as características principais e variáveis importantes devem estar presentes na amostra em proporções semelhantes às do todo.
-                                </p>
-                                <strong><p>Aleatoriedade</strong></p>
-                                <p>A seleção dos elementos da amostra deve ser aleatória para evitar erros sistemáticos e garantir que todas as partes da população tenham uma chance igual de serem incluídas na amostra. Isso pode ser alcançado por métodos como sorteios aleatórios ou técnicas estatísticas de amostragem probabilística.
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo3" aria-expanded="false"
+                                        aria-controls="collapseTwo3">
+                                        Erro aleatório
 
-                                </p>
-                                <strong><p>Tamanho da amostra </strong></p>
-                                <p>Determinar o tamanho adequado da amostra é essencial para equilibrar a precisão estatística com os recursos disponíveis. Métodos estatísticos são frequentemente aplicados para calcular o tamanho da amostra, necessário para alcançar resultados confiáveis. Um tamanho de amostra muito pequeno pode levar a generalizações inválidas, enquanto um tamanho excessivamente grande pode ser desnecessário e dispendioso.
-                                </p>
-                                <strong><p>Procedimentos documentados</strong></p>
-                                <p>Em laboratórios de metrologia, é indispensável documentar os procedimentos de amostragem adotados, incluindo critérios de seleção, técnicas de coleta, condições ambientais e qualquer outra informação relevante que possa afetar os resultados da medição.
-                                </p>
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo3" class="accordion-collapse collapse" aria-labelledby="headingTwo3"
+                                    data-bs-parent="#accordionExample3">
+                                    <div class="accordion-body">
+                                        <p>É aquele que ocorre nas medições de forma imprevisível, ou seja, provoca
+                                            alterações de forma aleatória (sem previsão), também chamado de erro
+                                            acidental. O erro aleatório acontece em função de causas diversas e
+                                            imprevisíveis e dificilmente pode ser eliminado. Pode ser causado por
+                                            flutuações naturais, condições ambientais variáveis ou imprecisões no método
+                                            de medição.
+                                        </p>
+                                        <div class="destaque borda-colorida icone exemplo">
+                                            <p>No processo de medição de uma bomba de combustível, podem ocorrer erros
+                                                aleatórios, como manuseio inadequado ou problemas de alimentação
+                                                elétrica. Desse modo, eventualmente, uma medição de uma bomba de
+                                                combustível pode apresentar um valor incorreto.
+                                            </p>
+                                        </div>
+                                        <p>
+                                            Saiba mais sobre o instrumento de medição <strong>bomba medidora de
+                                                combustível</strong> no <i>site</i> do Instituto de Pesos e Medidas do
+                                            Estado de São Paulo (IPEM-SP).
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <p>
-                                Em resumo, uma amostragem confiável pode garantir precisão nas medições em metrologia, pois influencia diretamente a qualidade e a confiabilidade das medições realizadas. Ao seguir métodos adequados de amostragem e aderir às normas reconhecidas internacionalmente, os laboratórios de metrologia podem assegurar que suas medições sejam precisas, confiáveis e cientificamente válidas, contribuindo para a integridade e a eficácia de seus serviços e resultados.
-                            </p>
-                            <h3 id="titulo8">Encerramento</h3>
-                            <p>
-                                É finalizado aqui este estudo dos processos de medição: a calibração, a verificação e a incerteza. Você conheceu também a existência do erro e a necessidade de determinar amostras confiáveis. Esses temas promovem a confiança em relação à exatidão das medições realizadas em diversos instrumentos, o que ajuda a garantir a qualidade nos serviços prestados e produtos oferecidos.
-                            </p>
-                            <p>
-                                Por fim, sugere-se a leitura da norma ABNT NBR ISO 10012:2004: Sistemas de gestão de medição – requisitos para os processos de medição e equipamentos de medição. É uma norma exclusiva para laboratórios de ensaios e calibração, a fim de garantir que os procedimentos de cálculo e a forma de tratamento de uma amostra metrológica funcionem igualmente em qualquer local.
-                            </p>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree3" aria-expanded="false"
+                                        aria-controls="collapseThree3">
+                                        Erro grosseiro
+                                    </button>
+                                </h2>
+                                <div id="collapseThree3" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree3" data-bs-parent="#accordionExample3">
+                                    <div class="accordion-body">
+                                        <p>Resultado de leitura errônea pelo operador, de operação indevida ou de dano
+                                            no sistema de medição. Pode ser minimizado com aferições e calibrações dos
+                                            instrumentos. De acordo com Tibiriçá e Reis (2023, p. 9) “O erro grosseiro é
+                                            imprevisível e por isso não pode ser estimado. No entanto, ele pode ser
+                                            evitado facilmente através do uso e manutenção adequados do sistema de
+                                            medição”. Por vezes, ocorrem equívocos na compreensão entre erro e
+                                            incerteza. É importante saber que o erro de uma medição pode ser corrigido a
+                                            partir do momento em que for detectada, com clareza, a falha no processo de
+                                            medição em questão. Já a incerteza de qualquer processo de medição
+                                            continuará sendo um intervalo de confiança das medidas.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
+                        <div class="print visually-hidden">
+                            <p><strong>Erro sistemático</strong></p>
+                            <p>É aquele que acontece nas medições sempre em um mesmo sentido (em idênticas condições de
+                                operação). Ou seja, sempre ocorre um aumento ou uma diminuição em relação ao valor de
+                                referência, de maneira previsível. Pode ser causado por problemas de ajuste, calibração,
+                                desgaste, fatores construtivos, método empregado ou por fatores externos.
+                            </p>
+                            <p>Um hidrômetro mal calibrado em sua fabricação, durante uma medição, indica um consumo
+                                ligeiramente superior ao real. Em todas as leituras, independentemente da quantidade de
+                                água consumida, o hidrômetro registra um volume de 17 litros maior do que o consumo
+                                real. Esse desvio constante é um exemplo de erro sistemático.
+                            </p>
+                            <p>
+                                Uma estimativa para o erro sistemático de um sistema de medição pode ser feita
+                                medindo-se um padrão algumas vezes e calculando-se a diferença entre a média das
+                                medições e o valor do padrão. Essa diferença é chamada de tendência.
+                            </p>
+                            <strong>
+                                <p>Erro aleatório
+                            </strong></p>
+                            <p>É aquele que ocorre nas medições de forma imprevisível, ou seja, provoca alterações de
+                                forma aleatória (sem previsão), também chamado de erro acidental. O erro aleatório
+                                acontece em função de causas diversas e imprevisíveis e dificilmente pode ser eliminado.
+                                Pode ser causado por flutuações naturais, condições ambientais variáveis ou imprecisões
+                                no método de medição.
+                            </p>
+                            <p>No processo de medição de uma bomba de combustível, podem ocorrer erros aleatórios, como
+                                manuseio inadequado ou problemas de alimentação elétrica. Desse modo, eventualmente, uma
+                                medição de uma bomba de combustível pode apresentar um valor incorreto.
+                            </p>
+                            <p>
+                                Saiba mais sobre o instrumento de medição <strong>bomba medidora de combustível</strong>
+                                no <i>site</i> do Instituto de Pesos e Medidas do Estado de São Paulo (IPEM-SP).
+                            </p>
+                            <strong>
+                                <p>Erro grosseiro
+                            </strong></p>
+                            <p>Resultado de leitura errônea pelo operador, de operação indevida ou de dano no sistema de
+                                medição. Pode ser minimizado com aferições e calibrações dos instrumentos. De acordo com
+                                Tibiriçá e Reis (2023, p. 9) “O erro grosseiro é imprevisível e por isso não pode ser
+                                estimado. No entanto, ele pode ser evitado facilmente através do uso e manutenção
+                                adequados do sistema de medição”. Por vezes, ocorrem equívocos na compreensão entre erro
+                                e incerteza. É importante saber que o erro de uma medição pode ser corrigido a partir do
+                                momento em que for detectada, com clareza, a falha no processo de medição em questão. Já
+                                a incerteza de qualquer processo de medição continuará sendo um intervalo de confiança
+                                das medidas.
+                            </p>
+                        </div>
+                        <p>Por fim, a redução do erro pode ocorrer com a aplicação de algumas medidas básicas, que
+                            envolvem o processo de medição. Veja algumas delas:
+                        </p>
+                        <ul class="custom-bullet">
+                            <li><strong>Calibração regular:</strong> ajustar e verificar os instrumentos periodicamente.
+                            </li>
+                            <li><strong>Melhorar técnicas de medição:</strong> usar procedimentos padronizados e treinar
+                                operadores.</li>
+                            <li><strong>Controle ambiental:</strong> minimizar influências externas, como temperatura e
+                                umidade.</li>
+                        </ul>
+                        <p class="no-print" aria-hidden="true">Como foi seu aprendizado sobre erro e incerteza?
+                            Verifique o que você aprendeu na atividade a seguir!
+
+                        </p>
+                        <!-- atividade -->
+                        <div class="box-atividade no-print">
+                            <p class="titulo-ativ"><strong>Erro ou incerteza</strong></p>
+
+                            <p>Complete as sentenças com <strong>erro</strong> ou <strong>incerteza</strong> de medição.
+                            </p>
+                            <div class="esquemaDaBru verdadeiro-falso">
+                                <p class="enunciado" tabindex="0">1) <span class="espacoPalavra"></span> de medição
+                                    relaciona-se à diferença entre o valor indicado na medida e o valor de referência.
+                                </p>
+                                <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                                    <button class="alt-c botao hvr-grow-shadow">Erro</button>
+                                    <button class="alt-e botao">Incerteza</button>
+                                </div>
+                                <div class="feedbacks">
+                                    <p class="f-positivo"><i class="fas fa-check"></i> Parabéns, você demonstrou que
+                                        compreendeu o que é erro.</p>
+                                    <p class="f-negativo"><i class="fas fa-times"></i> O erro sempre se relaciona com a
+                                        diferença do que foi medido com a referência.</p>
+                                </div>
+                            </div>
+                            <div class="esquemaDaBru verdadeiro-falso">
+                                <p class="enunciado" tabindex="0">2) <span class="espacoPalavra"></span> de medição
+                                    relaciona-se à dúvida e é caracterizada por uma faixa de valores (limite inferior e
+                                    superior), associada a uma probabilidade de abrangência, dentro da qual estaria
+                                    contido o valor verdadeiro do mensurado.</p>
+                                <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                                    <button class="alt-e botao">Erro</button>
+                                    <button class="alt-c botao hvr-grow-shadow">Incerteza</button>
+                                </div>
+                                <div class="feedbacks">
+                                    <p class="f-positivo"><i class="fas fa-check"></i> Parabéns, você demonstrou que
+                                        compreendeu o que é incerteza.</p>
+                                    <p class="f-negativo"><i class="fas fa-times"></i> A existência de informação de
+                                        limites inferiores e superiores caracteriza uma situação de incerteza, além
+                                        disso a presença da dúvida é que o determina se há uma incerteza.</p>
+                                </div>
+                            </div>
+                            <div class="esquemaDaBru verdadeiro-falso">
+                                <p class="enunciado" tabindex="0">3) <span class="espacoPalavra"></span> de medição é
+                                    formada por um limite inferior e superior e representa a dúvida no resultado da
+                                    medição.</p>
+                                <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                                    <button class="alt-e botao">Erro</button>
+                                    <button class="alt-c botao hvr-grow-shadow">Incerteza</button>
+                                </div>
+                                <div class="feedbacks">
+                                    <p class="f-positivo"><i class="fas fa-check"></i> Parabéns, você demonstrou que
+                                        compreendeu o que é incerteza.</p>
+                                    <p class="f-negativo"><i class="fas fa-times"></i> A existência de informação de
+                                        limites inferiores e superiores caracteriza uma situação de incerteza, além
+                                        disso a presença da dúvida é que o determina se há uma incerteza.</p>
+                                </div>
+                            </div>
+                            <div class="esquemaDaBru verdadeiro-falso">
+                                <p class="enunciado" tabindex="0">4) <span class="espacoPalavra"></span> de medição é a
+                                    diferença entre o valor medido e o valor de referência da grandeza que está sendo
+                                    medida.</p>
+                                <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                                    <button class="alt-c botao hvr-grow-shadow">Erro</button>
+                                    <button class="alt-e botao">Incerteza</button>
+                                </div>
+                                <div class="feedbacks">
+                                    <p class="f-positivo"><i class="fas fa-check"></i> Parabéns, você demonstrou que
+                                        compreendeu o que é erro.</p>
+                                    <p class="f-negativo"><i class="fas fa-times"></i> O erro sempre se relaciona com a
+                                        diferença do que foi medido com a referência.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="esquemaDaBru verdadeiro-falso">
+                                <p class="enunciado" tabindex="0">5) <span class="espacoPalavra"></span> de medição é a
+                                    quantificação da dúvida sobre o resultado da medição.</p>
+                                <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                                    <button class="alt-e botao">Erro</button>
+                                    <button class="alt-c botao hvr-grow-shadow">Incerteza</button>
+                                </div>
+                                <div class="feedbacks">
+                                    <p class="f-positivo"><i class="fas fa-check"></i> Parabéns, você demonstrou que
+                                        compreendeu o que é incerteza.</p>
+                                    <p class="f-negativo"><i class="fas fa-times"></i> A presença da dúvida é o que
+                                        determina se há uma incerteza.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- atividade -->
+
+                        <h3 id="titulo7">Amostragem confiável</h3>
+                        <p>Por vezes, é inviável e até impossível realizar a avaliação de todos os instrumentos de
+                            medição, produzidos por uma empresa. Desse modo, é necessário que a avaliação metrológica
+                            ocorra em uma amostra de todos os instrumentos produzidos.
+                        </p>
+                        <!-- destaque -->
+                        <div class="destaque borda-colorida icone importante">
+                            <p>A amostragem nada mais é do que a seleção e/ou a coleta de material ou dados, relativos a
+                                um objeto ou conjunto de avaliação.</p>
+                        </div>
+                        <p>
+                            A norma ABNT NBR ISO/IEC 17025:2017 contém um item voltado a esse tema, o <strong>7.3
+                                Amostragem</strong>. Nesse item, há uma obrigação para os laboratórios que realizam
+                            análise metrológica: ter “um plano e um método de amostragem, quando realiza amostragem de
+                            substâncias, materiais ou produtos para ensaio ou calibração subsequente”. Esse plano deve
+                            “assegurar a validade dos resultados de ensaio e calibração subsequentes.” (ABNT, 2017, p.
+                            13). A norma também diz que esse plano deve ter base em métodos estatísticos apropriados e
+                            ficar disponível no local onde a amostra for realizada. Entre os pontos importantes na
+                            determinação de uma amostra, o laboratório deve ficar atento às seguintes situações:
+                        </p>
+                        <!-- gaitinha4 -->
+                        <p class="no-print" aria-hidden="true">Clique ou toque para visualizar o conteúdo.</p>
+                        <div class="accordion no-print" id="accordionExample4" aria-hidden="true">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne4" aria-expanded="false"
+                                        aria-controls="collapseOne4">
+                                        Representatividade dos resultados
+                                    </button>
+                                </h2>
+                                <div id="collapseOne4" class="accordion-collapse collapse" aria-labelledby="headingOne4"
+                                    data-bs-parent="#accordionExample4">
+                                    <div class="accordion-body">
+                                        <p>Uma amostra representativa deve refletir as características da população ou
+                                            do processo que está sendo avaliado. Isso significa que as características
+                                            principais e variáveis importantes devem estar presentes na amostra em
+                                            proporções semelhantes às do todo.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo4" aria-expanded="false"
+                                        aria-controls="collapseTwo4">
+                                        Aleatoriedade
+
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo4" class="accordion-collapse collapse" aria-labelledby="headingTwo4"
+                                    data-bs-parent="#accordionExample4">
+                                    <div class="accordion-body">
+                                        <p>A seleção dos elementos da amostra deve ser aleatória para evitar erros
+                                            sistemáticos e garantir que todas as partes da população tenham uma chance
+                                            igual de serem incluídas na amostra. Isso pode ser alcançado por métodos
+                                            como sorteios aleatórios ou técnicas estatísticas de amostragem
+                                            probabilística.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree4" aria-expanded="false"
+                                        aria-controls="collapseThree4">
+                                        Tamanho da amostra
+                                    </button>
+                                </h2>
+                                <div id="collapseThree4" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree4" data-bs-parent="#accordionExample4">
+                                    <div class="accordion-body">
+                                        <p>Determinar o tamanho adequado da amostra é essencial para equilibrar a
+                                            precisão estatística com os recursos disponíveis. Métodos estatísticos são
+                                            frequentemente aplicados para calcular o tamanho da amostra, necessário para
+                                            alcançar resultados confiáveis. Um tamanho de amostra muito pequeno pode
+                                            levar a generalizações inválidas, enquanto um tamanho excessivamente grande
+                                            pode ser desnecessário e dispendioso.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFor4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFor4" aria-expanded="false"
+                                        aria-controls="collapseFor4">
+                                        Procedimentos documentados
+
+                                    </button>
+                                </h2>
+                                <div id="collapseFor4" class="accordion-collapse collapse" aria-labelledby="headingFor4"
+                                    data-bs-parent="#accordionExample4">
+                                    <div class="accordion-body">
+                                        <p>Em laboratórios de metrologia, é indispensável documentar os procedimentos de
+                                            amostragem adotados, incluindo critérios de seleção, técnicas de coleta,
+                                            condições ambientais e qualquer outra informação relevante que possa afetar
+                                            os resultados da medição.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="print visually-hidden">
+                            <p><strong>Representatividade dos resultados</strong></p>
+                            <p>Uma amostra representativa deve refletir as características da população ou do processo
+                                que está sendo avaliado. Isso significa que as características principais e variáveis
+                                importantes devem estar presentes na amostra em proporções semelhantes às do todo.
+                            </p>
+                            <strong>
+                                <p>Aleatoriedade
+                            </strong></p>
+                            <p>A seleção dos elementos da amostra deve ser aleatória para evitar erros sistemáticos e
+                                garantir que todas as partes da população tenham uma chance igual de serem incluídas na
+                                amostra. Isso pode ser alcançado por métodos como sorteios aleatórios ou técnicas
+                                estatísticas de amostragem probabilística.
+
+                            </p>
+                            <strong>
+                                <p>Tamanho da amostra
+                            </strong></p>
+                            <p>Determinar o tamanho adequado da amostra é essencial para equilibrar a precisão
+                                estatística com os recursos disponíveis. Métodos estatísticos são frequentemente
+                                aplicados para calcular o tamanho da amostra, necessário para alcançar resultados
+                                confiáveis. Um tamanho de amostra muito pequeno pode levar a generalizações inválidas,
+                                enquanto um tamanho excessivamente grande pode ser desnecessário e dispendioso.
+                            </p>
+                            <strong>
+                                <p>Procedimentos documentados
+                            </strong></p>
+                            <p>Em laboratórios de metrologia, é indispensável documentar os procedimentos de amostragem
+                                adotados, incluindo critérios de seleção, técnicas de coleta, condições ambientais e
+                                qualquer outra informação relevante que possa afetar os resultados da medição.
+                            </p>
+                        </div>
+                        <p>
+                            Em resumo, uma amostragem confiável pode garantir precisão nas medições em metrologia, pois
+                            influencia diretamente a qualidade e a confiabilidade das medições realizadas. Ao seguir
+                            métodos adequados de amostragem e aderir às normas reconhecidas internacionalmente, os
+                            laboratórios de metrologia podem assegurar que suas medições sejam precisas, confiáveis e
+                            cientificamente válidas, contribuindo para a integridade e a eficácia de seus serviços e
+                            resultados.
+                        </p>
+                        <h3 id="titulo8">Encerramento</h3>
+                        <p>
+                            É finalizado aqui este estudo dos processos de medição: a calibração, a verificação e a
+                            incerteza. Você conheceu também a existência do erro e a necessidade de determinar amostras
+                            confiáveis. Esses temas promovem a confiança em relação à exatidão das medições realizadas
+                            em diversos instrumentos, o que ajuda a garantir a qualidade nos serviços prestados e
+                            produtos oferecidos.
+                        </p>
+                        <p>
+                            Por fim, sugere-se a leitura da norma ABNT NBR ISO 10012:2004: Sistemas de gestão de medição
+                            – requisitos para os processos de medição e equipamentos de medição. É uma norma exclusiva
+                            para laboratórios de ensaios e calibração, a fim de garantir que os procedimentos de cálculo
+                            e a forma de tratamento de uma amostra metrológica funcionem igualmente em qualquer local.
+                        </p>
+
                     </div>
-                    <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a> 
-                </div> 
-            </section>
-            <!-- Paginação-->
-            <!-- <footer class="text-center no-print d-flex justify-content-center mx-auto">
+                </div>
+                <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a>
+            </div>
+        </section>
+        <!-- Paginação-->
+        <!-- <footer class="text-center no-print d-flex justify-content-center mx-auto">
                 <ul class="pagination">
     
                 </ul>
             </footer>    -->
-        </section>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
-        <!--Jquery-->
-        <script src="../assets/js/jquery-3.6.0.min.js"></script>
-        <!--Áudio customizado-->
-        <script src="../assets/js/audio-player.js"></script>
-        
-        <!--Atividade de verdadeiro ou falso-->
-        <script src="../assets/atividades/perguntas/perguntas.js"></script>
-        <!--Atividade de jogo da memória-->
-        <script src="../assets/atividades/jogo_memoria/jogoMemoria.js"></script>
-        <!--Atividade arrasta e solta-->
-        <script src='../assets/atividades/arrasta_solta/dragula.min.js'></script>
-        <script src="../assets/atividades/arrasta_solta/game-custom.js"></script>
-        <!--Atividade associar colunas-->
-        <script src="../assets/atividades/relacionar_colunas/relacionar-colunas.js"></script>
-        <!--Splide - slideshow-->
-        <script src="../assets/js/splide.min.js"></script>
-        <!--Prog'n'roll - barra de progresso conforme rola a página-->
-        <script src="../assets/js/prognroll.min.js"></script>
-        <!--Scripts gerais-->
-        <script src="../assets/js/geral.js"></script>
+    </section>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <!--Jquery-->
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <!--Áudio customizado-->
+    <script src="../assets/js/audio-player.js"></script>
 
-        <script>
-            var splide = new Splide( '.splide', {
-                type   : 'slide',
-                perPage: 2,
-                trimSpace: false,
-                // focus  : 'center'
-            } );
+    <!--Atividade de verdadeiro ou falso-->
+    <script src="../assets/atividades/perguntas/perguntas.js"></script>
+    <!--Atividade de jogo da memória-->
+    <script src="../assets/atividades/jogo_memoria/jogoMemoria.js"></script>
+    <!--Atividade arrasta e solta-->
+    <script src='../assets/atividades/arrasta_solta/dragula.min.js'></script>
+    <script src="../assets/atividades/arrasta_solta/game-custom.js"></script>
+    <!--Atividade associar colunas-->
+    <script src="../assets/atividades/relacionar_colunas/relacionar-colunas.js"></script>
+    <!--Splide - slideshow-->
+    <script src="../assets/js/splide.min.js"></script>
+    <!--Prog'n'roll - barra de progresso conforme rola a página-->
+    <script src="../assets/js/prognroll.min.js"></script>
+    <!--Scripts gerais-->
+    <script src="../assets/js/geral.js"></script>
 
-            splide.mount();
+    <script>
+        var splide = new Splide('.splide', {
+            type: 'slide',
+            perPage: 2,
+            trimSpace: false,
+            // focus  : 'center'
+        });
 
-            $(function() {
-                $("body").prognroll();
-            });
-        </script>
+        splide.mount();
 
-        <!-- Handtalk -->
-        <script>
-            var scriptElem=document.createElement("script");
-            scriptElem.src="https://plugin.handtalk.me/web/latest/handtalk.min.js",
-            scriptElem.charset="UTF-8",
-            scriptElem.onload=function(){
+        $(function () {
+            $("body").prognroll();
+        });
+    </script>
+    <!-- Handtalk -->
+    <script>
+        var scriptElem = document.createElement("script");
+        scriptElem.src = "https://plugin.handtalk.me/web/latest/handtalk.min.js",
+            scriptElem.charset = "UTF-8",
+            scriptElem.onload = function () {
                 window.ht = new HT({
-                    token:"bf5b7efb148a829a126a0e0c9fd533bf",
-                    align:"top",
+                    token: "bf5b7efb148a829a126a0e0c9fd533bf",
+                    align: "top",
                     videoEnabled: true,
-                    ytEmbedReplace: true,           
-                    mobileConfig:{align:"right",
-                                    actionsAlign:"top",
-                                    customButtonStyle:{
-                                        borderRadius:"6px",
-                                        size:"38px",
-                                        horizontalMargin:"13px",
-                                        bottomMargin:"140px",
-                                        rightMargin:"40px"}
-                                    }
-                    });        
-                $('.ht-skip').attr("aria-hidden","true")
+                    ytEmbedReplace: true,
+                    mobileConfig: {
+                        align: "right",
+                        actionsAlign: "top",
+                        customButtonStyle: {
+                            borderRadius: "6px",
+                            size: "38px",
+                            horizontalMargin: "13px",
+                            bottomMargin: "140px",
+                            rightMargin: "40px"
+                        }
+                    }
+                });
+                $('.ht-skip').attr("aria-hidden", "true")
             },
-        document.body.appendChild(scriptElem);
-        
-        </script>
-    </body>
+            document.body.appendChild(scriptElem);
+
+    </script>
+</body>
+
 </html>
