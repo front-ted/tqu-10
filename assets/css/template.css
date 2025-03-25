@@ -24,8 +24,10 @@ body {
   font-size: 20px;
 }
 .img-bg {
-  width: 100vw;
+  width: 80vw;
+  max-width: 960px;
   position: relative;
+  margin: 0 auto;
   img {
     width: 100%;
   }
@@ -83,8 +85,8 @@ body {
           background-color: #fff;
           border: 2px solid #fff;
           border-radius: 50%;
-          height: 60px;
-          width: 60px;
+          height: 35px;
+          width: 35px;
           position: absolute;
           top: 0;
           right: 50%;
@@ -97,8 +99,8 @@ body {
         &::after {
           background: url("../images/check.svg") no-repeat;
           border-radius: 50%;
-          height: 60px;
-          width: 60px;
+          height: 35px;
+          width: 35px;
           position: absolute;
           top: 0;
           right: 50%;

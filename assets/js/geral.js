@@ -19,30 +19,30 @@ window.addEventListener("load", function () {
     $(this).addClass("visitado");
   });
 
-  const proportionScale = (width, height) => {
-    const widthScreen = window.visualViewport.width;
-    const heightScreen = window.visualViewport.height;
-    const proporcaoHeight = (heightScreen * 100) / height;
-    const proporcaoWidth = (widthScreen * 100) / width;
+  // const proportionScale = (width, height) => {
+  //   const widthScreen = window.visualViewport.width;
+  //   const heightScreen = window.visualViewport.height;
+  //   const proporcaoHeight = (heightScreen * 100) / height;
+  //   const proporcaoWidth = (widthScreen * 100) / width;
 
-    if (proporcaoHeight < proporcaoWidth) {
-      return [proporcaoHeight / 100, "height", "width"];
-    } else {
-      return [proporcaoWidth / 100, "width", "height"];
-    }
-  };
+  //   if (proporcaoHeight < proporcaoWidth) {
+  //     return [proporcaoHeight / 100, "height", "width"];
+  //   } else {
+  //     return [proporcaoWidth / 100, "width", "height"];
+  //   }
+  // };
 
-  const resizeBodyCadeia = (selector = ".img-bg", x = 1920, y = 1080) => {
-    const proporcao1920 = proportionScale(1920, 1080)[0];
-    const s = document.querySelectorAll(selector);
-    s.forEach((element) => {
-      element.style.transform = `scale(${proporcao1920})`;
-    });
-  };
-  resizeBodyCadeia();
-  window.addEventListener("resize", (e) => {
-    resizeBodyCadeia();
-  });
+  // const resizeBodyCadeia = (selector = ".img-bg", x = 1920, y = 1200) => {
+  //   const proporcao1920 = proportionScale(x, y)[0];
+  //   const s = document.querySelectorAll(selector);
+  //   s.forEach((element) => {
+  //     element.style.transform = `scale(${proporcao1920})`;
+  //   });
+  // };
+  // resizeBodyCadeia();
+  // window.addEventListener("resize", (e) => {
+  //   resizeBodyCadeia();
+  // });
 });
 
 // reposicionamento do botao do menu
